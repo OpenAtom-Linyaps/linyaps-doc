@@ -1,0 +1,13 @@
+:root {
+  --vp-home-hero-name-color: #003296;
+  
+  --vp-c-brand: rgb(00,50,150);
+  --vp-c-brand-light: rgb(74,102,172);
+  --vp-c-brand-lighter: rgb(74,102,172);
+  --vp-c-brand-dark: rgb(74,102,172);
+  --vp-c-brand-darker: rgb(74,102,172);
+}
+
+.tagline {
+  max-width: 800px;
+}
