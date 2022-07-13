@@ -12,6 +12,7 @@ module.exports = {
     },
   },
   themeConfig: {
+    logo: '/assert/logo.svg',
     siteTitle: false,
     locales: {
       "/": {
