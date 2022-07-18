@@ -15,31 +15,54 @@ module.exports = {
     logo: "/assert/logo.svg",
     siteTitle: false,
     sidebar: {
-      "/guide/": [
+      "guide/": [
         {
           collapsible: true,
           text: "开始",
           items: [
-            { text: "什么是玲珑", link: "/guide/getting-started-why.md" },
-            { text: "安装", link: "/guide/getting-started-install.md" },
+            { text: "什么是玲珑", link: "guide/start/whatis.md" },
+            { text: "安装", link: "guide/start/install.md" },
           ],
         },
         {
           collapsible: true,
           text: "命令行工具",
-          items: [{ text: "运行", link: "/guide/ll-cli-run.md" }],
+          items: [
+            { text: "简介", link: "guide/ll-cli/introduction.md" },
+            { text: "列出已安装的玲珑应用", link: "guide/ll-cli/list.md" },
+            { text: "从远程仓库查询玲珑应用", link: "guide/ll-cli/query.md" },
+            { text: "安装玲珑应用", link: "guide/ll-cli/install.md" },
+            { text: "运行玲珑应用", link: "guide/ll-cli/run.md" },
+            { text: "卸载玲珑应用", link: "guide/ll-cli/uninstall.md" },
+            { text: "更新玲珑应用", link: "guide/ll-cli/update.md" },
+            { text: "查看运行中的玲珑应用", link: "guide/ll-cli/ps.md" },
+            { text: "进入运行中的玲珑容器内部", link: "guide/ll-cli/exec.md" },
+            { text: "强制退出正在运行的玲珑应用", link: "guide/ll-cli/kill.md" },
+          ],
           // TODO：add cli doc to here
         },
         {
           collapsible: true,
           text: "构建工具",
-          items: [{ text: "创建项目", link: "/guide/ll-builder-create.md" }],
+          items: [
+            { text: "简介", link: "guide/ll-builder/introduction.md" },
+            { text: "配置文件", link: "guide/ll-builder/manifests.md" },
+            { text: "创建玲珑项目", link: "guide/ll-builder/create.md" },
+            { text: "构建玲珑应用", link: "guide/ll-builder/build.md" },
+            { text: "运行编译后的玲珑应用", link: "guide/ll-builder/run.md" },
+            { text: "导出uab格式应用", link: "guide/ll-builder/export.md" },
+            { text: "推送uab到远程仓库", link: "guide/ll-builder/push.md" },
+          ],
           // TODO：add builder doc to here
         },
         {
           collapsible: true,
-          text: "其他",
-          items: [{ text: "常见问题", link: "/guide/faq.md" }],
+          text: "调试玲珑应用",
+          items: [
+            { text: "IDE中调试玲珑应用", link: "guide/debug/debug.md" },
+            { text: "常见构建问题", link: "guide/debug/ll-builder-faq.md" },
+            { text: "常见运行问题", link: "guide/debug/faq.md" },
+          ],
           // TODO：add builder doc to here
         },
       ],
@@ -56,10 +79,10 @@ module.exports = {
             text: "文档",
             ariaLabel: "doc",
             items: [
-              { text: "开始", link: "/guide/getting-started-why.md" },
-              { text: "命令行工具", link: "/guide/ll-cli-run.md" },
-              { text: "构建工具", link: "/guide/ll-builder-create.md" },
-              { text: "常见问题", link: "/guide/faq.md" },
+              { text: "开始", link: "/guide/start/whatis.md" },
+              { text: "命令行工具", link: "/guide/ll-cli/introduction.md" },
+              { text: "构建工具", link: "/guide/ll-builder/introduction.md" },
+              { text: "常见问题", link: "/guide/faq/faq.md" },
             ],
           },
           {

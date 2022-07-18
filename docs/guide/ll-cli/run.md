@@ -1,6 +1,3 @@
----
-layout: doc
----
 # 运行玲珑应用
 
 `ll-cli run`命令可以启动一个玲珑应用。
@@ -13,7 +10,7 @@ ll-cli run --help
 
 `ll-cli run`命令的帮助信息如下：
 
-```bash
+```text
 Usage: ll-cli [options] run com.deepin.demo
 
 Options:
@@ -73,4 +70,4 @@ gdb /opt/apps/org.deepin.music/files/bin/deepin-music
 
 该路径为沙箱内应用程序的绝对路径。
 
-玲珑应用`release`版本更多调试信息请参考：[玲珑应用常见bug](玲珑应用常见bug.md)。
+玲珑应用`release`版本更多调试信息请参考：[玲珑应用常见bug](../debug/faq.md.md)。
