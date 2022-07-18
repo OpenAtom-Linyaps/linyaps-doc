@@ -79,14 +79,15 @@ module.exports = {
             text: "文档",
             ariaLabel: "doc",
             items: [
-              { text: "开始", link: "/guide/start/whatis.md" },
-              { text: "命令行工具", link: "/guide/ll-cli/introduction.md" },
-              { text: "构建工具", link: "/guide/ll-builder/introduction.md" },
-              { text: "常见问题", link: "/guide/faq/faq.md" },
+              { text: "开始", link: "guide/start/whatis.md" },
+              { text: "命令行工具", link: "guide/ll-cli/introduction.md" },
+              { text: "构建工具", link: "guide/ll-builder/introduction.md" },
+              { text: "调试", link: "guide/debug/debug.md" },
+              { text: "常见问题", link: "guide/debug/faq.md" },
             ],
           },
           {
-            text: "Languages",
+            text: "语言",
             ariaLabel: "Language Menu",
             items: [
               { text: "简体中文", link: "/" },
