@@ -73,7 +73,7 @@ module.exports = {
           {
             text: "商店",
             ariaLabel: "store",
-            link: "https://linglong-store.iceyer.net/",
+            link: "http://10.20.52.176:30184",
           },
           {
             text: "文档",
@@ -101,7 +101,7 @@ module.exports = {
           {
             text: "Store",
             ariaLabel: "store",
-            link: "https://linglong-store.iceyer.net/",
+            link: "http://10.20.52.176:30184",
           },
           {
             text: "Docs",
