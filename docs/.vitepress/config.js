@@ -52,6 +52,7 @@ module.exports = {
             { text: "运行编译后的玲珑应用", link: "/guide/ll-builder/run.md" },
             { text: "导出uab格式应用", link: "/guide/ll-builder/export.md" },
             { text: "推送uab到远程仓库", link: "/guide/ll-builder/push.md" },
+            { text: "demo示例", link: "/guide/ll-builder/demo.md" },
           ],
           // TODO：add builder doc to here
         },
