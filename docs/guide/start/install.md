@@ -5,8 +5,11 @@
 安装玲珑环境
 
 ```bash
-sudo apt install linglong-builder \
-   linglong-box linglong-dbus-proxy linglong-bin
+sudo apt install linglong-builder \ 
+                 linglong-box \
+                 linglong-dbus-proxy \
+                 linglong-bin \
+                 linglong-installer
 ```
 
 ## 二进制安装
