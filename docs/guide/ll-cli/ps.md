@@ -14,8 +14,8 @@ ll-cli ps --help
 Usage: ll-cli [options] ps
 
 Options:
-  -h, --help                 Displays this help.
-  --default-config           default config json filepath
+  -h, --help                 Displays help on commandline options.
+  --help-all                 Displays help including Qt specific options.
   --output-format <console>  json/console
 
 Arguments:
@@ -26,4 +26,11 @@ Arguments:
 
 ```bash
 ll-cli ps
+```
+
+`ll-cli ps`命令输出如下：
+
+```text
+App                                             ContainerID                         Pid     Path
+org.deepin.calculator/5.7.21.4/x86_64           7c4299db7f5647428a79896658efa35c    1943975 /run/user/1000/linglong/7c4299db7f5647428a79896658efa35c
 ```

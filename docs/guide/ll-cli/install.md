@@ -14,10 +14,14 @@ ll-cli install --help
 Usage: ll-cli [options] install com.deepin.demo
 
 Options:
-  -h, --help                           Displays this help.
-  --default-config                     default config json filepath
+  -h, --help                           Displays help on commandline options.
+  --help-all                           Displays help including Qt specific
+                                       options.
   --repo-point <--repo-point=flatpak>  app repo type to use
-  --nodbus                             execute cmd directly, not via dbus
+  --nodbus                             execute cmd directly, not via dbus(only
+                                       for root user)
+  --channel <--channel=linglong>       the channnel of app
+  --module <--module=runtime>          the module of app
 
 Arguments:
   install                              install an application
@@ -27,7 +31,7 @@ Arguments:
 运行`ll-cli install`命令安装玲珑应用:
 
 ```bash
-ll-cli install <org.deepin.music>
+ll-cli install <org.deepin.calculator>
 ```
 
 `ll-cli install`命令需要输入应用完整的`appid`，若仓库有多个版本则会默认安装最高版本。
@@ -35,7 +39,15 @@ ll-cli install <org.deepin.music>
 安装指定版本需在`appid`后附加对应版本号:
 
 ```bash
-ll-cli install <org.deepin.music/5.1.2>
+ll-cli install <org.deepin.calculator/5.1.2>
+```
+
+`ll-cli install org.deepin.calculator`输出如下：
+
+```text
+install org.deepin.calculator , please wait a few minutes...
+org.deepin.calculator is installing...
+message: install org.deepin.calculator, version:5.7.21.4 success
 ```
 
 应用安装完成后，客户端会显示安装结果信息。

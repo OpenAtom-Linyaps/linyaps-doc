@@ -14,18 +14,17 @@ ll-cli命令的帮助信息如下
 Usage: ll-cli [options] subcommand [sub-option]
 
 Options:
-  -h, --help        Displays this help.
-  --default-config  default config json filepath
+  -h, --help  Displays help on commandline options.
+  --help-all  Displays help including Qt specific options.
 
 Arguments:
-  subcommand        run
-                    ps
-                    exec
-                    kill
-                    download
-                    install
-                    uninstall
-                    update
-                    query
-                    list
+  subcommand  run
+              ps
+              exec
+              kill
+              install
+              uninstall
+              update
+              query
+              list
 ```

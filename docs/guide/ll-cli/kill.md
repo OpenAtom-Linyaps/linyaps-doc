@@ -25,5 +25,11 @@ Arguments:
 使用 `ll-cli kill` 命令可以强制退出正在运行的玲珑应用:
 
 ```bash
-ll-cli kill <aebbe2f455cf443f89d5c92f36d154dd>
+ll-cli kill <9c41c0af2bad4617aea8485f5aaeb93a>
+```
+
+`ll-cli kill 9c41c0af2bad4617aea8485f5aaeb93a`命令输出如下：
+
+```text
+kill app:org.deepin.calculator/5.7.21.4/x86_64 success
 ```
