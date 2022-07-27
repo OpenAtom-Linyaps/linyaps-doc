@@ -130,4 +130,3 @@ ll-builder export
 ```text
 ll-builder push org.deepin.calculator_1.1.1_x86_64.uab
 ```
- 

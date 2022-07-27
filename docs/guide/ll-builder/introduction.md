@@ -22,7 +22,8 @@ Usage: ll-builder [options] subcommand [sub-option]
 
 Options:
   -v, --verbose  show detail log
-  -h, --help     Displays this help.
+  -h, --help     Displays help on commandline options.
+  --help-all     Displays help including Qt specific options.
 
 Arguments:
   subcommand     create
