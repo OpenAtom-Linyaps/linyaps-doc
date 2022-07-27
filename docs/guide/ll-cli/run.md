@@ -70,4 +70,4 @@ gdb /opt/apps/org.deepin.music/files/bin/deepin-music
 
 该路径为沙箱内应用程序的绝对路径。
 
-玲珑应用`release`版本更多调试信息请参考：[玲珑应用常见bug](../debug/faq.md.md)。
+玲珑应用`release`版本更多调试信息请参考：[玲珑应用常见bug](../debug/faq.md)。

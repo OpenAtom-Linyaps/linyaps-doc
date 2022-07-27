@@ -3,6 +3,7 @@
 ```text
 ll-builder create org.deepin.calculator
 ```
+
 ## 编辑linglong.yaml
 
 ### 填写软件包元信息
@@ -10,7 +11,7 @@ ll-builder create org.deepin.calculator
 ```text
 package:
   id: org.deepin.calculator
-  name: deepin-calculao
+  name: deepin-calculator
   version: 5.9.17
   kind: app
   description: |

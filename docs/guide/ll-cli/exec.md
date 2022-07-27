@@ -30,5 +30,3 @@ Arguments:
 ```bash
 ll-cli exec aebbe2f455cf443f89d5c92f36d154dd /bin/bash
 ```
-
-玲珑沙箱没有 `root` 权限，使用 `ll-cli exec` 命令进入容器内部后，不能使用 `gdb attach` 命令。

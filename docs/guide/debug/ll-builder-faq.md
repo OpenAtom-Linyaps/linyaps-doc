@@ -22,10 +22,4 @@
 
     低版本`fuse-overlay mount`存在问题，导致`qtbase commit`时文件内容被污染 ，无法正常使用。使用`fuse-overlayfs >= 1.8.2`版本。
 
-5. `error: Writing content object: fchown: Operation not permitted`
-
-    `ostree`仓库模式不正确，本地`ostree`初始化时，使用`bare-user-only`模式。
-
-6. `cmake check module` 使用`import target`时，`pkgConfig`变量展开会出现`link`时为空值
-
-    TODO
+5. `cmake check module` 使用`import target`时，`pkgConfig`变量展开会出现`link`时为空值。

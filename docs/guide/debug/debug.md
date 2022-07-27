@@ -68,11 +68,3 @@ Init Commands: `set substitute-path /buildstream/deepin-draw/deepin-draw.bst ~/D
 ![qt-creator](images/qt-creator.png)
 
 配置完成后，即可正常使用`QtCreator`来进行调试了。
-
-## VSCODE 配置
-
-TODO
-
-## CLION 配置
-
-TODO
