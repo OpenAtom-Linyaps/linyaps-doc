@@ -2,53 +2,16 @@
 
 `linglong.yaml` 是玲珑项目工程的描述文件，记录构建所需的相关信息。如构建产物的名称、版本、源码地址、构建依赖等。
 
-`linglong.yaml` 示例如下:
-
-```yaml
-package:
-  id: org.deepin.reader
-  version: 5.9.17
-  kind: app
-  description: |
-    reader for deepin os.
-
-runtime:
-  id: org.deepin.runtime
-  version: 20.0.0
-
-depends:
-  - id: libopenjp2/2.4.0
-  - id: djvu
-    version: 3.5.28
-
-source:
-  kind: git
-  url: "http://gerrit.uniontech.com/deepin-reader"
-  commit: a42702f164d85525f09211381c77d2085c9c1057
-  patch: patches/fix-install-prefix.patch
-
-build:
-  kind: manual
-  manual:
-    configure: |
-      mkdir build
-      cd build
-      qmake -r PREFIX=${PREFIX} ..
-      make -j
-      make test
-      make -j install
-```
-
 ## 工程目录结构
 
 ```bash
 {project-root}
-|__ linglong.yaml
-|__ .linglong-target // build cache for project
+|** linglong.yaml
+|** .linglong-target // build cache for project
 
 {user-home}
-|__ .cache/linglong-builder/repo
-|__ .cache/linglong-builder/layers
+|** .cache/linglong-builder/repo
+|** .cache/linglong-builder/layers
 ```
 
 ### 字段定义
@@ -64,12 +27,12 @@ package:
     reader for deepin os.
 ```
 
-| name        | description                                                             |
-| ----------- | ----------------------------------------------------------------------- |
-| id          | 构建产物的唯一名称。                                                       |
-| version     | 构建产物的版本。                                                           |
-| kind        | 构建产物的类型。可选类型：app、runtime、lib，依次代表应用、运行时、库。           |
-| description | 构建产物的详细描述。                                 |
+| name        | description                                                 |
+| ----------- | ----------------------------------------------------------- |
+| description | 构建产物的详细描述                                          |
+| id          | 构建产物的唯一名称                                          |
+| kind        | 构建产物的类型：app、runtime、lib，依次代表应用、运行时、库 |
+| version     | 构建产物的版本                                              |
 
 ## runtime
 
@@ -90,12 +53,11 @@ runtime:
   id: org.deepin.Runtime/20.5.0
 ```
 
-| name    | description                                                     |
-| ------- | --------------------------------------------------------------- |
-| id      | 运行时（runtime）的唯一名称。                                      |
-| version | 运行时（runtime）版本。                                           |
-| digest  | （暂未使用, 该字段可用来绑定唯一版本的运行时（runtime）。 |
-
+| name    | description                                             |
+| ------- | ------------------------------------------------------- |
+| id      | 运行时（runtime）的唯一名称                             |
+| version | 运行时（runtime）版本                                   |
+| digest  | （暂未使用, 该字段可用来绑定唯一版本的运行时（runtime） |
 
 ## depends
 
@@ -114,12 +76,12 @@ depends:
     digest: 381c77d2085c9c10574d85525f09211
 ```
 
-| name    | description                                                     |
-| ------- | --------------------------------------------------------------- |
-| id      | 依赖的唯一名称。                                                   |
-| version | 依赖的版本。                                                      |
-| type    | 依赖的类型，类型为runtime的依赖，将会和构建内容一起被提交。             |
-| digest  | （暂未使用, 该字段可用来绑定唯一版本的依赖）                           |
+| name    | description                                                 |
+| ------- | ----------------------------------------------------------- |
+| id      | 依赖的唯一名称                                              |
+| type    | 依赖的类型，类型为 runtime 的依赖，将会和构建内容一起被提交 |
+| version | 依赖的版本                                                  |
+| digest  | （暂未使用，该字段可用来绑定唯一版本的依赖）                |
 
 ## source
 
@@ -128,21 +90,21 @@ depends:
 ```yaml
 source:
   kind: git
-  url: "http://gerrit.uniontech.com/deepin-reader"
+  url: "https://github.com/linuxdeepin/deepin-reader.git"
   version: master
-  commit: a42702f164d85525f09211381c77d2085c9c1057
+  commit: 3c651bcc40748fc5d02d9134fcaee14fda44ab62
   patch: 
     - patches/fix-install-prefix-path.patch
     - patches/fix-lib-install-path.patch
 ```
 
-| name    | description                                                     |
-| ------- | --------------------------------------------------------------- |
-| kind    | 源码类型，可选类型local、archive、git。                             |
-| url     | 源码地址，类型为archive、git时填写。                                |
-| version | 源码分支版本，类型为git时填写。                                      |
-| commit  | 源码某次提交hash值，类型为git时填写。                                |
-| patch   | 源码补丁路径。                                                    |
+| name    | description                             |
+| ------- | --------------------------------------- |
+| kind    | 源码类型，可选类型 local、archive、git  |
+| url     | 源码地址，类型为 archive、git 时填写    |
+| version | 源码分支版本，类型为 git 时填写         |
+| commit  | 源码某次提交 hash 值，类型为 git 时填写 |
+| patch   | 源码补丁路径                            |
 
 ## build
 
@@ -163,6 +125,8 @@ build:
       make -j install
 ```
 
+
+
 ```yaml
 build:
   kind: autotools
@@ -171,14 +135,13 @@ build:
       ./bootstrap.sh 
 ```
 
-| name      | description                                                     |
-| -------   | --------------------------------------------------------------- |
-| kind      | 构建类型，可选类型manual、autotools、cmake、qmake。                       |
-| manual    | 构建规则，声明使用manual时，表示自定义规则，即对build、install、configure重写。|
-| configure | 构建时configure规则。                                             |
-| build     | 构建时build规则。                                                 |
-| install   | 构建时install规则。                                               |
-
+| name      | description                                                                       |
+| --------- | --------------------------------------------------------------------------------- |
+| build     | 构建时build规则                                                                   |
+| configure | 构建时configure规则                                                               |
+| install   | 构建时install规则                                                                 |
+| kind      | 构建类型，可选类型 manual、autotools、cmake、qmake                                |
+| manual    | 构建规则，声明使用 manual 时，表示自定义规则，即对 build、install、configure 重写 |
 
 ## variables
 
@@ -199,12 +162,10 @@ build:
     configure: |
       ./configure ${conf_args} ${extra_args}
 ```
-| name      | description                                                     |
-| -------   | --------------------------------------------------------------- |
-| conf_args | 内置变量。                                                        |
-| extra_args| 内置变量。                                         |
-| jobs      | 内置变量。                                                    |
 
+| name      | description                                    |
+| --------- | ---------------------------------------------- |
+| conf_args | 内置变量，variables字段下赋值，build字段下使用 |
 
 ##  完整示例
 
@@ -230,10 +191,9 @@ depends:
 
 source:
   kind: git
-  url: "http://gerrit.uniontech.com/deepin-reader"
-  version: 5.9.9.2
-  commit: a42702f164d85525f09211381c77d2085c9c1057
-  patch: patches/fix-install-prefix.patch
+  url: "https://github.com/linuxdeepin/deepin-reader.git"
+  version: master
+  commit: 3c651bcc40748fc5d02d9134fcaee14fda44ab62
 
 build:
   kind: qmake
@@ -296,12 +256,13 @@ build:
       echo skip configure
 ```
 
-package 类型为runtime时，将提交所有依赖内容.
+package 类型为runtime时，将提交所有依赖内容。
 
 # 构建模板
+
 ## automake类型构建模板
 
-`autotools.yaml` 提供了通用的`automake`类型构建模板, 模板文件如下:
+`autotools.yaml` 提供了通用的 `automake` 类型构建模板, 模板文件如下:
 
 ```yaml
 variables:
@@ -325,15 +286,17 @@ build:
     install: |
       make ${jobs} DESTDIR=${dest_dir} install
 ```
+
 使用方法：
 
 ```yaml
 build:
   kind: autotools
 ```
+
 ## qmake构建模板
 
-`qmake.yaml` 提供了通用的`qmake`构建模板, 模板文件如下:
+`qmake.yaml` 提供了通用的 `qmake` 构建模板, 模板文件如下:
 
 ```yaml
 variables:
@@ -355,15 +318,17 @@ build:
     install: |
       make ${jobs} DESTDIR=${dest_dir} install
 ```
+
 使用方法：
 
 ```yaml
 build:
   kind: qmake
 ```
+
 ## cmake构建模板
 
-`cmake.yaml` 提供了通用的`cmake`构建模板, 模板文件如下:
+`cmake.yaml` 提供了通用的 `cmake` 构建模板, 模板文件如下:
 
 ```yaml
 variables:
