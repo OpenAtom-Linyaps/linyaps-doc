@@ -44,7 +44,7 @@ gdbserver  :10240 deepin-draw
 3. 在`gdb`中输入以下命令以设置路径映射，帮助`gdb`找到对应的源代码，假定源码放置在`host`主机的`Desktop`，命令如下：
 
    ```bash
-   set substitute-path /buildstream/deepin-draw/deepin-draw.bst ~/Desktop/deepin-draw
+   set substitute-path /deepin-draw/deepin-draw.bst ~/Desktop/deepin-draw
    ```
 
 之后正常使用`gdb`即可。
@@ -60,7 +60,7 @@ gdbserver  :10240 deepin-draw
 
 本地执行档案：`/var/lib/linglong/layers/org.deepin.draw/5.10.8/x86_64/files/bin/deepin-draw`   # *需要调试的二进制文件*
 
-Init Commands: `set substitute-path /buildstream/deepin-draw/deepin-draw.bst ~/Desktop/deepin-draw` # *设置源码的目录*
+Init Commands: `set substitute-path /deepin-draw/deepin-draw.bst ~/Desktop/deepin-draw` # *设置源码的目录*
 ```
 
 大致配置如下图所示：
