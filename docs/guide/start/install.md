@@ -34,7 +34,7 @@ sudo apt install linglong-builder \
 
 deepin v23 已预装玲珑环境。
 
-## 二进制下载
+### 二进制下载
 
 ### debian 11(bullseye)
 
