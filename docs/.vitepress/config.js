@@ -75,7 +75,7 @@ module.exports = {
           {
             text: "商店",
             ariaLabel: "store",
-            link: "http://10.20.52.176:30184",
+            link: "http://10.0.33.45:28803",
           },
           {
             text: "文档",
@@ -103,7 +103,7 @@ module.exports = {
           {
             text: "Store",
             ariaLabel: "store",
-            link: "http://10.20.52.176:30184",
+            link: "http://10.0.33.45:28803",
           },
           {
             text: "Docs",
