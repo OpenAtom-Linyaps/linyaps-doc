@@ -52,7 +52,8 @@ module.exports = {
             { text: "导出uab格式应用", link: "/guide/ll-builder/export.md" },
             { text: "配置文件", link: "/guide/ll-builder/manifests.md" },
             // { text: "推送uab到远程仓库", link: "/guide/ll-builder/push.md" },
-            { text: "demo示例", link: "/guide/ll-builder/demo.md" },
+            { text: "本地demo示例", link: "/guide/ll-builder/demo.md" },
+            { text: "github构建示例", link: "/guide/ll-builder/github.md" }
           ],
           // TODO：add builder doc to here
         },

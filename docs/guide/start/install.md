@@ -34,8 +34,21 @@ sudo apt install linglong-builder \
 
 deepin v23 已预装玲珑环境。
 
-## 二进制安装
+## 二进制下载
 
 ### debian 11(bullseye)
 
+[https://github.com/linuxdeepin/linglong-hub/blob/master/linglong-deb/debian/debian_bullseye.tar.gz](https://github.com/linuxdeepin/linglong-hub/blob/master/linglong-deb/debian/debian_bullseye.tar.gz)
+
 ### ubuntu 22.04(jammy)
+
+[https://github.com/linuxdeepin/linglong-hub/blob/master/linglong-deb/debian/debian_bullseye.tar.gz](https://github.com/linuxdeepin/linglong-hub/blob/master/linglong-deb/debian/debian_bullseye.tar.gz)
+
+### 二进制安装
+
+debian 11 安装示例如下：
+
+```bash
+tar -zxvf debian_bullseye.tar.gz
+sudo apt install ./*.deb
+```
