@@ -55,3 +55,15 @@
 14. 应用运行时，找不到`libqxcb.so`库或者`qtwebengin` 报错？
 
     存在`qt.conf`文件时，在文件中配置正确路径，或者使用 `QTWEBENGINEPROCESS_PATH`、`QTWEBENGINERESOURCE_PATH`、`QT_QPA_PLATFORM_PLUGIN_PATH`、`QT_PLUGIN_PATH`环境变量配置搜索路径。
+
+15. 应用运行报错信息`gpu_data_manager_impl_private`，如何解决？
+
+    目前临时解决方案是加`--no-sandbox`，参考：[https://github.com/Automattic/simplenote-electron/issues/3044](https://github.com/Automattic/simplenote-electron/issues/3044)。
+
+16. 应用能否自己携带数据库文件，并在运行中往数据库中写入数据？
+
+    沙箱内文件系统是只读文件系统，不允许往应用资源文件中写入数据。
+
+17. 为什么执行携带`suid`、`guid`权限二进制失效？
+
+    玲珑沙箱为保证系统安全，沙箱内禁止执行此类权限二进制。
