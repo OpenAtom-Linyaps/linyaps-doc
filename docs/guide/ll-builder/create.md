@@ -58,6 +58,15 @@ runtime:
   version: 20.5.0
 ```
 
+### 依赖信息
+
+```yaml
+depends:
+  - id: icu
+    version: 63.1
+    type: runtime
+```
+
 ### 源码信息
 
 使用git源码
@@ -94,6 +103,11 @@ package:
 runtime:
   id: org.deepin.Runtime
   version: 20.5.0
+
+depends:
+  - id: icu
+    version: 63.1
+    type: runtime
 
 source:
   kind: git
