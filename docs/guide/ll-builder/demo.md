@@ -1,144 +1,103 @@
-# 本地demo示例
-
 ## 初始化玲珑工程
 
 ```text
-ll-builder create org.deepin.calculator
+ll-builder create org.deepin.demo
 ```
 
 ## 编辑linglong.yaml
 
 ### 填写软件包元信息
 
-```yaml
+```text
 package:
-  id: org.deepin.calculator
-  name: deepin-calculator
-  version: 5.9.17
+  id: org.deepin.demo
+  name: deepin-demo
+  version: 0.0.1
   kind: app
   description: |
-    calculator for deepin os.
+    simple qt demo.
 ```
-
 ### 填写运行时信息
 
-```yaml
+```text
 runtime:
-  id: org.deepin.runtime
-  version: 20.0.0
+  id: org.deepin.Runtime
+  version: 20.5.0
 ```
-
 ### 填写源码信息
 
 使用git源码
 
-```yaml
+```text
 source:
   kind: git
-  url: "https://github.com/linuxdeepin/deepin-calculator.git"
-  commit: 7b5fdf8d133c356317636bb4b4a76fc73ef288c6
+  url: "https://github.com/linuxdeepin/linglong-builder-demo.git"
+  commit: 24f78c8463d87ba12b0ac393ec56218240315a9
 ```
-
-### 填写依赖
-
-```yaml
-depends:
-  - id: "dde-qt-dbus-factory"
-    version: 5.5.12
-  - id: googletest
-    version: 1.8.1
-  - id: icu
-    version: 63.1
-    type: runtime
-  - id: xcb-util
-    type: runtime
-```
-
 ### 选择构建模板
 
-源码为cmake工程，填写build 类型为cmake（模板内容见cmake.yaml）。
+源码为qmake工程，填写build 类型为qmake（模板内容见qmake.yaml）。
 
-```yaml
+```text
 build:
-  kind: cmake
+  kind: qmake
 ```
-
-### 覆盖模板内容
-
-如果通用模板内容无法满足构建需求，可以在linglong.yaml文件覆盖指定内容, 未在linglong.yaml 重新声明的变量或命令将会继续沿用。
-
-覆盖变量extra_args：
-
-```yaml
-variables:
-  extra_args: |
-   -DVERSION=1.1.1 \
-   -DPREFIX=/usr
-```
-
-覆盖构建命令build：
-
-```yaml
-build:
-  kind: cmake
-  manual :
-    build: |
-      cd ${build_dir} && make -j8
-```
-
 ### 完整linglong.yaml
 
 ```yaml
 package:
-  id: org.deepin.calculator
-  name: deepin-calculator
-  version: 5.7.21
+  id: org.deepin.demo
+  name: deepin-demo
+  version: 0.0.1
   kind: app
   description: |
-    calculator for deepin os
-variables:
-  extra_args: |
-    -DVERSION=${VERSION} \
-    -DAPP_VERSION=5.7.21
+    simple qt demo.
+
 runtime:
   id: org.deepin.Runtime
   version: 20.5.0
-depends:
-  - id: "dde-qt-dbus-factory"
-    version: 5.5.12
-  - id: googletest
-    version: 1.8.1
-  - id: icu
-    version: 63.1
-    type: runtime
-  - id: xcb-util
-    type: runtime
+
 source:
   kind: git
-  url: "https://github.com/linuxdeepin/deepin-calculator.git"
-  commit: 7b5fdf8d133c356317636bb4b4a76fc73ef288c6
-build:
-  kind: cmake
-```
+  url: "https://github.com/linuxdeepin/linglong-builder-demo.git"
+  commit: 24f78c8463d87ba12b0ac393ec56218240315a9
 
+build:
+  kind: qmake
+```
 ## 开始构建
 
 在玲珑工程根目录下执行build子命令：
 
-```bash
+```text
 ll-builder build
 ```
 
-## 导出构建内容
+## 运行应用
 
-在玲珑工程根目录下执行export子命令，检出构建内容，同时生成bundle文件。
+构建成功后，在玲珑工程目录下执行run子命令，可以直接运行应用而无需安装。
 
-```bash
+```text
+ll-builder run
+```
+## 查看构建内容
+
+在玲珑工程根目录下执行export子命令，检出构建内容。
+
+```text
 ll-builder export
 ```
 
-<!-- ## 仓库推送
+目录结构如下：
 
-```bash
-ll-builder push org.deepin.calculator_1.1.1_x86_64.uab
-``` -->
+```text
+org.deepin.demo
+├── entries
+│   └── applications
+│        └── demo.desktop
+├── files
+│   └── bin
+│       └── demo
+├── info.json
+└── linglong.yaml
+```
