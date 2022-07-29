@@ -51,4 +51,5 @@ debian 11 安装示例如下：
 ```bash
 tar -zxvf debian_bullseye.tar.gz
 sudo apt install ./*.deb
+sudo reboot
 ```
