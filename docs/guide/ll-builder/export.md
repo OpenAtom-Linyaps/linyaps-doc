@@ -34,10 +34,8 @@ ll-builder export
 检出后的目录结构如下：
 
 ```text
-org.deepin.demo linglong.yaml org.deepin.demo_1.0.0_x86_64.uab
+org.deepin.demo linglong.yaml org.deepin.demo_0.0.1_x86_64.uab
 ```
-
-玲珑应用有两种包格式：`linglong`、`uab`，当前主推`linglong`包格式。
 
 以`org.deepin.demo`玲珑应用为例，目录如下：
 
@@ -45,8 +43,10 @@ org.deepin.demo linglong.yaml org.deepin.demo_1.0.0_x86_64.uab
 org.deepin.demo
 ├── entries
 │   └── applications
+│        └── demo.desktop
 ├── files
-│   └── demo
+│   └── bin
+│       └── demo
 ├── info.json
 └── linglong.yaml
 ```

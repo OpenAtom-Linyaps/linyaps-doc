@@ -1,6 +1,8 @@
+# demo示例
+
 ## 初始化玲珑工程
 
-```text
+```bash
 ll-builder create org.deepin.demo
 ```
 
@@ -8,7 +10,7 @@ ll-builder create org.deepin.demo
 
 ### 填写软件包元信息
 
-```text
+```yaml
 package:
   id: org.deepin.demo
   name: deepin-demo
@@ -17,31 +19,35 @@ package:
   description: |
     simple qt demo.
 ```
+
 ### 填写运行时信息
 
-```text
+```yaml
 runtime:
   id: org.deepin.Runtime
   version: 20.5.0
 ```
+
 ### 填写源码信息
 
 使用git源码
 
-```text
+```yaml
 source:
   kind: git
   url: "https://github.com/linuxdeepin/linglong-builder-demo.git"
   commit: 24f78c8463d87ba12b0ac393ec56218240315a9
 ```
+
 ### 选择构建模板
 
 源码为qmake工程，填写build 类型为qmake（模板内容见qmake.yaml）。
 
-```text
+```yaml
 build:
   kind: qmake
 ```
+
 ### 完整linglong.yaml
 
 ```yaml
@@ -65,11 +71,12 @@ source:
 build:
   kind: qmake
 ```
+
 ## 开始构建
 
 在玲珑工程根目录下执行build子命令：
 
-```text
+```bash
 ll-builder build
 ```
 
@@ -77,14 +84,15 @@ ll-builder build
 
 构建成功后，在玲珑工程目录下执行run子命令，可以直接运行应用而无需安装。
 
-```text
+```bash
 ll-builder run
 ```
+
 ## 查看构建内容
 
 在玲珑工程根目录下执行export子命令，检出构建内容。
 
-```text
+```bash
 ll-builder export
 ```
 

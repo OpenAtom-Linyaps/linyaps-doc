@@ -23,32 +23,7 @@ Arguments:
   build          build project
 ```
 
-`ll-builder build`命令必须运行在工程的根目录，即`linglong.yaml`文件所在位置。以一个简单[qt demo](https://gitlabwh.uniontech.com/ut001198/org.deepin.demo.git)为例：
-
-该项目配置文件如下：
-
-```yaml
-package:
-  kind: app
-  id: org.deepin.demo
-  name: deepin-demo
-  version: 1.0.0
-  description: |
-    demo for deepin os.
-
-base:
-  id: org.deepin.Runtime
-  version: 20.5.0
-
-depends:
-  - id: qtbase/5.11.3.15
-
-source:
-  kind: local
-
-build:
-  kind: qmake
-```
+`ll-builder build`命令必须运行在工程的根目录，即`linglong.yaml`文件所在位置。
 
 以玲珑项目`org.deepin.demo`为例，构建玲珑应用主要步骤如下：
 

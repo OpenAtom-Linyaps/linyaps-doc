@@ -36,43 +36,70 @@ org.deepin.demo/
 └── linglong.yaml
 ```
 
+## 编辑linglong.yaml
+
+### 软件包元信息
+
+```yaml
+package:
+  id: org.deepin.demo
+  name: deepin-demo
+  version: 0.0.1
+  kind: app
+  description: |
+    simple qt demo.
+```
+
+### 运行时信息
+
+```yaml
+runtime:
+  id: org.deepin.Runtime
+  version: 20.5.0
+```
+
+### 源码信息
+
+使用git源码
+
+```yaml
+source:
+  kind: git
+  url: "https://github.com/linuxdeepin/linglong-builder-demo.git"
+  commit: 24f78c8463d87ba12b0ac393ec56218240315a9
+```
+
+### 选择构建模板
+
+源码为qmake工程，填写build 类型为qmake（模板内容见qmake.yaml）。
+
+```yaml
+build:
+  kind: qmake
+```
+
+### 完整linglong.yaml
+
 `linglong.yaml`文件内容如下：
 
 ```yaml
-#Package metadata.
 package:
-  id: org.deepin.demo #Unique name for this package.
-  version: 0.0.0.1 #Package version.
-  kind: app #Package type. Such as app, lib and runtime.
-  description: This is a demo. #Shot description for this package.
+  id: org.deepin.demo
+  name: deepin-demo
+  version: 0.0.1
+  kind: app
+  description: |
+    simple qt demo.
 
-#Base enviriment for build.
-base:
-  id: org.deepin.base #Unique name for base.
-  version: 20.0.0 #Base version.
+runtime:
+  id: org.deepin.Runtime
+  version: 20.5.0
 
-#Common enviriment for build and running.
-#runtime:
-#  id: org.deepin.runtime #Unique name for runtime.
-#  version: 20.0.0 #Runtime version.
-
-#Private library for build.
-#depends:
-#  - id: #Unique name of depends.
-#    version: #Depends version.
-
-#Package source info.
 source:
-  kind: archive #Source type. Such as git and archive.
-  url: https://pools.uniontech.com/org.deepin.demo.tar.xz #Source url. It is used to fetch source code.
-  version: 0.0.0.1 #Source version.
-#  commit: #Git reference. If the kind is archive, we don't need this item.
-#  patch: #Source pacth. This will applyed to the source.
+  kind: git
+  url: "https://github.com/linuxdeepin/linglong-builder-demo.git"
+  commit: a3b89c3aa34c1aff8d7f823f0f4a87d5da8d4dc0
 
-#Build rules.
 build:
-  kind: #Build type. Such as manual...
-  manual:
-    configure:|
-    echo "Building start." #Shell Command to build source.
+  kind: qmake
 ```
