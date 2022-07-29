@@ -1,6 +1,6 @@
 # 卸载玲珑应用
 
-`ll-cli uninstall`命令可以安装玲珑应用。
+`ll-cli uninstall`命令可以卸载玲珑应用。
 
 查看`ll-cli uninstall`命令的帮助信息：
 

@@ -1,6 +1,6 @@
 # 创建玲珑项目
 
-`ll-builder create`命令用来来创建玲珑项目。
+`ll-builder create`命令用来创建玲珑项目。
 
 查看`ll-builder create`命令的帮助信息：
 
