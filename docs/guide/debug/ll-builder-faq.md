@@ -20,6 +20,4 @@
 
 4. `qtbase`构建成功，但无法构建`qt`应用，提示`module,mkspec` 相关错误
 
-    低版本`fuse-overlay mount`存在问题，导致`qtbase commit`时文件内容被污染 ，无法正常使用。使用`fuse-overlayfs >= 1.8.2`版本。
-
-5. `cmake check module` 使用`import target`时，`pkgConfig`变量展开会出现`link`时为空值。
+    低版本`fuse-overlay mount`存在问题，导致`qtbase commit`时文件内容被污染 ，无法正常使用。使用`fuse-overlayfs >= 1.7`版本。
