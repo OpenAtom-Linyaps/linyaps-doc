@@ -17,7 +17,7 @@ Options:
   -h, --help                           Displays help on commandline options.
   --help-all                           Displays help including Qt specific
                                        options.
-  --repo-point <--repo-point=flatpak>  app repo type to use
+  --repo-point <--repo-point>  app repo type to use
   --nodbus                             execute cmd directly, not via dbus(only
                                        for root user)
   --channel <--channel=linglong>       the channnel of app

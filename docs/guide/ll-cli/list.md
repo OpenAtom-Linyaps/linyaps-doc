@@ -18,7 +18,7 @@ Options:
   --help-all                           Displays help including Qt specific
                                        options.
   --type <--type=installed>            query installed app
-  --repo-point <--repo-point=flatpak>  app repo type to use
+  --repo-point <--repo-point>  app repo type to use
   --nodbus                             execute cmd directly, not via dbus
 
 Arguments:

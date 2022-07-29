@@ -17,7 +17,7 @@ Options:
   -h, --help                           Displays this help.
   --default-config                     default config json filepath
   --nodbus                             execute cmd directly, not via dbus
-  --repo-point <--repo-point=flatpak>  app repo type to use
+  --repo-point <--repo-point>  app repo type to use
 
 Arguments:
   uninstall                            uninstall an application
