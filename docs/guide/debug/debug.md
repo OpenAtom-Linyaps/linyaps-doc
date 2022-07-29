@@ -65,6 +65,6 @@ Init Commands: `set substitute-path /deepin-draw/deepin-draw.bst ~/Desktop/deepi
 
 大致配置如下图所示：
 
-![qt-creator](images/qt-creator.png)
+![qt-creator](images/qt-creator2.jpg)
 
 配置完成后，即可正常使用`QtCreator`来进行调试了。
