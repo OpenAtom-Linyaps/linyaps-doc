@@ -38,7 +38,7 @@ org.deepin.demo/
 
 `linglong.yaml`文件内容如下：
 
-```text
+```yaml
 #Package metadata.
 package:
   id: org.deepin.demo #Unique name for this package.
