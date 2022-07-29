@@ -34,7 +34,6 @@
 | 商业支持                  | ✔                              | ✘            | ✔               | ✘                                      |
 | 应用商店数量              | 预计 3000+                      | 1400+         | 6600+            | 1300+                                   |
 | 开发工具支持              |                                 | GNOME Builder | electron-builder |                                         |
-| GNOME Builder             | electron-builder                |               |                  |                                         |
 | 沙箱支持                  | ✔                              | ✔            | ✔               | ◐ （官方不提供，技术上可行）           |
 | rootless 沙箱             | ✔                              | ✘            | ✘               | ✘                                      |
 | 不安装运行                | ✔ （提供 Bundle 模式）         | ✘            | ✘               | ✔                                      |

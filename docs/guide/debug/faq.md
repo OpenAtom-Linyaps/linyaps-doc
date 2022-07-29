@@ -34,28 +34,24 @@
 
 9. 应用自带的`xdg-open`、`xdg-email`为什么失效？
 
-    `runtime`中玲珑特殊处理了`xdg-open`、`xdg-email`，因此应用禁止带此二进制。
+    `runtime`中玲珑特殊处理了`xdg-open`、`xdg-email`，因此应用禁止执行自己携带的xdg-open、xdg-email可执行文件或者脚本。
 
-10. 为什么`desktop`文件在启动器显示英文？
-
-    目前`dde`会处理自研应用`desktop`名称翻译，因此命名需要和原`desktop`保持一致。或者联系`dde`那边修改对应软件包。
-
-11. 应用使用系统环境变量未生效，为什么？
+10. 应用使用系统环境变量未生效，为什么？
 
     当使用环境变量时，需要确认沙箱内是否存在对应的环境变量，如果没有，需要联系玲珑团队处理。
 
-12. 应用运行需要的库文件没找到，如何提供？
+11. 应用运行需要的库文件没找到，如何提供？
 
     应用需要使用的资源文件，与库文件需要应用自身提供。库文件放到`files/lib`路径下。
 
-13. 应用下载目录可以选择哪里？
+12. 应用下载目录可以选择哪里？
 
     目前玲珑用户下载目录只能选择用户主目录下`Desktop`、`Documents`、`Downloads`、`Music`、`Pictures`、`Videos`、`Public`、`Templates` 目录，不能下载到其他目录。
 
-14. 应用运行时，为什么`QT WebEngine`渲染进程已崩溃？
+13. 应用运行时，为什么`QT WebEngine`渲染进程已崩溃？
 
     因系统升级了`glibc`，导致应用使用内置浏览器时失败，需要应用重新适配。临时解决方案是设置环境变量：`export QTWEBENGINE_DISABLE_SANDBOX=1`。
 
-15. 应用运行时，找不到`libqxcb.so`库或者`qtwebengin` 报错？
+14. 应用运行时，找不到`libqxcb.so`库或者`qtwebengin` 报错？
 
     存在`qt.conf`文件时，在文件中配置正确路径，或者使用 `QTWEBENGINEPROCESS_PATH`、`QTWEBENGINERESOURCE_PATH`、`QT_QPA_PLATFORM_PLUGIN_PATH`、`QT_PLUGIN_PATH`环境变量配置搜索路径。
