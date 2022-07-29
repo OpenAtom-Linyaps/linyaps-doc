@@ -17,7 +17,7 @@ Options:
   -h, --help                           Displays help on commandline options.
   --help-all                           Displays help including Qt specific
                                        options.
-  --repo-point <--repo-point>  app repo type to use
+  --repo-point                         app repo type to use
   --force                              query from server directly, not from
                                        cache
 

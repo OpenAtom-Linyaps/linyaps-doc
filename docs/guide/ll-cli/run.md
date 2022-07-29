@@ -18,7 +18,7 @@ Options:
                                                      commandline options.
   --help-all                                         Displays help including Qt
                                                      specific options.
-  --repo-point <--repo-point>                app repo type to use
+  --repo-point                                       app repo type to use
   --exec </bin/bash>                                 run exec
   --no-proxy                                         whether to use dbus proxy
                                                      in box
