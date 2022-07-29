@@ -58,7 +58,7 @@ build:
 cd org.deepin.demo
 ```
 
-执行`ll-budler build`命令将开始构建玲珑应用:
+执行`ll-builder build`命令将开始构建玲珑应用:
 
 ```bash
 ll-builder build
