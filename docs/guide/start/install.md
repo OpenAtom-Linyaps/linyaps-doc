@@ -42,7 +42,7 @@ deepin v23 已预装玲珑环境。
 
 ### ubuntu 22.04(jammy)
 
-[https://github.com/linuxdeepin/linglong-hub/blob/master/linglong-deb/debian/debian_bullseye.tar.gz](https://github.com/linuxdeepin/linglong-hub/blob/master/linglong-deb/debian/debian_bullseye.tar.gz)
+[https://github.com/linuxdeepin/linglong-hub/blob/master/linglong-deb/ubuntu/ubuntu_jammy.tar.gz](https://github.com/linuxdeepin/linglong-hub/blob/master/linglong-deb/ubuntu/ubuntu_jammy.tar.gz)
 
 ### 二进制安装
 
