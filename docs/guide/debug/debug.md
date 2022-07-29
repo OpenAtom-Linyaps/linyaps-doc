@@ -11,7 +11,7 @@ sudo apt install gdbserver gdb -y
 
 ```bash
 ll-cli run org.deepin.draw --exec /bin/bash
-gdbserver  :10240 deepin-draw
+gdbserver :10240 deepin-draw
 ```
 
 这里以调试应用`org.deepin.draw`为例。上述命令中，`:10240`为任意当前没有被占用的 tcp 端口。之后我们还需要做两件事情：
@@ -56,11 +56,11 @@ gdbserver  :10240 deepin-draw
 依次点击：调试>开始调试>连接到正在运行的调试服务器，在对话框中填入：
 
 ```text
-服务器端口： `10240`  # *任意`10000`以上的任意空闲端口*
+服务器端口：`10240`   # *任意`10000`以上的任意空闲端口*
 
 本地执行档案：`/var/lib/linglong/layers/org.deepin.draw/5.10.8/x86_64/files/bin/deepin-draw`   # *需要调试的二进制文件*
 
-Init Commands: `set substitute-path /deepin-draw/deepin-draw.bst ~/Desktop/deepin-draw` # *设置源码的目录*
+Init Commands: `set substitute-path /deepin-draw/deepin-draw.bst ~/Desktop/deepin-draw`   # *设置源码的目录*
 ```
 
 大致配置如下图所示：
