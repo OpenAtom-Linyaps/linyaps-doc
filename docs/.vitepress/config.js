@@ -20,7 +20,7 @@ module.exports = {
           collapsible: true,
           text: "开始",
           items: [
-            { text: "玲珑是什么", link: "/guide/start/whatis.md" },
+            // { text: "玲珑是什么", link: "/guide/start/whatis.md" },
             { text: "安装", link: "/guide/start/install.md" },
           ],
         },
