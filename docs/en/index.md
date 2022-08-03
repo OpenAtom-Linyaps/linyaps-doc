@@ -9,7 +9,7 @@ hero:
     - theme: brand
       text: Get Started
       # link: /guide/get-started
-      link: http://doc-dev.linglong.space/
+      link: /guide/start/whatis
     - theme: alt
       text: Source
       link: https://github.com/linuxdeepin

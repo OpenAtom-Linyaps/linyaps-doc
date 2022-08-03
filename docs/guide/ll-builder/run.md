@@ -28,6 +28,10 @@ Arguments:
 ll-builder run
 ```
 
+`ll-builder run`运行成功输出如下：
+
+![org.deepin.demo.png](./images/org.deepin.demo.png)
+
 为了便于调试，使用额外的`--exec /bin/bash`参数可替换进入沙箱后默认执行的程序，如：
 
 ```bash

@@ -14,10 +14,12 @@ ll-cli list --help
 Usage: ll-cli [options] list
 
 Options:
-  -h, --help                           Displays this help.
-  --default-config                     default config json filepath
+  -h, --help                           Displays help on commandline options.
+  --help-all                           Displays help including Qt specific
+                                       options.
   --type <--type=installed>            query installed app
-  --repo-point <--repo-point=flatpak>  app repo type to use
+  --repo-point                         app repo type to use
+  --nodbus                             execute cmd directly, not via dbus
 
 Arguments:
   list                                 show installed application
@@ -27,4 +29,13 @@ Arguments:
 
 ```bash
 ll-cli list
+```
+
+`ll-cli list` 输出如下：
+
+```text
+appId                           name                            version         arch        channel         module      description
+org.deepin.Runtime              runtime                         20.5.0          x86_64      linglong        runtime     runtime of deepin
+org.deepin.calculator           deepin-calculator               5.7.21.4        x86_64      linglong        runtime     calculator for deepin os
+org.deepin.camera               deepin-camera                   6.0.2.6         x86_64      linglong        runtime     camera for deepin os
 ```

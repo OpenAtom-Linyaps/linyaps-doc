@@ -18,9 +18,7 @@ Options:
                                                      commandline options.
   --help-all                                         Displays help including Qt
                                                      specific options.
-  --default-config                                   default config json
-                                                     filepath
-  --repo-point <--repo-point=flatpak>                app repo type to use
+  --repo-point                                       app repo type to use
   --exec </bin/bash>                                 run exec
   --no-proxy                                         whether to use dbus proxy
                                                      in box
@@ -39,25 +37,25 @@ Arguments:
 当应用被正常安装后，使用`ll-cli run`命令即可启动：
 
 ```bash
-ll-cli run <org.deepin.music>
+ll-cli run <org.deepin.calculator>
 ```
 
 默认情况下执行run命令会启动最高版本的应用，若需运行指定版本应用，需在`appid`后附加对应版本号：
 
 ```bash
-ll-cli run <org.deepin.music/5.1.2>
+ll-cli run <org.deepin.calculator/5.7.21.4>
 ```
 
 默认情况下会使用`ll-dbus-proxy`拦截转发`dbus`消息，如果不想使用`ll-dbus-proxy`，可以使用`--no-proxy`参数：
 
 ```bash
-ll-cli run <org.deepin.music> --no-proxy
+ll-cli run <org.deepin.calculator> --no-proxy
 ```
 
 使用 `ll-cli run`命令可以进入指定程序沙箱环境：
 
 ```bash
-ll-cli run <org.deepin.music> --exec /bin/bash
+ll-cli run <org.deepin.calculator> --exec /bin/bash
 ```
 
 进入后可执行 `shell` 命令，如`gdb`、`strace`、`ls`、`find`等。
@@ -65,9 +63,9 @@ ll-cli run <org.deepin.music> --exec /bin/bash
 由于玲珑应用都是在沙箱内运行，无法通过常规的方式直接调试，需要在沙箱内运行调试工具，如 `gdb`：
 
 ```bash
-gdb /opt/apps/org.deepin.music/files/bin/deepin-music
+gdb /opt/apps/org.deepin.calculator/files/bin/deepin-calculator
 ```
 
 该路径为沙箱内应用程序的绝对路径。
 
-玲珑应用`release`版本更多调试信息请参考：[玲珑应用常见bug](../debug/faq.md.md)。
+玲珑应用`release`版本更多调试信息请参考：[玲珑应用常见bug](../debug/faq.md)。
