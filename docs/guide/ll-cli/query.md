@@ -26,7 +26,7 @@ Arguments:
   appId                                application id
 ```
 
-通过`ll-cli query`命令可以从远程 repo 中找到应用程序信息:
+通过`ll-cli query`命令可以从远程 repo 中查询应用程序信息:
 
 ```bash
 ll-cli query <calculator>
