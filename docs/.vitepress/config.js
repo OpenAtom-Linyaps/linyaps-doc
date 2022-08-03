@@ -129,7 +129,7 @@ module.exports = {
     },
     socialLinks: [{ icon: "github", link: "https://github.com/linuxdeepin" }],
     footer: {
-      message: "Released under the GPLv3 License.",
+      // message: "Released under the GPLv3 License.",
       //   copyright: "Copyright © 2019-present Iceyer",
     },
   },
