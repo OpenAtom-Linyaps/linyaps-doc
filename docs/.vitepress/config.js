@@ -81,7 +81,7 @@ module.exports = {
             text: "文档",
             ariaLabel: "doc",
             items: [
-              { text: "开始", link: "/guide/start/whatis.md" },
+              { text: "开始", link: "/guide/start/install.md" },
               { text: "命令行工具", link: "/guide/ll-cli/introduction.md" },
               { text: "构建工具", link: "/guide/ll-builder/introduction.md" },
               { text: "调试", link: "/guide/debug/debug.md" },
