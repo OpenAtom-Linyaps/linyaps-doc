@@ -1,14 +1,14 @@
-# ll-cli简介
+# ll-cli Introduction
 
-`ll-cli`是一个包管理器前端，用于管理玲珑应用的安装、卸载、查看、启动、关闭、调试、更新等操作。
+`ll-cli` is the front-end of the package manager, used to install, uninstall, check, run, close, debug, and update Linglong applications, etc.
 
-查看`ll-cli`命令的帮助信息：
+View the help information of `ll-cli` commands.
 
 ```bash
 ll-cli --help
 ```
 
-`ll-cli`命令的帮助信息如下：
+Here is the output:
 
 ```text
 Usage: ll-cli [options] subcommand [sub-option]

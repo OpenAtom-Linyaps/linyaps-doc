@@ -68,6 +68,59 @@ module.exports = {
           // TODO：add builder doc to here
         },
       ],
+      "/en/guide/": [
+        {
+          collapsible: true,
+          text: "Getting Start",
+          items: [
+            // { text: "玲珑是什么", link: "/guide/start/whatis.md" },
+            { text: "Install Linglong Environment", link: "/en/guide/start/install.md" },
+          ],
+        },
+        {
+          collapsible: true,
+          text: "Command Line Tools",
+          items: [
+            { text: "Introduction", link: "/en/guide/ll-cli/introduction.md" },
+            { text: "List Installed Apps", link: "/en/guide/ll-cli/list.md" },
+            { text: "Query Apps From Remote", link: "/en/guide/ll-cli/query.md" },
+            { text: "Install App", link: "/en/guide/ll-cli/install.md" },
+            { text: "Run App", link: "/en/guide/ll-cli/run.md" },
+            { text: "Uninstall App", link: "/en/guide/ll-cli/uninstall.md" },
+            { text: "Update App", link: "/en/guide/ll-cli/update.md" },
+            { text: "View Running Apps", link: "/en/guide/ll-cli/ps.md" },
+            { text: "Attach To LingLong-Box", link: "/en/guide/ll-cli/exec.md" },
+            { text: "Force Quit App", link: "/en/guide/ll-cli/kill.md" },
+          ],
+          // TODO：add cli doc to here
+        },
+        {
+          collapsible: true,
+          text: "Build Tools",
+          items: [
+            { text: "Introduction", link: "/en/guide/ll-builder/introduction.md" },
+            { text: "Create Project", link: "/en/guide/ll-builder/create.md" },
+            { text: "Build App", link: "/en/guide/ll-builder/build.md" },
+            { text: "Run Compiled App", link: "/en/guide/ll-builder/run.md" },
+            { text: "Export Uab Format", link: "/en/guide/ll-builder/export.md" },
+            { text: "Manifests", link: "/en/guide/ll-builder/manifests.md" },
+            // { text: "Push Uab To Remote Repository", link: "/en/guide/ll-builder/push.md" },
+            // { text: "Local demo", link: "/en/guide/ll-builder/demo.md" },
+            { text: "CI/CD build with github", link: "/en/guide/ll-builder/github.md" }
+          ],
+          // TODO：add builder doc to here
+        },
+        {
+          collapsible: true,
+          text: "Debug App",
+          items: [
+            { text: "Debug App In IDE", link: "/en/guide/debug/debug.md" },
+            { text: "Build FAQ", link: "/en/guide/debug/ll-builder-faq.md" },
+            { text: "Run FAQ", link: "/en/guide/debug/faq.md" },
+          ],
+          // TODO：add builder doc to here
+        },
+      ],
     },
     locales: {
       "/": {
@@ -111,9 +164,11 @@ module.exports = {
             collapsible: true,
             collapsed: true,
             items: [
-              { text: "Getting Start", link: "/en/getting-started/why.md" },
-              { text: "ll-cli", link: "/en/ll-cli/" },
-              { text: "ll-builder", link: "/en/ll-builder/" },
+              { text: "Getting Start", link: "/en/guide/start/install.md" },
+              { text: "Command Line Tools", link: "/en/guide/ll-cli/introduction.md" },
+              { text: "Build Tools", link: "/en/guide/ll-builder/introduction.md" },
+              { text: "Debug", link: "/en/guide/debug/debug.md" },
+              { text: "FAQ", link: "/en/guide/debug/faq.md" },
             ],
           },
           {
