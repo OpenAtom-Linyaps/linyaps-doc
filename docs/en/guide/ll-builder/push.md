@@ -8,7 +8,7 @@ View the help information of `ll-builder push` commands:
 ll-builder push --help
 ```
 
-Here is the output：
+Here is the outputs：
 
 ```text
 Usage: ll-builder [options] push <filePath>

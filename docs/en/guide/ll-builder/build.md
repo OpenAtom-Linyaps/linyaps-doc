@@ -1,16 +1,16 @@
-# Build Linglong application
+# Build App
 
-The `ll-builder build` command is used to build Linglong applications.
+Use `ll-builder build` to build a Linglong application.
 
-See help for the `ll-builder build` command:
+View the hep information of the `ll-builder build` command:
 
 ```bash
 ll-builder build --help
-````
+```
 
-The help information for the `ll-builder build` command is as follows:
+Here is the outputs:
 
-````text
+```text
 Usage: ll-builder [options] build
 
 Options:
@@ -21,7 +21,7 @@ Options:
 
 Arguments:
   build build project
-````
+```
 
 The `ll-builder build` command must be run in the root directory of the project, where the `linglong.yaml` file is located.
 
@@ -31,13 +31,13 @@ Go to the `org.deepin.demo` project directory:
 
 ```bash
 cd org.deepin.demo
-````
+```
 
-Execute the `ll-builder build` command to start building the Linglong application:
+Execute the `ll-builder build` command to start building:
 
 ```bash
 ll-builder build
-````
+```
 
 After the build is complete, the build content will be automatically committed to the local ostree cache. See `ll-builder export` for exporting build content.
 
@@ -45,8 +45,8 @@ Use the `--exec` parameter to enter the Linglong container before the build scri
 
 ```bash
 ll-builder build --exec /bin/bash
-````
+```
 
 After entering the container, you can execute `shell` commands, such as `gdb`, `strace`, etc.
 
-For more debugging information of Linglong application `debug` version, please refer to: [DEBUG](../debug/debug.md).
+For more debugging information of Linglong application `debug` version, please refer to: [Debug App](../debug/debug.md).

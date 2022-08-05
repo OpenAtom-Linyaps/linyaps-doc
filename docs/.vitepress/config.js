@@ -53,7 +53,7 @@ module.exports = {
             { text: "配置文件", link: "/guide/ll-builder/manifests.md" },
             // { text: "推送uab到远程仓库", link: "/guide/ll-builder/push.md" },
             // { text: "本地demo示例", link: "/guide/ll-builder/demo.md" },
-            { text: "github构建示例", link: "/guide/ll-builder/github.md" }
+            { text: "上架应用到商店", link: "/guide/ll-builder/github.md" }
           ],
           // TODO：add builder doc to here
         },
@@ -89,7 +89,7 @@ module.exports = {
             { text: "Uninstall App", link: "/en/guide/ll-cli/uninstall.md" },
             { text: "Update App", link: "/en/guide/ll-cli/update.md" },
             { text: "View Running Apps", link: "/en/guide/ll-cli/ps.md" },
-            { text: "Attach To LingLong-Box", link: "/en/guide/ll-cli/exec.md" },
+            { text: "Attach To Container", link: "/en/guide/ll-cli/exec.md" },
             { text: "Force Quit App", link: "/en/guide/ll-cli/kill.md" },
           ],
           // TODO：add cli doc to here
@@ -106,7 +106,7 @@ module.exports = {
             { text: "Manifests", link: "/en/guide/ll-builder/manifests.md" },
             // { text: "Push Uab To Remote Repository", link: "/en/guide/ll-builder/push.md" },
             // { text: "Local demo", link: "/en/guide/ll-builder/demo.md" },
-            { text: "CI/CD build with github", link: "/en/guide/ll-builder/github.md" }
+            { text: "App to store", link: "/en/guide/ll-builder/github.md" }
           ],
           // TODO：add builder doc to here
         },

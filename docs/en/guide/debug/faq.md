@@ -2,7 +2,7 @@
 
 1. When the application runs to read the application installation resource file under `/usr/share`, why does the reading fail?
 
-   Linglong applications run in a sandbox environment, and the application data will be mounted to `/opt/apps/<appid>`/. Only system data will exist in the `/usr/share` directory, and there will be no application-related data. Therefore, reading directly from `/usr/share` will fail. Suggested processing: Use the `XDG_DATA_DIRS` environment variable to read resources, and `/opt/apps/<appid>/files/share` will exist in this environment variable search path.
+   Linglong applications run in a container, and the application data will be mounted to `/opt/apps/<appid>`/. Only system data will exist in the `/usr/share` directory, and there will be no application-related data. Therefore, reading directly from `/usr/share` will fail. Suggested processing: Use the `XDG_DATA_DIRS` environment variable to read resources, and `/opt/apps/<appid>/files/share` will exist in this environment variable search path.
 
 2. The font library file cannot be found when the application is running? Why can the corresponding font library be read when the `deb` package is installed?
 
@@ -12,11 +12,11 @@
 
    At present, the `runtime` that Linglong application depends on provides the `qt` library and the `dtk` library. Because `runtime` has a strict size limit. Adding additional library files to `runtime` is currently not allowed.
 
-4. The application runs in the sandbox. Can a configuration file be created in any path of the sandbox during the running process?
+4. The application runs in the container. Can a configuration file be created in any path of the container during the running process?
 
-   This is an unacceptable behavior. The file system in the sandbox is a read-only file system, and configuration files are not allowed to be created under arbitrary paths.
+   This is an unacceptable behavior. The file system in the container is a read-only file system, and configuration files are not allowed to be created under arbitrary paths.
 
-5. Where is app data saved? Where can I find it outside the sandbox?
+5. Where is app data saved? Where can I find it outside the container?
 
    Because Linglong application follows the principle of non-interference, the `XDG_DATA_HOME`, `XDG_CONFIG_HOME`, `XDG_CACHE_HOME` environment variables are defined in the corresponding path of the host machine `~/.linglong/<appid>`/, so the user application data will be saved in Under this path, when writing data during application running, it should also read the corresponding environment variable to write the data. Mutual configuration calls between applications are prohibited.
 
@@ -38,7 +38,7 @@
 
 10. The system environment variable used by the application does not take effect, why?
 
-    When using environment variables, you need to confirm whether there are corresponding environment variables in the sandbox. If not, you need to contact the Linglong team for processing.
+    When using environment variables, you need to confirm whether there are corresponding environment variables in the container. If not, you need to contact the Linglong team for processing.
 
 11. The library files required for the application to run are not found, how to provide them?
 
@@ -50,7 +50,7 @@
 
 13. Why has the `QT WebEngine` rendering process crashed when the application is running?
 
-    Due to the system upgrade of `glibc`, the application fails to use the built-in browser, and the application needs to be re-adapted. A temporary solution is to set the environment variable: `export QTWEBENGINE_DISABLE_SANDBOX=1`.
+    Due to the system upgrade of `glibc`, the application fails to use the built-in browser, and the application needs to be re-adapted. A temporary solution is to set the environment variable: `export QTWEBENGINE_DISABLE_container=1`.
 
 14. When the application is running, the `libqxcb.so` library cannot be found or the `qtwebengin` error is reported?
 
@@ -58,12 +58,12 @@
 
 15. The application running error message `gpu_data_manager_impl_private`, how to solve it?
 
-    The current temporary solution is to add `--no-sandbox`, reference: [https://github.com/Automattic/simplenote-electron/issues/3044](https://github.com/Automattic/simplenote-electron/ issues/3044).
+    The current temporary solution is to add `--no-container`, reference: [https://github.com/Automattic/simplenote-electron/issues/3044](https://github.com/Automattic/simplenote-electron/ issues/3044).
 
 16. Can the application carry the database file by itself and write data to the database during operation?
 
-    The file system in the sandbox is a read-only file system and does not allow data to be written to application resource files.
+    The file system in the container is a read-only file system and does not allow data to be written to application resource files.
 
 17. Why does the execution of binary with `suid` and `guid` permissions fail?
 
-    In order to ensure system security, Linglong Sandbox prohibits the execution of such permission binaries in the sandbox.
+    In order to ensure system security, Linglong container prohibits the execution of such permission binaries in the container.

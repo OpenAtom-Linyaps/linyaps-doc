@@ -23,11 +23,11 @@ features:
    # details: Linglong provides easy-to-use build tools, you can refer to the help manual
   - icon: 🛠️
     title: Stable and independent operating environment
-    details: Linglong provides a stable and compatible runtime, and the application can control its own dependencies and be independent of the system
+    details: Linglong provides a stable and compatible runtime, and the application can control its own dependencies and be independent of the system.
   - icon: 🖖
     title: Safe Isolation Sandbox Container
-    details: Linglong applications run in an independent sandbox environment, isolated from the host, safe and stable
+    details: Linglong applications run in an independent sandbox environment, isolated from the host, safe and stable.
   - icon: 🛠️
     title: Perfect access control mechanism
-    details: Linglong is committed to protecting user privacy and has a complete application permission control mechanism   
+    details: Linglong is committed to protecting user privacy and has a complete application permission control mechanism.  
 ---

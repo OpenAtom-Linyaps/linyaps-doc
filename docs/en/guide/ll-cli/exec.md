@@ -1,14 +1,14 @@
-# Attach To LingLong-Box
+# Attach To Running Container
 
 Use `ll-cli exec` to enter the inside of the running Linglong container.
 
-View the help information of `ll-cli exec` commands:
+View the help information of `ll-cli exec` command:
 
 ```bash
 ll-cli exec --help
 ```
 
-Here is the output：
+Here is the outputs：
 
 ```text
 Usage: ll-cli [options] exec 9c41c0af2bad4617aea8485f5aaeb93a "bash"
@@ -32,13 +32,13 @@ killall ll-service
 ll-service
 ```
 
-Use `ll-cli exec ` to enter the inside of the running Linglong container.
+Example of using `ll-cli exec` to get inside a running container:
 
 ```bash
 ll-cli exec 9c41c0af2bad4617aea8485f5aaeb93a /bin/bash
 ```
 
-Return to the `ll-service` terminal interface and find that it has entered the application sandbox.
+Return to the `ll-service` terminal interface and find that it has entered the application container.
 
 Use `ls -l /` to view the root directory structure. The output is as follows:
 

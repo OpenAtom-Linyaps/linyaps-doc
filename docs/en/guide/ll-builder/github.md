@@ -1,11 +1,11 @@
-# Ci-Cd build with github
+# App to store
 
-## Process
+## Main process
 
-- Submit a pull request to the [https://github.com/linuxdeepin/linglong-hub](https://github.com/linuxdeepin/linglong-hub) repository.
+- Create a Linglong project and use ll-builder to build a Linglong app locally.
 
-- The github pull request will be synchronized to the intranet gitLab through action, and then trigger the build process.
+- Submit a pull request to the [https://github.com/linuxdeepin/linglong-hub](https://github.com/linuxdeepin/linglong-hub) project.
 
-- After the application is built successfully, the application will be automatically pushed to the Linglong test warehouse.
+- After the project maintainer approves the content, the build process is triggered. After the build is successful, the content will be submitted to the test environment, and the github action can obtain the build log and status.
 
-- After the deepin team has passed the test, the app will be put on the [Linglong Web Store](https://store.linglong.space).
+- After the app test passed, it will be put on the [Linglong Web Store](https://store.linglong.space).

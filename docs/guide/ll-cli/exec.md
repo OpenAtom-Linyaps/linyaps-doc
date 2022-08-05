@@ -38,7 +38,7 @@ ll-service
 ll-cli exec 9c41c0af2bad4617aea8485f5aaeb93a /bin/bash
 ```
 
-返回`ll-service`终端界面，发现已进入应用沙箱。
+返回`ll-service`终端界面，发现已进入应用容器。
 
 `ls -l /` 查看根目录结构，输出如下：
 

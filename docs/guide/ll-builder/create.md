@@ -38,7 +38,7 @@ org.deepin.demo/
 
 ## 编辑linglong.yaml
 
-### 软件包元信息
+### 软件包元信息配置
 
 ```yaml
 package:
@@ -50,7 +50,7 @@ package:
     simple qt demo.
 ```
 
-### 运行时信息
+### 运行时
 
 ```yaml
 runtime:
@@ -58,7 +58,7 @@ runtime:
   version: 20.5.0
 ```
 
-### 依赖信息
+### 依赖项
 
 ```yaml
 depends:
@@ -67,7 +67,7 @@ depends:
     type: runtime
 ```
 
-### 源码信息
+### 源码
 
 使用git源码
 
@@ -87,7 +87,7 @@ build:
   kind: qmake
 ```
 
-### 完整linglong.yaml
+### 完整的linglong.yaml配置
 
 `linglong.yaml`文件内容如下：
 

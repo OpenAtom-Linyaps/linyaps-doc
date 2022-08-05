@@ -1,6 +1,6 @@
-# Build Profile Introduction
+# Manifests
 
-`linglong.yaml` is the description file of Linglong project, which records the relevant information required for construction. Such as the name, version, source address, build dependencies, etc. of the build product.
+`linglong.yaml` is the description file of a Linglong project, which records the relevant information required for construction. Such as the name, version, source address, build dependencies, etc. of the build product.
 
 ## Project directory structure
 
@@ -16,7 +16,7 @@
 
 ## Field definitions
 
-### package
+### App meta infos
 
 ```yaml
 package:
@@ -59,7 +59,7 @@ runtime:
 | version | Runtime version                                   |
 | digest  | (not used yet, this field can be used to bind a unique version of the runtime (runtime) |
 
-### depends
+### Dependencies
 
 Describes the build dependencies and runtime dependencies of the application.
 
@@ -106,7 +106,7 @@ source:
 | commit | The hash value of a source code commit, fill in when the type is git |
 | patch | Source patch path |
 
-### build
+### build rules
 
 Describe build rules.
 
@@ -167,7 +167,7 @@ build:
 
 ## complete example
 
-### Build the app
+### Build app
 
 ```yaml
 package:
@@ -256,7 +256,7 @@ build:
 
 When the package type is runtime, all dependencies will be submitted.
 
-## build template
+## build tools template
 
 ### automake type build template
 

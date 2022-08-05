@@ -16,7 +16,7 @@
 
    ```bash
    sudo sysctl -w kernel.unprivileged_userns_clone=1
-   ````
+   ```
 
 4. The build of `qtbase` is successful, but the `qt` application cannot be built, which prompts `module,mkspec` related errors.
 

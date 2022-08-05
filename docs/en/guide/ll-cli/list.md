@@ -1,14 +1,14 @@
-# List Installed Linglong Apps
+# List Installed Apps
 
 Use `ll-cli list` to view the installed Linglong apps.
 
-View the help information of `ll-cli list` commands.
+View the help information of `ll-cli list` command.
 
 ```bash
 ll-cli list --help
 ```
 
-Here is the output：
+Here is the outputs：
 
 ```text
 Usage: ll-cli [options] list
@@ -25,13 +25,13 @@ Arguments:
   list                                 show installed application
 ```
 
-To view the installed `runtime` and apps, run `ll-cli list`：
+To view the installed `runtime` and apps, run `ll-cli list`:
 
 ```bash
 ll-cli list
 ```
 
-The output of `ll-cli list` is as below：
+Here is the outputs:
 
 ```text
 appId                           name                            version         arch        channel         module      description

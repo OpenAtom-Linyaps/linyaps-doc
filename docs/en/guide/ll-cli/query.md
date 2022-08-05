@@ -1,14 +1,14 @@
 # Query Apps From Remote
 
-Use `ll-cli query` to query the info of Linglong apps in remote repositories.
+Use `ll-cli query` to search app meta infos from remote repository.
 
-View the help information of `ll-cli query` commands：
+View the help information of `ll-cli query` command：
 
 ```bash
 ll-cli query --help
 ```
 
-Here is the output：
+Here is the outputs：
 
 ```text
 Usage: ll-cli [options] query com.deepin.demo
@@ -26,25 +26,24 @@ Arguments:
   appId                                application id
 ```
 
-Use `ll-cli query` to query app info in remote repositories:
+Use `ll-cli query` to search app meta infos from remote repository and local cache:
 
 ```bash
 ll-cli query <calculator>
 ```
 
-Add `--force` to force query app info in remote repositories:
+Add `--force` to force search app info from remote repository:
 
 ```bash
 ll-cli query <calculator> --force
 ```
+
 This command returns the info of all apps whose `appid` (appid is the app unique identifier) contains the keyword "calculator", including the complete `appid`, application name, version, CPU architecture and descriptions.
 
-The output of `ll-cli query calculator --force` is as below：
+Here is the outputs：
 
 ```text
 appId                           name                            version         arch        channel         module      description
 org.deepin.calculator           deepin-calculator               5.5.23          x86_64      linglong        runtime     Calculator for UOS
 org.deepin.calculator           deepin-calculator               5.7.1           x86_64      linglong        runtime     Calculator for UOS
-
 ```
-

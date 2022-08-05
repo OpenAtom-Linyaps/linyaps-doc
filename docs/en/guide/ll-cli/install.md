@@ -2,13 +2,13 @@
 
 Use `ll-cli install` to install Linglong apps.
 
-View the help information of `ll-cli install` commands:
+View the help information of `ll-cli install` command:
 
 ```bash
 ll-cli install --help
 ```
 
-Here is the output：
+Here is the outputs：
 
 ```text
 Usage: ll-cli [options] install com.deepin.demo
@@ -28,7 +28,7 @@ Arguments:
   appId                                application id
 ```
 
-Run `ll-cli install` to install Linglong apps:
+Example of run the `ll-cli install` command to install the Linglong app:
 
 ```bash
 ll-cli install <org.deepin.calculator>
@@ -42,7 +42,7 @@ To install a specified version, append the corresponding version number after `a
 ll-cli install <org.deepin.calculator/5.1.2>
 ```
 
-Here is the output of `ll-cli install org.deepin.calculator`:
+Here is the outputs of `ll-cli install org.deepin.calculator`:
 
 ```text
 install org.deepin.calculator , please wait a few minutes...

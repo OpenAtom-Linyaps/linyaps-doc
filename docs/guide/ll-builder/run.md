@@ -22,7 +22,7 @@ Arguments:
   run            run project
 ```
 
-`ll-builder run`命令根据配置文件读取该程序相关的运行环境信息，构造一个沙箱环境，并在沙箱中执行该程序而无需安装。
+`ll-builder run`命令根据配置文件读取该程序相关的运行环境信息，构造一个容器环境，并在容器中执行该程序而无需安装。
 
 ```bash
 ll-builder run
@@ -32,10 +32,10 @@ ll-builder run
 
 ![org.deepin.demo.png](./images/org.deepin.demo.png)
 
-为了便于调试，使用额外的`--exec /bin/bash`参数可替换进入沙箱后默认执行的程序，如：
+为了便于调试，使用额外的`--exec /bin/bash`参数可替换进入容器后默认执行的程序，如：
 
 ```bash
 ll-builder run --exec /bin/bash
 ```
 
-使用该选项，`ll-builder`创建沙箱后将进入`bash`终端，可在沙箱内执行其他操作。
+使用该选项，`ll-builder`创建容器后将进入`bash`终端，可在容器内执行其他操作。

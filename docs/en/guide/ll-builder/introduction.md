@@ -15,7 +15,7 @@ View the help information of `ll-builder` commands:
 ll-builder --help
 ```
 
-Here is the output:
+Here is the outputs:
 
 ```text
 Usage: ll-builder [options] subcommand [sub-option]

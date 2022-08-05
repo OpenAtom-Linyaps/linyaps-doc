@@ -1,14 +1,14 @@
-# Run Linglong Apps
+# Run App
 
-Use `ll-cli run` to run Linglong Apps.
+Use `ll-cli run` command to start a Linglong application.
 
-View the help information of `ll-cli run` commands：
+See help for the `ll-cli run` command:
 
 ```bash
 ll-cli run --help
 ```
 
-Here is the output：
+View the help information for the `ll-cli run` command:
 
 ```text
 Usage: ll-cli [options] run com.deepin.demo
@@ -18,7 +18,7 @@ Options:
                                                      commandline options.
   --help-all                                         Displays help including Qt
                                                      specific options.
-  --repo-point <--repo-point=flatpak>                app repo type to use
+  --repo-point                                       app repo type to use
   --exec </bin/bash>                                 run exec
   --no-proxy                                         whether to use dbus proxy
                                                      in box
@@ -34,25 +34,25 @@ Arguments:
   appId                                              application id
 ```
 
-When the application is installed successfully, use `ll-cli run` to run it:
+When the application is installed normally, use the `ll-cli run` command to start it:
 
 ```bash
 ll-cli run <org.deepin.calculator>
 ```
 
-By default, executing the run command starts the highest version. To run a specified version, append the corresponding version number after `appid`:
+By default, executing the run command will start the application of the highest version. If you want to run the application of the specified version, you need to append the corresponding version number after `appid`:
 
 ```bash
 ll-cli run <org.deepin.calculator/5.7.21.4>
 ```
 
-By default, `ll-dbus-proxy` is used to intercept and forward `dbus` messages. If you do not want to use `ll-dbus-proxy`, use the `--no-proxy` parameter:
+By default, `ll-dbus-proxy` is used to intercept and forward `dbus` messages. If you do not want to use `ll-dbus-proxy`, you can use the `--no-proxy` parameter:
 
 ```bash
 ll-cli run <org.deepin.calculator> --no-proxy
 ```
 
-Use the `ll-cli run` command to enter the sandbox environment of a specified program:
+Use the `ll-cli run` command to enter the specified program container:
 
 ```bash
 ll-cli run <org.deepin.calculator> --exec /bin/bash
@@ -60,12 +60,12 @@ ll-cli run <org.deepin.calculator> --exec /bin/bash
 
 After entering, execute `shell` commands, such as `gdb`, `strace`, `ls`, `find`, etc.
 
-Since Linglong applications run in the sandbox, they cannot be directly debugged in the conventional way. You need to run debugging tools in the sandbox, such as `gdb`:
+Since Linglong applications run in the container, they cannot be directly debugged in the conventional way. You need to run debugging tools in the container, such as `gdb`:
 
 ```bash
 gdb /opt/apps/org.deepin.calculator/files/bin/deepin-calculator
 ```
 
-The path is the absolute path of the application in the sandbox.
+The path is the absolute path of the application in the container.
 
-For more debugging information of Linglong application `release` version, please refer to: [FAQ](../debug/faq.md).
+For more debugging information of Linglong application `release` version, please refer to: [Run FAQ](../debug/faq.md).

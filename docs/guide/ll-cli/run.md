@@ -52,7 +52,7 @@ ll-cli run <org.deepin.calculator/5.7.21.4>
 ll-cli run <org.deepin.calculator> --no-proxy
 ```
 
-使用 `ll-cli run`命令可以进入指定程序沙箱环境：
+使用 `ll-cli run`命令可以进入指定程序容器环境：
 
 ```bash
 ll-cli run <org.deepin.calculator> --exec /bin/bash
@@ -60,12 +60,12 @@ ll-cli run <org.deepin.calculator> --exec /bin/bash
 
 进入后可执行 `shell` 命令，如`gdb`、`strace`、`ls`、`find`等。
 
-由于玲珑应用都是在沙箱内运行，无法通过常规的方式直接调试，需要在沙箱内运行调试工具，如 `gdb`：
+由于玲珑应用都是在容器内运行，无法通过常规的方式直接调试，需要在容器内运行调试工具，如 `gdb`：
 
 ```bash
 gdb /opt/apps/org.deepin.calculator/files/bin/deepin-calculator
 ```
 
-该路径为沙箱内应用程序的绝对路径。
+该路径为容器内应用程序的绝对路径。
 
 玲珑应用`release`版本更多调试信息请参考：[玲珑应用常见bug](../debug/faq.md)。

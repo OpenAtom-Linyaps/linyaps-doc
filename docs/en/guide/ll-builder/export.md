@@ -8,7 +8,7 @@ View the help information of `ll-builder export` commands:
 ll-builder export --help
 ```
 
-Here is the output：
+Here is the outputs：
 
 ```text
 Usage: ll-builder [options] export [filename]

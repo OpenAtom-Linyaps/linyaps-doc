@@ -1,14 +1,14 @@
 # Create Linglong project
 
-The `ll-builder create` command is used to create Linglong projects.
+Use `ll-builder create` to create a Linglong project.
 
-See help for the `ll-builder create` command:
+View the help information information of `ll-builder create` command:
 
 ```bash
 ll-builder create --help
 ```
 
-The help information for the `ll-builder create` command is as follows:
+Here is the outputs:
 
 ```text
 Usage: ll-builder [options] create <org.deepin.demo>
@@ -23,13 +23,13 @@ Arguments:
   name project name
 ```
 
-The `ll-builder create` command creates a corresponding folder in the current directory according to the input project name, and generates the `linglong.yaml` template file required for the build. An example is as follows:
+The `ll-builder create` command create a folder in the current directory according to the project name, and generates the `linglong.yaml` template file required for the build. Here is an example:
 
 ```bash
 ll-builder create <org.deepin.demo>
 ```
 
-The output of the `ll-builder create org.deepin.demo` command is as follows:
+Here is the outputs:
 
 ```text
 org.deepin.demo/
@@ -38,7 +38,7 @@ org.deepin.demo/
 
 ## Edit linglong.yaml
 
-### Package meta information
+### App meta infos
 
 ```yaml
 package:
@@ -50,7 +50,7 @@ package:
     simple qt demo.
 ```
 
-### runtime information
+### runtime
 
 ```yaml
 runtime:
@@ -58,7 +58,7 @@ runtime:
   version: 20.5.0
 ```
 
-### Dependency information
+### Dependencies
 
 ```yaml
 depends:
@@ -67,7 +67,7 @@ depends:
     type: runtime
 ```
 
-### Source information
+### Source
 
 Use git source code
 
@@ -78,7 +78,7 @@ source:
   commit: 24f78c8463d87ba12b0ac393ec56218240315a9
 ```
 
-### Select build template
+### Build template
 
 The source code is a qmake project, and the build type is qmake (see qmake.yaml for the template content).
 
@@ -87,7 +87,7 @@ build:
   kind: qmake
 ```
 
-### complete linglong.yaml
+### completed `linglong.yaml` config
 
 The contents of the `linglong.yaml` file are as follows:
 

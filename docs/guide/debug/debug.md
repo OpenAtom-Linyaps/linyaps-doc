@@ -10,7 +10,7 @@
 sudo apt install gdbserver gdb -y
 ```
 
-接下来参考“运行编译后的玲珑应用”中的教程，通过 `ll-build run` 命令在容器中运行 `bash`，并通过 `gdbserver` 运行需要被调试的应用：
+接下来参考“运行编译后的应用”中的教程，通过 `ll-build run` 命令在容器中运行 `bash`，并通过 `gdbserver` 运行需要被调试的应用：
 
 ```bash
 ll-build run --exec /bin/bash
@@ -26,8 +26,8 @@ gdbserver :10240 deepin-draw
 ## 在终端中使用 gdb 进行调试
 
 1. 找到容器中被执行的可执行文件在宿主机上的位置，对于如上项目，该文件位于 `/path/to/project/.linglong-target/overlayfs/up/opt/apps/org.deepin.demo/files/bin/demo`。
-   
-   对于通过 `ll-cli` 安装的应用，其可执行程序一般位于 `$LINGLONG_ROOT/layers/[appid]/[version]/[arch]/files/bin` 下.
+
+   对于通过 `ll-cli` 安装的应用，其可执行程序一般位于 `$LINGLONG_ROOT/layers/[appid]/[version]/[arch]/files/bin` 下。
 
    在容器外使用 `gdb` 加载该程序：
 

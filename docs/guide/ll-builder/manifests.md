@@ -16,7 +16,7 @@
 
 ## 字段定义
 
-### package
+### 软件包元信息配置
 
 ```yaml
 package:
@@ -34,7 +34,7 @@ package:
 | kind        | 构建产物的类型：app、runtime、lib，依次代表应用、运行时、库 |
 | version     | 构建产物的版本                                              |
 
-### runtime
+### 运行时
 
 应用运行时环境，同时也是构建依赖。
 
@@ -59,7 +59,7 @@ runtime:
 | version | 运行时（runtime）版本                                   |
 | digest  | （暂未使用, 该字段可用来绑定唯一版本的运行时（runtime） |
 
-### depends
+### 依赖项
 
 描述应用的构建依赖与运行依赖。
 
@@ -83,7 +83,7 @@ depends:
 | version | 依赖的版本                                                  |
 | digest  | （暂未使用，该字段可用来绑定唯一版本的依赖）                |
 
-### source
+### 源码
 
 描述源码信息。
 
@@ -106,7 +106,7 @@ source:
 | commit  | 源码某次提交 hash 值，类型为 git 时填写 |
 | patch   | 源码补丁路径                            |
 
-### build
+### 构建规则
 
 描述构建规则。
 
@@ -141,7 +141,7 @@ build:
 | kind      | 构建类型，可选类型 manual、autotools、cmake、qmake                                |
 | manual    | 构建规则，声明使用 manual 时，表示自定义规则，即对 build、install、configure 重写 |
 
-### variables
+### 变量
 
 描述构建可以使用的变量，配合build构建使用。
 
@@ -256,7 +256,7 @@ build:
 
 package 类型为runtime时，将提交所有依赖内容。
 
-## 构建模板
+## 构建工具模板
 
 ### automake类型构建模板
 
