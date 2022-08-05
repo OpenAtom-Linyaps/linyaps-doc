@@ -65,6 +65,6 @@ Init Commands: `set substitute-path /source /path/to/project`
 
 The general configuration is shown in the following figure:
 
-![qt-creator](images/qt-creator.png)
+![qt-creator](images/qt-creator.jpg)
 
 After the configuration is complete, you can use `QtCreator` to debug normally.
