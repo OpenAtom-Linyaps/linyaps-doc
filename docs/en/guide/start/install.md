@@ -14,9 +14,11 @@ Output as below:
 5.10.101-amd64-desktop
 ```
 
-Kernel version for x86 architecture >= 5.10.
+Kernel version requirement >=4.19.
 
-## Repository installation
+* [x86 architecture kernel 4.19 supports Linglong tutorial](https://github.com/jakeday/linux-surface/issues/443)
+
+## Deb package installation tutorial
 
 ### deepin 20
 
@@ -34,7 +36,7 @@ sudo apt install linglong-builder \
 
 Deepin 23 has preinstalled the the Linglong environment.
 
-## Binary download
+## Deb download
 
 ### debian 11(bullseye)
 
@@ -44,9 +46,9 @@ Deepin 23 has preinstalled the the Linglong environment.
 
 [Click Here to download ubuntu 22.04 (jammy) Linglong deb package](https://github.com/linuxdeepin/linglong-hub/blob/master/linglong-deb/ubuntu/ubuntu_jammy.tar.gz)
 
-### Binary install
+### Deb install
 
-debian 11 安装示例如下：
+The debian 11 installation is as follows:
 
 ```bash
 tar -zxvf debian_bullseye.tar.gz

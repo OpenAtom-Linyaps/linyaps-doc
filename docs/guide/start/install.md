@@ -14,9 +14,11 @@ uname -r
 5.10.101-amd64-desktop
 ```
 
-x86架构内核版本要求>=5.10。
+内核版本要求>=4.19。
 
-## 仓库安装
+* [x86架构内核4.19支持玲珑教程](https://github.com/jakeday/linux-surface/issues/443)
+
+## deb包安装教程
 
 ### deepin v20
 
@@ -34,7 +36,7 @@ sudo apt install linglong-builder \
 
 deepin v23 已预装玲珑环境。
 
-### 二进制下载
+### deb包下载
 
 ### debian 11(bullseye)
 
@@ -44,7 +46,7 @@ deepin v23 已预装玲珑环境。
 
 [点击下载ubuntu 22.04(jammy)玲珑deb包](https://github.com/linuxdeepin/linglong-hub/releases/download/1.3.3/ubuntu_jammy.tar.gz)
 
-### 二进制安装
+### deb包安装
 
 debian 11 安装示例如下：
 
