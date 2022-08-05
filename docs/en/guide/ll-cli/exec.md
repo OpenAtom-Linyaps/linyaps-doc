@@ -1,4 +1,4 @@
-# Attach To Running Container
+# Attach To Container
 
 Use `ll-cli exec` to enter the inside of the running Linglong container.
 
