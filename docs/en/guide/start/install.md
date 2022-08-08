@@ -16,7 +16,7 @@ Output as below:
 
 Kernel version requirement >=4.19.
 
-* [x86 architecture kernel 4.19 supports Linglong tutorial](https://github.com/jakeday/linux-surface/issues/443)
+* The 4.19 kernel of the x86 architecture needs to enable the user namespace.
 
 ## Deb package installation tutorial
 

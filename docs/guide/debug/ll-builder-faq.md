@@ -1,4 +1,4 @@
-# ll-builder 常见构建问题
+# 常见构建问题
 
 1. `cmake`类型构建，出现`-lxxx`失败，但`ldconfig`与`pkg-config`均能查询到该库信息。
 

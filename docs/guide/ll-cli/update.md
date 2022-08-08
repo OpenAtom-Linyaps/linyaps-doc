@@ -1,4 +1,4 @@
-# 更新玲珑应用
+# 更新应用
 
 `ll-cli update`命令可以更新玲珑应用。
 
@@ -38,8 +38,8 @@ org.deepin.calculator is updating...
 message: update org.deepin.calculator success, version:5.7.16 --> 5.7.21.4
 ```
 
-更新指定版本到最新版:
+更新指定版本到最新版本:
 
 ```bash
-ll-cli update <org.deepin.calculator/5.7.21.4>
+ll-cli update <org.deepin.calculator/5.7.16>
 ```

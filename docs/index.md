@@ -9,7 +9,7 @@ hero:
     - theme: brand
       text: 开始
       # link: /guide/get-started
-      link: /guide/start/whatis
+      link: /guide/start/install
     # - theme: alt
     #   text: 源码
     #   link: https://github.com/linuxdeepin

@@ -6,6 +6,6 @@
 
 - 向[https://github.com/linuxdeepin/linglong-hub](https://github.com/linuxdeepin/linglong-hub)项目提交pull request。
 
-- 项目维护者审核内容通过后，触发构建流程，构建成功后内容将被提交到测试环境，github action可以获取构建日志及状态。
+- 项目维护者审核内容通过后，触发构建流程，构建成功后内容将被提交到玲珑测试仓库，github action可以获取构建日志及状态。
 
 - 应用通过测试后将会上架到[玲珑网页商店](http://10.0.33.45:28803)。

@@ -16,7 +16,7 @@ uname -r
 
 内核版本要求>=4.19。
 
-* [x86架构内核4.19支持玲珑教程](https://github.com/jakeday/linux-surface/issues/443)
+* x86架构4.19内核需要开启user namespace。
 
 ## deb包安装教程
 

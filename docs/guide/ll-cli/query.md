@@ -1,4 +1,4 @@
-# 从远程仓库查询玲珑应用
+# 从远程仓库查询应用
 
 `ll-cli query`命令可以查询玲珑远程仓库中的应用信息。
 
@@ -26,7 +26,7 @@ Arguments:
   appId                                application id
 ```
 
-通过`ll-cli query`命令可以从远程 repo 中找到应用程序信息:
+通过`ll-cli query`命令可以从远程 repo 中查找应用程序信息:
 
 ```bash
 ll-cli query <calculator>
@@ -48,4 +48,3 @@ org.deepin.calculator           deepin-calculator               5.5.23          
 org.deepin.calculator           deepin-calculator               5.7.1           x86_64      linglong        runtime     Calculator for UOS
 
 ```
-

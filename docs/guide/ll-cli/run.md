@@ -1,4 +1,4 @@
-# 运行玲珑应用
+# 运行应用
 
 `ll-cli run`命令可以启动一个玲珑应用。
 
@@ -68,4 +68,4 @@ gdb /opt/apps/org.deepin.calculator/files/bin/deepin-calculator
 
 该路径为容器内应用程序的绝对路径。
 
-玲珑应用`release`版本更多调试信息请参考：[玲珑应用常见bug](../debug/faq.md)。
+玲珑应用`release`版本更多调试信息请参考：[玲珑应用常见问题](../debug/faq.md)。

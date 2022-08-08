@@ -1,4 +1,4 @@
-# ll-builder FAQ
+# Build FAQ
 
 1. `-lxxx` failed in `cmake` type build, but `ldconfig` and `pkg-config` can query the library information.
 
