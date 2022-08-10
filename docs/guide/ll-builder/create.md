@@ -47,7 +47,7 @@ package:
   version: 0.0.1
   kind: app
   description: |
-    simple qt demo.
+    simple Qt demo.
 ```
 
 ### 运行时
@@ -98,7 +98,7 @@ package:
   version: 0.0.1
   kind: app
   description: |
-    simple qt demo.
+    simple Qt demo.
 
 runtime:
   id: org.deepin.Runtime

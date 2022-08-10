@@ -6,12 +6,14 @@
 
 ```bash
 {project-root}
-|** linglong.yaml
-|** .linglong-target // build cache for project
+├── linglong.yaml
+└── .linglong-target
 
 {user-home}
-|** .cache/linglong-builder/repo
-|** .cache/linglong-builder/layers
+└── .cache
+    └── linglong-builder
+        ├── repo
+        └── layers
 ```
 
 ## 字段定义
@@ -34,9 +36,9 @@ package:
 | kind        | 构建产物的类型：app、runtime、lib，依次代表应用、运行时、库 |
 | version     | 构建产物的版本                                              |
 
-### 运行时
+### 运行时（runtime）
 
-应用运行时环境，同时也是构建依赖。
+应用运行依赖，同时也是构建依赖。
 
 ```yaml
 runtime:
@@ -46,7 +48,7 @@ runtime:
   digest: 4d85525f09211381c77d2085c9c1057
 ```
 
-同时也可写为以下形式:
+可简写为以下形式:
 
 ```text
 runtime:
@@ -57,7 +59,7 @@ runtime:
 | ------- | ------------------------------------------------------- |
 | id      | 运行时（runtime）的唯一名称                             |
 | version | 运行时（runtime）版本                                   |
-| digest  | （暂未使用, 该字段可用来绑定唯一版本的运行时（runtime） |
+| digest  | （暂未使用, 该字段可用来绑定唯一版本的运行时） |
 
 ### 依赖项
 
@@ -125,6 +127,8 @@ build:
       make -j install
 ```
 
+
+
 ```yaml
 build:
   kind: autotools
@@ -133,13 +137,13 @@ build:
       ./bootstrap.sh 
 ```
 
-| name      | description                                                                       |
-| --------- | --------------------------------------------------------------------------------- |
-| build     | 构建时build规则                                                                   |
-| configure | 构建时configure规则                                                               |
-| install   | 构建时install规则                                                                 |
-| kind      | 构建类型，可选类型 manual、autotools、cmake、qmake                                |
-| manual    | 构建规则，声明使用 manual 时，表示自定义规则，即对 build、install、configure 重写 |
+| name      | description                                                                      |
+| --------- | -------------------------------------------------------------------------------- |
+| build     | 构建时build规则                                                                  |
+| configure | 构建时configure规则                                                              |
+| install   | 构建时install规则                                                                |
+| kind      | 构建类型，可选类型 manual、autotools、cmake、qmake                               |
+| manual    | 构建规则，声明使用 manual 时，表示自定义规则，即对build、install、configure 重写 |
 
 ### 变量
 
@@ -147,23 +151,36 @@ build:
 
 ```yaml
 variables:
-   conf_args: |
-     --prefix=/usr
-   extra_args: |
-     --doc=enable
-   jobs: |
-     -j64
+  build_dir: |
+  dest_dir: |
+  conf_args: |
+    --prefix=${PREFIX}
+    --libdir=lib/${TRIPLET}
+  extra_args: |
+    --doc=enable
+  jobs: |
+    -j64
 
 build:
   kind: manual
   manual:
     configure: |
       ./configure ${conf_args} ${extra_args}
+    build: |
+      make ${jobs}
+    install: |
+      make DESTDIR=${dest_dir} install
 ```
 
-| name      | description                                    |
-| --------- | ---------------------------------------------- |
-| conf_args | 内置变量，variables字段下赋值，build字段下使用 |
+| name       | description                                                                               |
+| ---------- | ----------------------------------------------------------------------------------------- |
+| build_dir  | 内置变量之一，variables字段下自定义赋值，build字段下使用                                  |
+| dest_dir   | 同build_dir                                                                               |
+| conf_args  | 同build_dir                                                                               |
+| extra_args | 同build_dir                                                                               |
+| jobs       | 同build_dir                                                                               |
+| PREFIX     | 环境变量之一，可在variable、build字段下使用；提供构建时的安装路径。                       |
+| TRIPLET    | 环境变量之一，可在variable、build字段下使用；提供包含架构信息的三元组，如x86_64-linux-gnu |
 
 ## 完整示例
 
