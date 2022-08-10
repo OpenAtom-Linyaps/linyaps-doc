@@ -12,7 +12,7 @@ module.exports = {
     },
   },
   themeConfig: {
-    logo: "/assert/logo.svg",
+    logo: "/asset/logo.svg",
     siteTitle: false,
     sidebar: {
       "/guide/": [

@@ -46,3 +46,21 @@
 | 多版本共存                | ✔                              | ✔            | ✔               | ✔                                      |
 | 点对点分发                | ✔                              | ✔            | ✔               | ✔                                      |
 | 应用升级                  | 仓库升级                        | 仓库升级      | 仓库升级         | 官方工具升级                            |
+
+```vue
+<template>
+  <div>ttttdddd</div>
+  <div>{{test}}</div>
+</template>
+<script>
+export default {
+  data() {
+    return {
+      test: 344
+    }
+  },
+  mounted(){
+    
+  }
+}
+</script>

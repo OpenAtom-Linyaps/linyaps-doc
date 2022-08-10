@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1323px" height="324px" viewBox="0 0 1323 324" version="1.1">
+    <title>椭圆形 + 椭圆形 + 椭圆形 + 椭圆形 蒙版</title>
+    <defs>
+        <radialGradient cx="94.1489531%" cy="98.6189362%" fx="94.1489531%" fy="98.6189362%" r="359.001745%" gradientTransform="translate(0.941490,0.986189),scale(0.244792,1.000000),rotate(-166.953393),translate(-0.941490,-0.986189)" id="radialGradient-1">
+            <stop stop-color="#27408B" offset="0%"/>
+            <stop stop-color="#244AB8" offset="100%"/>
+        </radialGradient>
+        <polygon id="path-2" points="0.992734226 0.0325047801 1322.59885 0.0325047801 1322.59885 323.550669 0.992734226 323.550669"/>
+        <linearGradient x1="-8.07428519%" y1="49.8608169%" x2="95.9257148%" y2="49.8608169%" id="linearGradient-4">
+            <stop stop-color="#002797" stop-opacity="0.43" offset="0%"/>
+            <stop stop-color="#32B9FB" stop-opacity="0.5" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="107.717833%" y1="50.0540541%" x2="3.71783296%" y2="50.0540541%" id="linearGradient-5">
+            <stop stop-color="#002797" stop-opacity="0.43" offset="0%"/>
+            <stop stop-color="#32B9FB" stop-opacity="0.43" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="椭圆形-+-椭圆形-+-椭圆形-+-椭圆形-蒙版">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"/>
+            </mask>
+            <use id="蒙版" fill="url(#radialGradient-1)" xlink:href="#path-2"/>
+            <ellipse id="椭圆形" fill-opacity="0.45" fill="#285BBD" fill-rule="nonzero" mask="url(#mask-3)" cx="942.299809" cy="-19.2409178" rx="161.421797" ry="161.759082"/>
+            <ellipse id="椭圆形" fill-opacity="0.54" fill="#285BBD" fill-rule="nonzero" mask="url(#mask-3)" cx="368.481836" cy="326.992352" rx="151.1174" ry="151.434034"/>
+            <ellipse id="椭圆形" fill="url(#linearGradient-4)" fill-rule="nonzero" opacity="0.57" mask="url(#mask-3)" cx="217.020268" cy="46.4952199" rx="227.020268" ry="227.49522"/>
+            <ellipse id="椭圆形" fill="url(#linearGradient-5)" fill-rule="nonzero" opacity="0.81" mask="url(#mask-3)" cx="1125.04627" cy="353.14914" rx="304.933078" ry="305.621415"/>
+        </g>
+    </g>
+</svg>
