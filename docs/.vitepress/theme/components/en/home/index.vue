@@ -41,7 +41,7 @@
               <h3><i class="selected"></i>Independent</h3>
               <p>Apps and systems are isolated from each other, so system changes have little effect on apps, and it is easier to support more distributions.</p>
               <h3><i class="selected"></i>Compatible</h3>
-              <p>Dependency hell can be avoided and multiple versions can coexist, making app compatibility better.</p>
+              <p>Dependency conflict can be avoided and multiple versions can coexist, making app compatibility better.</p>
               <h3><i class="selected"></i>Easy to distribute</h3>
               <p>Both online distribution and offline distribution are supported. You can distribute Linglong apps in the ecosystem of Linux distributions or in your own channels.</p>
             </div>
