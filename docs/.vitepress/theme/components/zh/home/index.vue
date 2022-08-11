@@ -135,21 +135,21 @@
 import { ref } from "@vue/reactivity";
 
 const apps = ref([
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' }
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/com.deepin.gomoku.svg', text: '五子棋' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/com.deepin.lianliankan.svg', text: '连连看' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/dde-calendar.svg', text: '日历' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/deepin-calculator.svg', text: '计算器' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/deepin-editor.svg', text: '文本编辑器' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/deepin-reader.svg', text: '文档查看器' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/deepin-compressor.svg', text: '归档管理器' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/org.deepin.browser.svg', text: '浏览器' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/deepin-mail.svg', text: '邮箱' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/deepin-album.svg', text: '相册' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/deepin-draw.svg', text: '画板' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/deepin-image-viewer.svg', text: '看图' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/deepin-camera.svg', text: '相机' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/deepin-music.svg', text: '音乐' },
+  { key: 1, icon: 'https://repo-dev.linglong.space/icon/deepin-movie.svg', text: '影院' }
 ])
 const bundles = [{
   appId: "org.dde.calendar",
