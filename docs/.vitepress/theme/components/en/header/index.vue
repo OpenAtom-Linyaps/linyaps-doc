@@ -11,7 +11,7 @@
       </div>
       <!-- 语言切换 -->
       <div class="lang">
-        <span class="zh">中</span>
+        <span @click="switchLang('/')" class="zh">中</span>
         <i>/</i>
         <span class="en">EN</span>
       </div>
@@ -20,7 +20,11 @@
     <div style="width: 48px;height: 48px;"></div>
   </div>
 </template>
-<script setup></script>
+<script setup>
+const switchLang = (url) => {
+  location.href = url
+}
+</script>
 
 <style lang="scss" scoped>
 .nav-wrap {

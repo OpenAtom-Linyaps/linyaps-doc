@@ -13,14 +13,18 @@
       <div class="lang">
         <span class="zh">中</span>
         <i>/</i>
-        <span class="en">EN</span>
+        <span @click="switchLang('/en/index.html')" class="en">EN</span>
       </div>
     </div>
     <!-- 布局占位 -->
     <div style="width: 48px;height: 48px;"></div>
   </div>
 </template>
-<script setup></script>
+<script setup>
+const switchLang = (url) => {
+  location.href = url
+}
+</script>
 
 <style lang="scss" scoped>
 .nav-wrap {
