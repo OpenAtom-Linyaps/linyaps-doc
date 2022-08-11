@@ -4,9 +4,9 @@
     <div class="nav-bar u-flex u-items-center u-justify-between">
       <!-- 导航 -->
       <div class="nav u-flex u-item-center u-justify-start">
-        <a class="selected" href="http://10.0.33.45:20082">Home</a>
+        <a class="selected" href="/">Home</a>
         <a href="http://10.0.33.45:28803/" target="_blank">Linglong Store</a>
-        <a href="http://10.0.33.45:20082/guide/start/install.html">User Manual</a>
+        <a href="/guide/start/install.html">User Manual</a>
         <i class="active"></i>
       </div>
       <!-- 语言切换 -->
@@ -21,12 +21,65 @@
   </div>
 </template>
 <script setup>
+import { reactive } from "@vue/reactivity";
+import { onBeforeUnmount, onMounted } from "@vue/runtime-core";
+
+const scrollVal = reactive({
+  // 当前滚动位置
+  currentScrollTop: 0,
+  headerTheme: false
+})
+
+const listenScroll = () => {
+  window.addEventListener('scroll', () => {
+    scrollVal.currentScrollTop = window.scrollY;
+    if (window.scrollY > 20) {
+      scrollVal.headerTheme = true
+    } else {
+      scrollVal.headerTheme = false
+    }
+  });
+}
+
+onMounted(() => {
+  listenScroll()
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', () => { });
+})
 const switchLang = (url) => {
   location.href = url
 }
 </script>
 
 <style lang="scss" scoped>
+.header-theme {
+  .nav {
+    a {
+      color: #333 !important;
+    }
+
+    .selected {
+      color: #025bff;
+    }
+  }
+
+  .lang {
+    .zh {
+      color: #333 !important;
+    }
+
+    i {
+      color: rgba($color: #333, $alpha: 0.5) !important;
+    }
+
+    .en {
+      color: #333 !important;
+    }
+  }
+}
+
 .nav-wrap {
   width: 100%;
   height: 100%;

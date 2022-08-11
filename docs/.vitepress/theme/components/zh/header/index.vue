@@ -1,12 +1,12 @@
 <template>
-  <div class="nav-wrap u-flex u-items-center u-justify-between">
+  <div class="nav-wrap u-flex u-items-center u-justify-between" :class="{ 'header-theme': scrollVal.headerTheme }">
     <div class="logo"></div>
     <div class="nav-bar u-flex u-items-center u-justify-between">
       <!-- 导航 -->
       <div class="nav u-flex u-item-center u-justify-start">
-        <a class="selected" href="http://10.0.33.45:20082">首页</a>
+        <a class="selected" href="/">首页</a>
         <a href="http://10.0.33.45:28803/" target="_blank">玲珑商店</a>
-        <a href="http://10.0.33.45:20082/guide/start/install.html">使用手册</a>
+        <a href="/guide/start/install.html">使用手册</a>
         <i class="active"></i>
       </div>
       <!-- 语言切换 -->
@@ -21,12 +21,65 @@
   </div>
 </template>
 <script setup>
+import { reactive } from "@vue/reactivity";
+import { onBeforeUnmount, onMounted } from "@vue/runtime-core";
+
+const scrollVal = reactive({
+  // 当前滚动位置
+  currentScrollTop: 0,
+  headerTheme: false
+})
+
+const listenScroll = () => {
+  window.addEventListener('scroll', () => {
+    scrollVal.currentScrollTop = window.scrollY;
+    if (window.scrollY > 20) {
+      scrollVal.headerTheme = true
+    } else {
+      scrollVal.headerTheme = false
+    }
+  });
+}
+
+onMounted(() => {
+  listenScroll()
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', () => { });
+})
 const switchLang = (url) => {
   location.href = url
 }
 </script>
 
 <style lang="scss" scoped>
+.header-theme {
+  .nav {
+    a {
+      color: #333 !important;
+    }
+
+    .selected {
+      color: #025bff;
+    }
+  }
+
+  .lang {
+    .zh {
+      color: #333 !important;
+    }
+
+    i {
+      color: rgba($color: #333, $alpha: 0.5) !important;
+    }
+
+    .en {
+      color: #333 !important;
+    }
+  }
+}
+
 .nav-wrap {
   width: 100%;
   height: 100%;
