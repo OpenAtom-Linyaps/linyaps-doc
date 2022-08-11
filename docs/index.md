@@ -1,4 +1,5 @@
 ---
-layout: HomeLayout
+layout: page
 ---
-<HomeLayout/>
+
+<HomeLayout />

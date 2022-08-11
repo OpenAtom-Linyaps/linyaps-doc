@@ -1,2 +1,5 @@
+---
+layout: home
+---
 
-<EnHomeLayout/>
+<EnHomeLayout />

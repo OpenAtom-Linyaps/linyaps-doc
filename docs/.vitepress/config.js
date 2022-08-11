@@ -125,11 +125,11 @@ module.exports = {
     locales: {
       "/": {
         nav: [
-          {
-            text: "商店",
-            ariaLabel: "store",
-            link: "http://10.0.33.45:28803",
-          },
+          // {
+          //   text: "商店",
+          //   ariaLabel: "store",
+          //   link: "http://10.0.33.45:28803",
+          // },
           {
             text: "文档",
             ariaLabel: "doc",
@@ -141,23 +141,23 @@ module.exports = {
               { text: "常见问题", link: "/guide/debug/faq.md" },
             ],
           },
-          {
-            text: "语言",
-            ariaLabel: "Language Menu",
-            items: [
-              { text: "简体中文", link: "/guide/start/install.md" },
-              { text: "English", link: "/en/guide/start/install.md" },
-            ],
-          },
+          // {
+          //   text: "语言",
+          //   ariaLabel: "Language Menu",
+          //   items: [
+          //     { text: "简体中文", link: "/guide/start/install.md" },
+          //     { text: "English", link: "/en/guide/start/install.md" },
+          //   ],
+          // },
         ],
       },
       "/en/": {
         nav: [
-          {
-            text: "Store",
-            ariaLabel: "store",
-            link: "http://10.0.33.45:28803",
-          },
+          // {
+          //   text: "Store",
+          //   ariaLabel: "store",
+          //   link: "http://10.0.33.45:28803",
+          // },
           {
             text: "Docs",
             ariaLabel: "doc",
@@ -171,14 +171,14 @@ module.exports = {
               { text: "FAQ", link: "/en/guide/debug/faq.md" },
             ],
           },
-          {
-            text: "Languages",
-            ariaLabel: "Language Menu",
-            items: [
-              { text: "简体中文", link: "/guide/start/install.md" },
-              { text: "English", link: "/en/guide/start/install.md" },
-            ],
-          },
+          // {
+          //   text: "Languages",
+          //   ariaLabel: "Language Menu",
+          //   items: [
+          //     { text: "简体中文", link: "/guide/start/install.md" },
+          //     { text: "English", link: "/en/guide/start/install.md" },
+          //   ],
+          // },
         ],
       },
     },
