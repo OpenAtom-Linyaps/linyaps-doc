@@ -305,10 +305,10 @@ const bundles = [{
     }
   }
   .to-user {
-    // background-image: url(/asset/home/user-bg.svg);
+    background-image: url(/asset/home/user-bg.png);
   }
   .to-dev {
-    // background-image: url(/asset/home/dev-bg.svg);
+    background-image: url(/asset/home/dev-bg.png);
   }
 }
 .feature-block {
