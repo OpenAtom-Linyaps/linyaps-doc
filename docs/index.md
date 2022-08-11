@@ -1,5 +1,1 @@
----
-layout: home
-
----
-<Home/>
+<HomeLayout/>
