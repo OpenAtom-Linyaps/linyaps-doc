@@ -13,7 +13,7 @@
 </template>
 <script setup>
 import { reactive } from "@vue/reactivity";
-import { onBeforeUnmount, onMounted, watch } from "@vue/runtime-core";
+import { onBeforeUnmount, onMounted } from "@vue/runtime-core";
 
 const scrollVal = reactive({
   // 当前滚动位置
@@ -40,7 +40,7 @@ onBeforeUnmount(() => {
   window.removeEventListener('scroll', () => { });
 })
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .full-container {
   position: relative;
   width: 100%;
