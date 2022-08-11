@@ -244,7 +244,7 @@ const jump = (url) => {
   .shield {
     width: 480px;
     height: 500px;
-    background: transparent url(/asset/home/shield.png) no-repeat 100% / cover;
+    // background: transparent url(/asset/home/shield.png) no-repeat 100% / cover;
   }
   .link-wrap {
     margin-top: 80px;

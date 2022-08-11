@@ -21,7 +21,7 @@
         <span>Adaption: operation@uniontech.com</span>
         <span>(Monday to Friday 9:00-18:00)</span>
       </div>
-      <div class="flex-none offical" style="width: 150px;">
+      <div class="flex-none offical" style="width: 190px;">
         <h3>Follow Us on WeChat</h3>
         <div class="qcode account"></div>
       </div>
