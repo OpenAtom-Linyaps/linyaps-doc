@@ -12,9 +12,9 @@
               Linglong is a new independent package management toolset, dedicated to solving various compatibility problems caused by complex package formats and cross dependencies under Linux, as well as to reducing the security risks caused by decentralized control of permissions.
             </p>
             <div class="link-wrap">
-              <div class="link quick">Quick Built in 10 mins</div>
-              <div class="link plain ml-15">Runtime List</div>
-              <div class="link plain ml-15">Discussions</div>
+              <a href="javascript:void(0)" target="_blank" @click="jump('http://localhost:3000/en/guide/ll-builder/introduction.html')" class="link quick">Quick Built in 10 mins</a>
+              <a href="javascript:void(0)" target="_blank" @click="jump('http://localhost:3000/en/guide/ll-builder/manifests.html')" class="link plain ml-15">Runtime List</a>
+              <a href="https://bbs.deepin.org/en" target="_blank" class="link plain ml-15">Discussions</a>
             </div>
           </div>
           <div class="shield"></div>
@@ -193,6 +193,9 @@ const bundles = [{
   version: "22.2.2.3",
   downloadUrl: "https://repo-dev.linglong.space/bundle/com.zwsoft.zwcad2022_22.2.2.3_x86_64.uab"
 }]
+const jump = (url) => {
+  location.href = url
+}
 </script>
 
 <style lang="scss" scoped>
