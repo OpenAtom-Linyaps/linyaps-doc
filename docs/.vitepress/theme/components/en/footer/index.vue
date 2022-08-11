@@ -3,35 +3,35 @@
     <div class="block u-flex">
       <div class="flex-none logo-panel">
         <div class="logo"></div>
-        <h2>打造操作系统新生态</h2>
+        <h2>Build Innovative OS Ecosystem</h2>
       </div>
       <div class="flex-none link" style="width: 150px;">
-        <h3>快速连接</h3>
-        <a href="https://www.uniontech.com" target="_blank">统信官网</a>
-        <a href="https://www.chinauos.com" target="_blank">UOS生态社区</a>
+        <h3>Links</h3>
+        <a href="https://www.uniontech.com" target="_blank">UnionTech Software</a>
+        <a href="https://www.chinauos.com" target="_blank">UOS Community</a>
       </div>
       <div class="flex-none link" style="width: 150px;">
-        <h3>关于我们</h3>
-        <a href="https://www.uniontech.com/about" target="_blank">公司介绍</a>
-        <a href="https://www.uniontech.com/partners" target="_blank">合作伙伴</a>
+        <h3>About Us</h3>
+        <a href="https://www.uniontech.com/about" target="_blank">Company Profile</a>
+        <a href="https://www.uniontech.com/partners" target="_blank">Partners</a>
       </div>
       <div class="flex-grow link">
-        <h3>联系我们</h3>
-        <span>合作：cooperation@uniontech.com</span>
-        <span>适配：operation@uniontech.com</span>
-        <span>联系电话：400-8588-488（周一至周五 9:00-18:00）</span>
+        <h3>Contact Us</h3>
+        <span>Cooperation: cooperation@uniontech.com</span>
+        <span>Adaption: operation@uniontech.com</span>
+        <span>(Monday to Friday 9:00-18:00)</span>
       </div>
       <div class="flex-none offical" style="width: 150px;">
-        <h3>关注微信公众号</h3>
+        <h3>Follow Us on WeChat</h3>
         <div class="qcode account"></div>
       </div>
       <div class="flex-none offical">
-        <h3>技术服务</h3>
+        <h3>Technical Support</h3>
         <div class="qcode service"></div>
       </div>
     </div>
     <div class="copyright">
-      <span>Copyright © 2021 统信软件版权所有</span>
+      <span>Copyright © 2022 UnionTech Software. All Rights Reserved.</span>
     </div>
   </div>
 </template>
