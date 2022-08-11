@@ -6,7 +6,7 @@
       <div class="nav u-flex u-item-center u-justify-start">
         <a class="selected" href="/">Home</a>
         <a href="http://10.0.33.45:28803/" target="_blank">Linglong Store</a>
-        <a href="/guide/start/install.html">User Manual</a>
+        <a href="javascript:void(0);" @click="jump('/guide/start/install.html')">User Manual</a>
         <i class="active"></i>
       </div>
       <!-- 语言切换 -->
@@ -48,6 +48,9 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', () => { });
 })
+const jump = (url) => {
+  location.href = url
+}
 const switchLang = (url) => {
   location.href = url
 }

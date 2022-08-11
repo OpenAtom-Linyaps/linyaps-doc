@@ -184,14 +184,6 @@ const bundles = [{
   name: "xunlei",
   version: "1.0.0.2",
   downloadUrl: "https://repo-dev.linglong.space/bundle/com.xunlei.download_1.0.0.2_x86_64.uab"
-}, {
-  appId: "com.zwsoft.zwcad2022",
-  arch: "x86_64",
-  description: "如需试用/购买及技术咨询，联系电话：4007-182-588，技术支持： support@zwcad.com\n中望CAD 2022 Linux版是中望软件研发的二维CAD软件，提供强大的绘图、编辑和修改功能，以及打印输出功能，具体包括：\n1）兼容R12~2018版本的DWG/DXF文件，支持DWT/DWF/DWFx格式的打开；\n2）支持三维实体的查看、创建和三维动态观察；\n3）支持模型和布局切换；\n4）可创建转角标注、对齐标注、角度标注、直径标注、半径标注、弧长标注、引线标注等标注对象；\n5）支持对象捕捉、栅格捕捉、正交锁定、极轴追踪等辅助绘图功能；\n6）支持点坐标查询、直线长度统计、面积统计等统计查询功能；\n7）支持实体通用编辑操作；\n8）支持文字编辑操作；\n9）支持PDF/OFD格式输出和国产打印输出。\n10）API接口支持LISP/ZRX/.NET/Python等二次开发",
-  icon: "url(https://store.chinauos.com/api/public/blob/6148b337-dee0-4aa4-8866-c1e13e615f5d)",
-  name: "ZWCAD",
-  version: "22.2.2.3",
-  downloadUrl: "https://repo-dev.linglong.space/bundle/com.zwsoft.zwcad2022_22.2.2.3_x86_64.uab"
 }]
 const jump = (url) => {
   location.href = url
@@ -453,7 +445,7 @@ const jump = (url) => {
   .card {
     background: #ffffff;
     border-radius: 4px;
-    width: 225px;
+    width: 280px;
     height: 280px;
     padding: 40px 15px;
     text-align: center;
