@@ -7,19 +7,19 @@
       </div>
       <div class="flex-none link" style="width: 150px;">
         <h3>快速连接</h3>
-        <a href="">统信官网</a>
-        <a href="">UOS生态社区</a>
+        <a href="https://www.uniontech.com" target="_blank">统信官网</a>
+        <a href="https://www.chinauos.com" target="_blank">UOS生态社区</a>
       </div>
       <div class="flex-none link" style="width: 150px;">
         <h3>关于我们</h3>
-        <a href="">公司介绍</a>
-        <a href="">合作伙伴</a>
+        <a href="https://www.uniontech.com/about" target="_blank">公司介绍</a>
+        <a href="https://www.uniontech.com/partners" target="_blank">合作伙伴</a>
       </div>
       <div class="flex-grow link">
         <h3>联系我们</h3>
-        <a href="">合作：cooperation@uniontech.com</a>
-        <a href="">适配：operation@uniontech.com</a>
-        <a href="">联系电话：400-8588-488（周一至周五 9:00-18:00）</a>
+        <span>合作：cooperation@uniontech.com</span>
+        <span>适配：operation@uniontech.com</span>
+        <span>联系电话：400-8588-488（周一至周五 9:00-18:00）</span>
       </div>
       <div class="flex-none offical" style="width: 150px;">
         <h3>关注微信公众号</h3>
@@ -70,6 +70,13 @@
       margin-bottom: 30px;
     }
     a {
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.45);
+      margin-top: 14px;
+    }
+    span {
       display: block;
       font-size: 14px;
       font-weight: 400;
