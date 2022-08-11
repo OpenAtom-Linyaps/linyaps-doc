@@ -95,8 +95,8 @@
             <ul class="app-list">
               <li v-for="app of apps" :key="app.key">
                 <div class="card u-flex u-items-center u-justify-start">
-                  <i></i>
-                  <span>音乐打开</span>
+                  <i :style="{backgroundImage:app.icon}"></i>
+                  <span>{{app.text}}</span>
                 </div>
               </li>
             </ul>
@@ -135,21 +135,21 @@
 import { ref } from "@vue/reactivity";
 
 const apps = ref([
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' },
-  { key: 1, icon: '', text: '' }
+  { key: 1, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 2, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 3, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 4, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 5, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 6, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 7, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 8, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 9, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 10, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 11, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 12, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 13, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 14, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' },
+  { key: 15, icon: 'url(https://api-dev.linglong.space/icon/deepin-screen-recorder.svg)', text: '拍照' }
 ])
 const bundles = [{
   appId: "org.dde.calendar",
@@ -388,7 +388,6 @@ const bundles = [{
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
-          background-image: url(/asset/home/f5.png);
         }
         span {
           font-size: 16px;
