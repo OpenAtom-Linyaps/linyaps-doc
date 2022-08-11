@@ -24,7 +24,7 @@ const scrollVal = reactive({
 const listenScroll = () => {
   window.addEventListener('scroll', () => {
     scrollVal.currentScrollTop = window.scrollY;
-    if (window.scrollY >= 610) {
+    if (window.scrollY > 20) {
       scrollVal.headerTheme = true
     } else {
       scrollVal.headerTheme = false
@@ -49,6 +49,7 @@ onBeforeUnmount(() => {
     width: 100%;
     height: 72px;
     top: 0px;
+    z-index: 1000;
   }
   .header-theme {
     background-color: rgba(255, 255, 255, 0.8);
@@ -77,7 +78,6 @@ onBeforeUnmount(() => {
   }
   .footer {
     height: 347px;
-    background: red;
   }
 }
 </style>

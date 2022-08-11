@@ -2,6 +2,7 @@
   <div class="nav-wrap u-flex u-items-center u-justify-between">
     <div class="logo"></div>
     <div class="nav-bar u-flex u-items-center u-justify-between">
+      <!-- 导航 -->
       <div class="nav u-flex u-item-center u-justify-start">
         <a class="selected" href="http://10.0.33.45:20082">首页</a>
         <a href="http://10.0.33.45:28803/" target="_blank">玲珑商店</a>
@@ -16,12 +17,10 @@
       </div>
     </div>
     <!-- 布局占位 -->
-    <div></div>
+    <div style="width: 48px;height: 48px;"></div>
   </div>
 </template>
-<script setup>
-
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 .nav-wrap {
