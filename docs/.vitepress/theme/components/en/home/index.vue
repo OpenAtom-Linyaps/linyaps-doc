@@ -117,9 +117,9 @@
             <div class="card" v-for="bundle of bundles" :key="bundle.appId">
               <i class="app" :style="{backgroundImage:bundle.icon}"></i>
               <div class="app-name u-truncate">{{bundle.name}}</div>
-              <a href="">
+              <a :href="bundle.downloadUrl">
                 <i class="down"></i>
-                下载体验
+                Download
               </a>
             </div>
           </div>
@@ -159,7 +159,7 @@ const bundles = [{
   id: 0,
   name: "netease-cloud-music",
   version: "1.2.1.1",
-  downloadUrl: "url(https://repo-dev.linglong.space/bundle/com.163.music_1.2.1.1_x86_64.uab)"
+  downloadUrl: "https://repo-dev.linglong.space/bundle/com.163.music_1.2.1.1_x86_64.uab"
 }, {
   appId: "cn.wps.wps-office",
   arch: "x86_64",
@@ -167,7 +167,7 @@ const bundles = [{
   icon: "url(https://store.chinauos.com/api/public/blob/ec4435df-037e-40cf-8417-67993b89dd0e)",
   name: "WPS2019 Community",
   version: "11.1.0.11664",
-  downloadUrl: "url(https://repo-dev.linglong.space/bundle/cn.wps.wps-office_11.1.0.11664_x86-64.uab)"
+  downloadUrl: "https://repo-dev.linglong.space/bundle/cn.wps.wps-office_11.1.0.11664_x86-64.uab"
 }, {
   appId: "com.baidu.baidunetdisk",
   arch: "x86_64",
@@ -175,7 +175,7 @@ const bundles = [{
   icon: "url(https://store.chinauos.com/api/public/blob/5bb10bee-53de-4ed0-ac65-8374c8c3e8f4)",
   name: "baidunetdisk",
   version: "4.3.0",
-  downloadUrl: "url(https://repo-dev.linglong.space/bundle/com.baidu.baidunetdisk_4.3.0_x86_64.uab)"
+  downloadUrl: "https://repo-dev.linglong.space/bundle/com.baidu.baidunetdisk_4.3.0_x86_64.uab"
 }, {
   appId: "com.xunlei.download",
   arch: "x86_64",
@@ -183,7 +183,7 @@ const bundles = [{
   icon: "url(https://store.chinauos.com/api/public/blob/5266244f-5df0-4512-ac0e-b980eba060f6)",
   name: "xunlei",
   version: "1.0.0.2",
-  downloadUrl: "url(https://repo-dev.linglong.space/bundle/com.xunlei.download_1.0.0.2_x86_64.uab)"
+  downloadUrl: "https://repo-dev.linglong.space/bundle/com.xunlei.download_1.0.0.2_x86_64.uab"
 }, {
   appId: "com.zwsoft.zwcad2022",
   arch: "x86_64",
@@ -191,7 +191,7 @@ const bundles = [{
   icon: "url(https://store.chinauos.com/api/public/blob/6148b337-dee0-4aa4-8866-c1e13e615f5d)",
   name: "ZWCAD",
   version: "22.2.2.3",
-  downloadUrl: "url(https://repo-dev.linglong.space/bundle/com.zwsoft.zwcad2022_22.2.2.3_x86_64.uab )"
+  downloadUrl: "https://repo-dev.linglong.space/bundle/com.zwsoft.zwcad2022_22.2.2.3_x86_64.uab"
 }]
 </script>
 
@@ -450,7 +450,7 @@ const bundles = [{
   .card {
     background: #ffffff;
     border-radius: 4px;
-    width: 282px;
+    width: 225px;
     height: 280px;
     padding: 40px 15px;
     text-align: center;

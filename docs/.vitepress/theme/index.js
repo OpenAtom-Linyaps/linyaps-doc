@@ -12,13 +12,14 @@ import EnFooter from './components/en/footer/index.vue'
 import EnHomeLayout from './components/en/home/index.vue'
 
 const { Layout, NotFound } = DefaultTheme
-let langLayout = null
-if (location.pathname === '/') {
-  langLayout = HomeLayout
-} else if (location.pathname.startsWith("/en/index.html")) {
-  langLayout = EnHomeLayout
-} else {
-  langLayout = Layout
+let langLayout = Layout
+if (typeof location === 'object') {
+  if (location.pathname === '/') {
+    langLayout = HomeLayout
+  }
+  if (location.pathname.startsWith("/en/index.html")) {
+    langLayout = EnHomeLayout
+  }
 }
 
 export default {

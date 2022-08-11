@@ -1,12 +1,12 @@
 <template>
-  <div class="container">
-    <div class="header" :class="{ 'header-theme': scrollVal.headerTheme }">
+  <div class="full-container">
+    <div class="full-header" :class="{ 'header-theme': scrollVal.headerTheme }">
       <slot name="header" />
     </div>
     <div class="content">
       <slot name="content" />
     </div>
-    <div class="footer">
+    <div class="full-footer">
       <slot name="footer" />
     </div>
   </div>
@@ -40,11 +40,11 @@ onBeforeUnmount(() => {
   window.removeEventListener('scroll', () => { });
 })
 </script>
-<style lang="scss" scoped>
-.container {
+<style lang="scss">
+.full-container {
   position: relative;
   width: 100%;
-  .header {
+  .full-header {
     position: fixed;
     width: 100%;
     height: 72px;
@@ -76,7 +76,7 @@ onBeforeUnmount(() => {
       }
     }
   }
-  .footer {
+  .full-footer {
     height: 347px;
   }
 }
