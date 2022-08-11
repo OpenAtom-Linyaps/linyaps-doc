@@ -12,8 +12,8 @@
               玲珑是一种新型的独立管理工具集，致力于治理Linux系统下传统软件包格式复杂、交叉的依赖关系导致的各种兼容性问题，以及过于松散的权限管控导致的安全风险。
             </p>
             <div class="link-wrap">
-              <a href="javascript:void(0);" @click="jump('http://localhost:3000/guide/ll-builder/introduction.html')" class="link quick">10分钟快速构建</a>
-              <a href="javascript:void(0)" @click="jump('http://localhost:3000/guide/ll-builder/manifests.html')" class="link plain ml-15">runtime清单</a>
+              <a href="javascript:void(0);" @click="jump('/guide/ll-builder/introduction.html')" class="link quick">10分钟快速构建</a>
+              <a href="javascript:void(0)" @click="jump('/guide/ll-builder/manifests.html')" class="link plain ml-15">runtime清单</a>
               <a href="https://bbs.deepin.org" target="_blank" class="link plain ml-15">社区讨论</a>
             </div>
           </div>

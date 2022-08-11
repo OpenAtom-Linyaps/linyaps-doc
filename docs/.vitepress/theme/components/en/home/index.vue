@@ -12,8 +12,8 @@
               Linglong is a new independent package management toolset, dedicated to solving various compatibility problems caused by complex package formats and cross dependencies under Linux, as well as to reducing the security risks caused by decentralized control of permissions.
             </p>
             <div class="link-wrap">
-              <a href="javascript:void(0)" target="_blank" @click="jump('http://localhost:3000/en/guide/ll-builder/introduction.html')" class="link quick">Quick Built in 10 mins</a>
-              <a href="javascript:void(0)" target="_blank" @click="jump('http://localhost:3000/en/guide/ll-builder/manifests.html')" class="link plain ml-15">Runtime List</a>
+              <a href="javascript:void(0)" target="_blank" @click="jump('/en/guide/ll-builder/introduction.html')" class="link quick">Quick Built in 10 mins</a>
+              <a href="javascript:void(0)" target="_blank" @click="jump('/en/guide/ll-builder/manifests.html')" class="link plain ml-15">Runtime List</a>
               <a href="https://bbs.deepin.org/en" target="_blank" class="link plain ml-15">Discussions</a>
             </div>
           </div>

@@ -1,6 +1,6 @@
 // .vitepress/theme/index.js
 import DefaultTheme from 'vitepress/theme'
-import './custom.css'
+import './custom.scss'
 
 import FullLayout from './components/layout/full.vue'
 import Header from './components/zh/header/index.vue'
