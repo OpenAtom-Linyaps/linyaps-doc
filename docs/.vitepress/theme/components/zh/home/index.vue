@@ -157,7 +157,7 @@ const bundles = [{
   description: "网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，在线音乐服务主打歌单、社交、大牌推荐和音乐指纹，以歌单、DJ节目、社交、地理位置为核心要素，主打发现和分享。",
   icon: "url(https://store.chinauos.com/api/public/blob/1dda7a14-738e-4ce4-b81a-6d6ba0d3c3f6)",
   id: 0,
-  name: "netease-cloud-music",
+  name: "网易云音乐",
   version: "1.2.1.1",
   downloadUrl: "url(https://repo-dev.linglong.space/bundle/com.163.music_1.2.1.1_x86_64.uab)"
 }, {
@@ -165,8 +165,7 @@ const bundles = [{
   arch: "x86_64",
   "description": "WPS Office 2019 for Linux 办公软件，是一款兼容、开放、高效、安全并极具中文本土化优势的办公软件。支持国内外主流软硬件系统，其专业的图文混排功能、强有力的计算引擎和强大的数据处理功能、丰富的动画效果设置、公文处理等，可以充分满足国内外用户在Linux体系下高效办公的要求。\nWPS Office 2019 for Linux在文字排版、表格计算、演示动画三大核心功能上做到底层兼容，可以直接创建、读取、编辑、保存如doc、xls、ppt、pps等格式的文档、国际标准OOXML文档（如docx、xlsx、pptx、ppsx等格式的文档）。\n客服热线：400-822-9012\nQQ群：858835097\n微信客服：搜索 \"WPS客户服务\"",
   icon: "url(https://store.chinauos.com/api/public/blob/ec4435df-037e-40cf-8417-67993b89dd0e)",
-  id: 0,
-  name: "WPS2019 Community",
+  name: "WPS2019 社区版",
   version: "11.1.0.11664",
   downloadUrl: "url(https://repo-dev.linglong.space/bundle/cn.wps.wps-office_11.1.0.11664_x86-64.uab)"
 }, {
@@ -174,8 +173,7 @@ const bundles = [{
   arch: "x86_64",
   description: "百度网盘为百度旗下的一款云存储产品，用户可以轻松将自己的文件上传到网盘上，并可跨终端随时随地查看和分享。",
   icon: "url(https://store.chinauos.com/api/public/blob/5bb10bee-53de-4ed0-ac65-8374c8c3e8f4)",
-  id: 0,
-  name: "baidunetdisk",
+  name: "百度网盘",
   version: "4.3.0",
   downloadUrl: "url(https://repo-dev.linglong.space/bundle/com.baidu.baidunetdisk_4.3.0_x86_64.uab)"
 }, {
@@ -183,8 +181,7 @@ const bundles = [{
   arch: "x86_64",
   description: "十八年技术沉淀，专注下载传输，成就用户信赖的必备工具”，迅雷团队首次推出 linux 界面版本，为国产芯片和国产操作系统助力，为用户提供极速，流畅，便捷的下载服务。\n\n【支持国芯、支持国产操作系统】\n\n       支持多种芯片，适配龙芯，适配国产操作系统。\n\n【一样下载体验】\n\n       一样强大而稳定的下载内核，简洁的操作界面，一样的下载速度，一样的下载信息呈现。\n\n【简约的界面交互】 　　\n\n       简约设计，精致的简约体验；linux 迅雷界面尺寸更加小巧，小屏幕也能适应。　\n\n【强大的软件框架】\n\n       linux 迅雷使用基于 “Electron” 的软件框架，使界面响应将更加流畅，文字显示效果更加清晰细腻。\n\n",
   icon: "url(https://store.chinauos.com/api/public/blob/5266244f-5df0-4512-ac0e-b980eba060f6)",
-  id: 0,
-  name: "xunlei",
+  name: "迅雷",
   version: "1.0.0.2",
   downloadUrl: "url(https://repo-dev.linglong.space/bundle/com.xunlei.download_1.0.0.2_x86_64.uab)"
 }, {
@@ -192,8 +189,7 @@ const bundles = [{
   arch: "x86_64",
   description: "如需试用/购买及技术咨询，联系电话：4007-182-588，技术支持： support@zwcad.com\n中望CAD 2022 Linux版是中望软件研发的二维CAD软件，提供强大的绘图、编辑和修改功能，以及打印输出功能，具体包括：\n1）兼容R12~2018版本的DWG/DXF文件，支持DWT/DWF/DWFx格式的打开；\n2）支持三维实体的查看、创建和三维动态观察；\n3）支持模型和布局切换；\n4）可创建转角标注、对齐标注、角度标注、直径标注、半径标注、弧长标注、引线标注等标注对象；\n5）支持对象捕捉、栅格捕捉、正交锁定、极轴追踪等辅助绘图功能；\n6）支持点坐标查询、直线长度统计、面积统计等统计查询功能；\n7）支持实体通用编辑操作；\n8）支持文字编辑操作；\n9）支持PDF/OFD格式输出和国产打印输出。\n10）API接口支持LISP/ZRX/.NET/Python等二次开发",
   icon: "url(https://store.chinauos.com/api/public/blob/6148b337-dee0-4aa4-8866-c1e13e615f5d)",
-  id: 0,
-  name: "ZWCAD",
+  name: "中望CAD 2022",
   version: "22.2.2.3",
   downloadUrl: "url(https://repo-dev.linglong.space/bundle/com.zwsoft.zwcad2022_22.2.2.3_x86_64.uab )"
 }]
