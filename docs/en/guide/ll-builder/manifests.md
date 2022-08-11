@@ -6,12 +6,14 @@
 
 ```bash
 {project-root}
-|** linglong.yaml
-|** .linglong-target // build cache for project
+├── linglong.yaml
+└── .linglong-target
 
 {user-home}
-|** .cache/linglong-builder/repo
-|** .cache/linglong-builder/layers
+└── .cache
+    └── linglong-builder
+        ├── repo
+        └── layers
 ```
 
 ## Field definitions
@@ -27,16 +29,16 @@ package:
     reader for deepin os.
 ```
 
-| name        | description                                                 |
-| ----------- | ----------------------------------------------------------- |
-| description | Detailed description of the build product                                          |
-| id          | Unique name of the build product                                          |
+| name        | description                                                                                          |
+| ----------- | ---------------------------------------------------------------------------------------------------- |
+| description | Detailed description of the build product                                                            |
+| id          | Unique name of the build product                                                                     |
 | kind        | The type of the build product: app, runtime, lib, representing application, runtime, library in turn |
-| version     | version of the build product                                              |
+| version     | version of the build product                                                                         |
 
 ### runtime
 
-The application runtime environment is also a build dependency.
+Describe the build and run dependencies of the application.
 
 ```yaml
 runtime:
@@ -53,10 +55,10 @@ runtime:
   id: org.deepin.Runtime/20.5.0
 ```
 
-| name    | description                                             |
-| ------- | ------------------------------------------------------- |
-| id      | Unique name of the runtime                            |
-| version | Runtime version                                   |
+| name    | description                                                                             |
+| ------- | --------------------------------------------------------------------------------------- |
+| id      | Unique name of the runtime                                                              |
+| version | Runtime version                                                                         |
 | digest  | (not used yet, this field can be used to bind a unique version of the runtime (runtime) |
 
 ### Dependencies
@@ -76,12 +78,12 @@ depends:
     digest: 381c77d2085c9c10574d85525f09211
 ```
 
-| name    | description                                                 |
-| ------- | ----------------------------------------------------------- |
-| id      | Unique name of the dependency                                              |
+| name    | description                                                                                          |
+| ------- | ---------------------------------------------------------------------------------------------------- |
+| id      | Unique name of the dependency                                                                        |
 | type    | The type of the dependency, the type of runtime dependency, will be submitted with the build content |
-| version | Dependent version                                                  |
-| digest  | (not used yet, this field can be used to bind a unique version of the dependency)                |
+| version | Dependent version                                                                                    |
+| digest  | (not used yet, this field can be used to bind a unique version of the dependency)                    |
 
 ### source
 
@@ -98,13 +100,13 @@ source:
     - patches/fix-lib-install-path.patch
 ```
 
-| name | description |
-| ------- | --------------------------------------- |
-| kind | Source code type, optional types local, archive, git |
-| url | Source address, fill in when the type is archive or git |
-| version | Source branch version, fill in when the type is git |
-| commit | The hash value of a source code commit, fill in when the type is git |
-| patch | Source patch path |
+| name    | description                                                          |
+| ------- | -------------------------------------------------------------------- |
+| kind    | Source code type, optional types local, archive, git                 |
+| url     | Source address, fill in when the type is archive or git              |
+| version | Source branch version, fill in when the type is git                  |
+| commit  | The hash value of a source code commit, fill in when the type is git |
+| patch   | Source patch path                                                    |
 
 ### build rules
 
@@ -133,13 +135,13 @@ build:
       ./bootstrap.sh
 ```
 
-| name | description |
-| --------- | --------------------------------------------------------------------------------- |
-| build | build rules at build time |
-| configure | build-time configure rules |
-| install | build-time install rules |
-| kind | Build type, optional manual, autotools, cmake, qmake |
-| manual | Build rules, when manual is declared, it means custom rules, that is, rewriting build, install, configure |
+| name      | description                                                                                               |
+| --------- | --------------------------------------------------------------------------------------------------------- |
+| build     | build rules at build time                                                                                 |
+| configure | build-time configure rules                                                                                |
+| install   | build-time install rules                                                                                  |
+| kind      | Build type, optional manual, autotools, cmake, qmake                                                      |
+| manual    | Build rules, when manual is declared, it means custom rules, that is, rewriting build, install, configure |
 
 ### variables
 
@@ -147,23 +149,36 @@ Describes the variables that can be used by the build, used with the build build
 
 ```yaml
 variables:
-   conf_args: |
-     --prefix=/usr
-   extra_args: |
-     --doc=enable
-   jobs: |
-     -j64
+  build_dir: |
+  dest_dir: |
+  conf_args: |
+    --prefix=${PREFIX}
+    --libdir=lib/${TRIPLET}
+  extra_args: |
+    --doc=enable
+  jobs: |
+    -j64
 
 build:
   kind: manual
   manual:
     configure: |
       ./configure ${conf_args} ${extra_args}
+    build: |
+      make ${jobs}
+    install: |
+      make DESTDIR=${dest_dir} install
 ```
 
-| name | description |
-| --------- | ---------------------------------------------- |
-| conf_args | Built-in variables, assigned in the variable field, used in the build field |
+| name       | description                                                                                                                                                             |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| build_dir  | Built-in variables, assigned in the variable field, used in the build field                                                                                             |
+| dest_dir   | Same as build_dir                                                                                                                                                       |
+| conf_args  | Same as build_dir                                                                                                                                                       |
+| extra_args | Same as build_dir                                                                                                                                                       |
+| jobs       | Same as build_dir                                                                                                                                                       |
+| PREFIX     | One of the environment variables, which can be used under the variable and build fields; provide the installation path when building                                    |
+| TRIPLET    | One of the environment variables, which can be used under the variable and build fields; provide a triple containing architecture information, such as x86_64-linux-gnu |
 
 ## complete example
 

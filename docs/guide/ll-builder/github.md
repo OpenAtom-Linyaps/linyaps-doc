@@ -4,8 +4,8 @@
 
 - 创建一个玲珑工程，使用ll-builder在本地构建出玲珑应用。
 
-- 向[https://github.com/linuxdeepin/linglong-hub](https://github.com/linuxdeepin/linglong-hub)项目提交pull request。
+- 将玲珑工程以pull request（PR）方式提交到[https://github.com/linuxdeepin/linglong-hub](https://github.com/linuxdeepin/linglong-hub)项目。
 
-- 项目维护者审核内容通过后，触发构建流程，构建成功后内容将被提交到玲珑测试仓库，github action可以获取构建日志及状态。
+- 项目维护者审核内容通过后，将触发构建流程，构建成功后内容将被提交到玲珑测试仓库。
 
-- 应用通过测试后将会上架到[玲珑网页商店](http://10.0.33.45:28803)。
+- 应用通过测试后将会合并PR，并将应用上架到[玲珑网页商店](http://10.0.33.45:28803)。
