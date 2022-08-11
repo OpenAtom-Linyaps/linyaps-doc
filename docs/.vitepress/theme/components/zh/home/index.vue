@@ -111,7 +111,7 @@
         <div class="w-center block">
           <div class="title">
             <span>体验离线bundle格式</span>
-            <p class="sub">可在deepin、Ubuntu和Debian上体验离线bundle格式，无需安装即可运行，更多发行版持续支持中…</p>
+            <p class="sub">可在Deepin、Ubuntu和Debian上体验离线bundle格式，无需安装即可运行，更多发行版持续支持中…</p>
           </div>
           <div class="u-flex u-items-center u-justify-between">
             <div class="card" v-for="bundle of bundles" :key="bundle.appId">
