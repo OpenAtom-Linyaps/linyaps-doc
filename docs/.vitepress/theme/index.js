@@ -1,5 +1,19 @@
-// .vitepress/theme/index.js
+
 import DefaultTheme from 'vitepress/theme'
+import './custom.scss'
+
+import Layout from './components/layout/flow.vue'
+
+const { NotFound } = DefaultTheme
+
+export default {
+  Layout,
+  NotFound
+  // }
+}
+
+// .vitepress/theme/index.js
+/* import DefaultTheme from 'vitepress/theme'
 import './custom.scss'
 
 import FullLayout from './components/layout/full.vue'
@@ -34,4 +48,4 @@ export default {
     app.component('EnFooter', EnFooter)
     app.component('EnHomeLayout', EnHomeLayout)
   }
-}
+} */

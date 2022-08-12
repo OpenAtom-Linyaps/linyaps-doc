@@ -1,4 +1,6 @@
 ---
-layout: HomeLayout
+page: true
+sidebar: false
+lang: zh
 ---
-<HomeLayout/>
+<!-- <HomeLayout/> -->
