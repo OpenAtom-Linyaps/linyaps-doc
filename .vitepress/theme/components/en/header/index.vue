@@ -4,9 +4,9 @@
     <div class="nav-bar u-flex u-items-center u-justify-between">
       <!-- 导航 -->
       <div class="nav u-flex u-item-center u-justify-start">
-        <a class="selected" href="/" style="padding-left: 10px;">Home</a>
+        <a class="selected" href="/" style="padding-left: 10px">Home</a>
         <a href="http://10.0.33.45:28803/" target="_blank">Linglong Store</a>
-        <a href="/en/guide/start/install.html">User Manual</a>
+        <a href="javascript:void(0);" @click="jump('/en/guide/start/install.html')">User Manual</a>
         <i class="active"></i>
       </div>
       <!-- 语言切换 -->
@@ -17,12 +17,12 @@
       </div>
     </div>
     <!-- 布局占位 -->
-    <div style="width: 48px;height: 48px;"></div>
+    <div style="width: 48px; height: 48px"></div>
   </div>
 </template>
 <script setup>
-import { reactive } from "@vue/reactivity";
-import { onBeforeUnmount, onMounted } from "@vue/runtime-core";
+import { reactive } from '@vue/reactivity'
+import { onBeforeUnmount, onMounted } from '@vue/runtime-core'
 
 const scrollVal = reactive({
   // 当前滚动位置
@@ -32,13 +32,13 @@ const scrollVal = reactive({
 
 const listenScroll = () => {
   window.addEventListener('scroll', () => {
-    scrollVal.currentScrollTop = window.scrollY;
+    scrollVal.currentScrollTop = window.scrollY
     if (window.scrollY > 20) {
       scrollVal.headerTheme = true
     } else {
       scrollVal.headerTheme = false
     }
-  });
+  })
 }
 
 onMounted(() => {
@@ -46,7 +46,7 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
-  window.removeEventListener('scroll', () => { });
+  window.removeEventListener('scroll', () => {})
 })
 const jump = (url) => {
   location.href = url
