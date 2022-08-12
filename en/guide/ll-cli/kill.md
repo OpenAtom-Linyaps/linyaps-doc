@@ -2,13 +2,13 @@
 
 Use `ll-cli kill` to force quit running Linglong apps.
 
-View the help information of `ll-cli kill` command：
+View the help information of `ll-cli kill` command:
 
 ```bash
 ll-cli kill --help
 ```
 
-Here is the outputs：
+Here is the outputs:
 
 ```text
 Usage: ll-cli [options] kill container-id

@@ -2,13 +2,13 @@
 
 Use `ll-cli query` to search app meta infos from remote repository.
 
-View the help information of `ll-cli query` command：
+View the help information of `ll-cli query` command:
 
 ```bash
 ll-cli query --help
 ```
 
-Here is the outputs：
+Here is the outputs:
 
 ```text
 Usage: ll-cli [options] query com.deepin.demo
@@ -40,7 +40,7 @@ ll-cli query <calculator> --force
 
 This command returns the info of all apps whose `appid` (appid is the app unique identifier) contains the keyword "calculator", including the complete `appid`, application name, version, CPU architecture and descriptions.
 
-Here is the outputs：
+Here is the outputs:
 
 ```text
 appId                           name                            version         arch        channel         module      description

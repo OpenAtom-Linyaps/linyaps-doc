@@ -8,7 +8,7 @@ View the help information of `ll-cli ps` command:
 ll-cli ps --help
 ```
 
-Here is the outputs：
+Here is the outputs:
 
 ```text
 Usage: ll-cli [options] ps

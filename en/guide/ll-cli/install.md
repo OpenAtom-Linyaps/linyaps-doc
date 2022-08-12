@@ -8,7 +8,7 @@ View the help information of `ll-cli install` command:
 ll-cli install --help
 ```
 
-Here is the outputs：
+Here is the outputs:
 
 ```text
 Usage: ll-cli [options] install com.deepin.demo

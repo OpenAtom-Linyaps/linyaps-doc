@@ -8,7 +8,7 @@ View the help information of `ll-cli exec` command:
 ll-cli exec --help
 ```
 
-Here is the outputs：
+Here is the outputs:
 
 ```text
 Usage: ll-cli [options] exec 9c41c0af2bad4617aea8485f5aaeb93a "bash"

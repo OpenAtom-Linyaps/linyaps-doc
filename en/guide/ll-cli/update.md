@@ -8,7 +8,7 @@ View the help information of `ll-cli update` command:
 ll-cli update --help
 ```
 
-Here is the outputs：
+Here is the outputs:
 
 ```text
 Usage: ll-cli [options] update com.deepin.demo
