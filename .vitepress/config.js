@@ -146,8 +146,8 @@ module.exports = {
                         text: "语言",
                         ariaLabel: "Language Menu",
                         items: [
-                            { text: "简体中文", link: "/" },
-                            { text: "English", link: "/en/" },
+                            { text: "简体中文", link: "/guide/start/install.md" },
+                            { text: "English", link: "/en/guide/start/install.md" },
                         ],
                     },
                 ],
@@ -176,8 +176,8 @@ module.exports = {
                         text: "Languages",
                         ariaLabel: "Language Menu",
                         items: [
-                            { text: "简体中文", link: "/" },
-                            { text: "English", link: "/en/" },
+                            { text: "简体中文", link: "/guide/start/install.md" },
+                            { text: "English", link: "/en/guide/start/install.md" },
                         ],
                     },
                 ],
