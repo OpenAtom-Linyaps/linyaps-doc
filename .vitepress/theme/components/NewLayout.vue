@@ -29,7 +29,6 @@ const lay = computed(() => {
   if (route.path !== '/' && !route.path.startsWith('/en/index.html')) {
     _lay.isDefault = true
   }
-  console.log('lay:', lay)
   return _lay
 })
 
