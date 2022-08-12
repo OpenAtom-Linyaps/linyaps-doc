@@ -12,6 +12,24 @@
   max-width: 800px;
 }
 
+// --------2022-08-02--------
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  line-height: 1;
+}
 
 .full-container {
   position: relative;

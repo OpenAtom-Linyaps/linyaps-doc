@@ -4,9 +4,9 @@
     <div class="nav-bar u-flex u-items-center u-justify-between">
       <!-- 导航 -->
       <div class="nav u-flex u-item-center u-justify-start">
-        <a class="selected" href="/">Home</a>
+        <a class="selected" href="/" style="padding-left: 10px;">Home</a>
         <a href="http://10.0.33.45:28803/" target="_blank">Linglong Store</a>
-        <a href="javascript:void(0);" @click="jump('/guide/start/install.html')">User Manual</a>
+        <a href="/en/guide/start/install.html">User Manual</a>
         <i class="active"></i>
       </div>
       <!-- 语言切换 -->

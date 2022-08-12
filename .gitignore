@@ -1,5 +1,11 @@
-/yarn.lock
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+.idea
+pnpm-lock.yaml
+smartmontools.md
+zsh_history.md
+/*.md
 /package-lock.json
-/docs/.vitepress/dist/
-/node_modules
-/.idea
