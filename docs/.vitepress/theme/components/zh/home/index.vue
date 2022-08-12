@@ -9,7 +9,7 @@
           <div class="enter">
             <h1>玲珑，为兼容与安全而生</h1>
             <p class="describe">
-              玲珑是一种新型的独立管理工具集，致力于治理Linux系统下传统软件包格式复杂、交叉的依赖关系导致的各种兼容性问题，以及过于松散的权限管控导致的安全风险。
+              玲珑是一种新型的独立包管理工具集，致力于治理Linux系统下传统软件包格式复杂、交叉的依赖关系导致的各种兼容性问题，以及过于松散的权限管控导致的安全风险。
             </p>
             <div class="link-wrap">
               <div @click="jump('/guide/ll-builder/introduction.html')" class="link quick">10分钟快速构建</div>
