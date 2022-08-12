@@ -1,16 +1,34 @@
 {
-  "name": "linglong.space",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "docs:dev": "vitepress dev docs --host 0.0.0.0",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
-  },
-  "devDependencies": {
-    "sass": "^1.53.0",
-    "vitepress": "^1.0.0-alpha.4",
-    "vue": "^3.2.37"
-  }
+    "name": "xining.me",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "vitepress dev --host 0.0.0.0",
+        "build": "vitepress build",
+        "serve": "vitepress serve"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^17.0.23",
+        "@typescript-eslint/eslint-plugin": "^5.18.0",
+        "@typescript-eslint/parser": "^5.18.0",
+        "@typescript-eslint/types": "^5.18.0",
+        "@vue/compiler-sfc": "^3.2.33",
+        "eslint": "^8.12.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-vue": "^8.6.0",
+        "fs-extra": "^10.1.0",
+        "globby": "^11.1.0",
+        "gray-matter": "^4.0.3",
+        "prettier": "^2.6.2",
+        "typescript": "^4.6.3",
+        "vitepress": "v1.0.0-alpha.4"
+    },
+    "dependencies": {
+        "sass": "^1.54.4"
+    }
 }

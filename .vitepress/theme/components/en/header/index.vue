@@ -1,19 +1,19 @@
 <template>
-  <div class="nav-wrap u-flex u-items-center u-justify-between" :class="{ 'header-theme': scrollVal.headerTheme }">
+  <div class="nav-wrap u-flex u-items-center u-justify-between">
     <div class="logo"></div>
     <div class="nav-bar u-flex u-items-center u-justify-between">
       <!-- 导航 -->
       <div class="nav u-flex u-item-center u-justify-start">
-        <a class="selected" href="/">首页</a>
-        <a href="http://10.0.33.45:28803/" target="_blank">玲珑商店</a>
-        <a href="javascript:void(0);" @click="jump('/guide/start/install.html')">使用手册</a>
+        <a class="selected" href="/" style="padding-left: 10px;">Home</a>
+        <a href="http://10.0.33.45:28803/" target="_blank">Linglong Store</a>
+        <a href="/en/guide/start/install.html">User Manual</a>
         <i class="active"></i>
       </div>
       <!-- 语言切换 -->
       <div class="lang">
-        <span class="zh">中</span>
+        <span @click="switchLang('/')" class="zh">中</span>
         <i>/</i>
-        <span @click="switchLang('/en/index.html')" class="en">EN</span>
+        <span class="en">EN</span>
       </div>
     </div>
     <!-- 布局占位 -->
@@ -41,9 +41,6 @@ const listenScroll = () => {
   });
 }
 
-const jump = (url) => {
-  location.href = url
-}
 onMounted(() => {
   listenScroll()
 })
@@ -51,6 +48,9 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', () => { });
 })
+const jump = (url) => {
+  location.href = url
+}
 const switchLang = (url) => {
   location.href = url
 }
@@ -128,7 +128,7 @@ const switchLang = (url) => {
     font-size: 16px;
     font-weight: 400;
     .zh {
-      color: #025bff !important;
+      color: rgba($color: #ffffff, $alpha: 0.5);
       cursor: pointer;
       &:hover {
         color: #025bff;
@@ -140,7 +140,7 @@ const switchLang = (url) => {
       padding: 0px 8px;
     }
     .en {
-      color: rgba($color: #ffffff, $alpha: 0.5);
+      color: #025bff !important;
       cursor: pointer;
       &:hover {
         color: #025bff;

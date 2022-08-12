@@ -12,8 +12,8 @@
               Linglong is a new independent package management toolset, dedicated to solve various compatibility problems caused by complex package formats and cross dependencies under Linux, as well as to reducing the security risks caused by decentralized control of permissions.
             </p>
             <div class="link-wrap">
-              <div target="_blank" @click="jump('/en/guide/ll-builder/introduction.html')" class="link quick">Quick build in 10 mins</div>
-              <div target="_blank" @click="jump('/en/guide/ll-builder/manifests.html')" class="link plain ml-15">Runtime list</div>
+              <a href="/en/guide/ll-builder/introduction.html" class="link quick">Quick Built in 10 mins</a>
+              <a href="/en/guide/ll-builder/manifests.html" class="link plain ml-15">Runtime List</a>
               <a href="https://bbs.deepin.org/en" target="_blank" class="link plain ml-15">Discussions</a>
             </div>
           </div>
@@ -133,6 +133,9 @@
 </template>
 <script setup>
 import { ref } from "@vue/reactivity";
+import FullLayout from '../../layout/full.vue'
+import EnHeader from '../header/index.vue'
+import EnFooter from '../footer/index.vue'
 
 const apps = ref([
   { key: 1, icon: 'url(https://repo-dev.linglong.space/icon/com.deepin.gomoku.svg)', text: 'deepin-gomoku' },
@@ -242,6 +245,9 @@ const jump = (url) => {
     margin-top: 80px;
     .link {
       display: inline-block;
+      color: #ffffff;
+      outline: none;
+      text-decoration: none;
       border: 1px solid #c5c5c5;
       border-radius: 2px;
       padding: 9px 15px;
