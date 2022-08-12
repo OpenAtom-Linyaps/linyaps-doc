@@ -58,29 +58,29 @@
             <div class="card">
               <i class="f-icon f1"></i>
               <h3>启动速度快</h3>
-              <p>deepin 正式集成玲珑，提供美观便捷的图形化管理</p>
+              <p>deepin 正式集成玲珑，提供美观便捷的图形化管理。</p>
             </div>
             <div class="card">
               <i class="f-icon f2"></i>
               <h3>发行版已集成</h3>
-              <p>提供机制供发行版针对runtime进行深度优化，减小体积提升</p>
+              <p>提供机制供发行版针对runtime进行深度优化，减小体积提升。</p>
             </div>
             <div class="card">
               <i class="f-icon f3"></i>
               <h3>兼容性强</h3>
-              <p>独立的runtime使得应用与系统隔离，增强兼容性</p>
+              <p>独立的runtime使得应用与系统隔离，增强兼容性。</p>
             </div>
           </div>
           <div class="u-flex u-items-center u-justify-start" style="margin-top: 24px;">
             <div class="card">
               <i class="f-icon f4"></i>
               <h3>安全性高</h3>
-              <p>容器化技术与权限控制机制，提升安全性</p>
+              <p>容器化技术与权限控制机制，提升安全性。</p>
             </div>
             <div class="card" style="margin-left: 24px;">
               <i class="f-icon f5"></i>
               <h3>易于分发</h3>
-              <p>在线与离线分发均支持，无需安装即可运行</p>
+              <p>在线与离线分发均支持，无需安装即可运行。</p>
             </div>
           </div>
         </div>
