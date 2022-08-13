@@ -4,6 +4,8 @@ ADD . .
 RUN sed -i 's/http:\/\/10.0.33.45:28803/https:\/\/store.linglong.dev/g' .vitepress/config.js && \
     sed -i 's/http:\/\/10.0.33.45:28803/https:\/\/store.linglong.dev/g' guide/ll-builder/github.md && \
     sed -i 's/http:\/\/10.0.33.45:28803/https:\/\/store.linglong.dev/g' en/guide/ll-builder/github.md && \
+    sed -i 's/http:\/\/10.0.33.45:28803/https:\/\/store.linglong.dev/g' .vitepress/theme/components/zh/header/index.vue && \
+    sed -i 's/http:\/\/10.0.33.45:28803/https:\/\/store.linglong.dev/g' .vitepress/theme/components/en/header/index.vue && \
     sed -i 's/http:\/\/10.0.33.45:28803/https:\/\/store.linglong.dev/g' .vitepress/theme/components/zh/home/index.vue && \
     sed -i 's/http:\/\/10.0.33.45:28803/https:\/\/store.linglong.dev/g' .vitepress/theme/components/en/home/index.vue && \
     sed -i 's/https:\/\/repo-dev.linglong.space/https:\/\/mirror-repo-linglong.deepin.com/g' .vitepress/theme/components/zh/home/index.vue && \
