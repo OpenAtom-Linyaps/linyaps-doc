@@ -8,7 +8,7 @@ Use `uname -r` to check the kernel version.
 uname -r
 ```
 
-Output as below:
+Here is the outputs:
 
 ```text
 5.10.101-amd64-desktop
