@@ -7,7 +7,7 @@ RUN sed -i 's/http:\/\/10.0.33.45:28803/https:\/\/store.linglong.dev/g' .vitepre
     sed -i 's/http:\/\/10.0.33.45:28803/https:\/\/store.linglong.dev/g' .vitepress/theme/components/zh/home/index.vue && \
     sed -i 's/http:\/\/10.0.33.45:28803/https:\/\/store.linglong.dev/g' .vitepress/theme/components/en/home/index.vue && \
     sed -i 's/https:\/\/repo-dev.linglong.space/https:\/\/mirror-repo-linglong.deepin.com/g' .vitepress/theme/components/zh/home/index.vue && \
-    sed -i 's/http:\/\/10.0.33.45:28803/https:\/\/mirror-repo-linglong.deepin.com/g' .vitepress/theme/components/en/home/index.vue && \
+    sed -i 's/https:\/\/repo-dev.linglong.space/https:\/\/mirror-repo-linglong.deepin.com/g' .vitepress/theme/components/en/home/index.vue && \
     yarn --registry=http://registry-npm.sndu.cn/ install && yarn build
 
 FROM hub.deepin.com/library/nginx:latest
