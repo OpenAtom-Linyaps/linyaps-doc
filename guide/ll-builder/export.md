@@ -8,7 +8,7 @@
 ll-builder export --help
 ```
 
-ll-builder export 命令的帮助信息如下：
+`ll-builder export`命令的帮助信息如下：
 
 ```text
 Usage: ll-builder [options] export [filename]
