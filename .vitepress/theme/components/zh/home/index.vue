@@ -58,12 +58,12 @@
             <div class="card">
               <i class="f-icon f1"></i>
               <h3>启动速度快</h3>
-              <p>deepin 正式集成玲珑，提供美观便捷的图形化管理。</p>
+              <p>提供机制供发行版针对runtime进行深度优化，减小体积提升。</p>
             </div>
             <div class="card">
               <i class="f-icon f2"></i>
               <h3>发行版已集成</h3>
-              <p>提供机制供发行版针对runtime进行深度优化，减小体积提升。</p>
+              <p>deepin 正式集成玲珑，提供美观便捷的图形化管理。</p>
             </div>
             <div class="card">
               <i class="f-icon f3"></i>
