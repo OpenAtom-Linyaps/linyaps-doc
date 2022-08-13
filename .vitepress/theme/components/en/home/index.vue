@@ -9,7 +9,9 @@
           <div class="enter">
             <h1>Linglong is born for better compatibility and security.</h1>
             <p class="describe">
-              Linglong is a new independent package management toolset, dedicated to solve various compatibility problems caused by complex package formats and cross dependencies under Linux, as well as to reducing the security risks caused by decentralized control of permissions.
+              Linglong is a new independent package management toolset, dedicated to solve various compatibility
+              problems caused by complex package formats and cross dependencies under Linux, as well as to reducing the
+              security risks caused by decentralized control of permissions.
             </p>
             <div class="link-wrap">
               <a href="/en/guide/ll-builder/introduction.html" class="link quick">Quick build in 10 mins</a>
@@ -30,20 +32,25 @@
             <div class="to to-user">
               <h2>For Users</h2>
               <h3><i class="selected"></i>Stable</h3>
-              <p>Greatly reduce the issues such as app running failed after system updates, and system crashes after installing a new app.</p>
+              <p>Greatly reduce the issues such as app running failed after system updates, and system crashes after
+                installing a new app.</p>
               <h3><i class="selected"></i>Safe</h3>
-              <p>Prevent unauthorized apps from reading user data, so even if malicious apps are accidentally installed, your system cannot be invaded.</p>
+              <p>Prevent unauthorized apps from reading user data, so even if malicious apps are accidentally installed,
+                your system cannot be invaded.</p>
               <h3><i class="selected"></i>Easy to use</h3>
               <p>Double-click to run without installation, and simply delete the files to remove apps.</p>
             </div>
             <div class="to to-dev">
               <h2>For Developers</h2>
               <h3><i class="selected"></i>Independent</h3>
-              <p>Apps and systems are isolated from each other, so system changes have little effect on apps, and it is easier to support more distributions.</p>
+              <p>Apps and systems are isolated from each other, so system changes have little effect on apps, and it is
+                easier to support more distributions.</p>
               <h3><i class="selected"></i>Compatible</h3>
-              <p>Dependency conflict can be avoided and multiple versions can coexist, making app compatibility better.</p>
+              <p>Dependency conflict can be avoided and multiple versions can coexist, making app compatibility better.
+              </p>
               <h3><i class="selected"></i>Easy to distribute</h3>
-              <p>Both online distribution and offline distribution are supported. You can distribute Linglong apps in the ecosystem of Linux distributions or in your own channels.</p>
+              <p>Both online distribution and offline distribution are supported. You can distribute Linglong apps in
+                the ecosystem of Linux distributions or in your own channels.</p>
             </div>
           </div>
         </div>
@@ -57,13 +64,15 @@
           <div class="u-flex u-items-center u-justify-between">
             <div class="card">
               <i class="f-icon f1"></i>
-              <h3>Quick Start</h3>
-              <p>Mechanisms are offered for deep optimization of runtime in distributions, so as to reduce the size.</p>
+              <h3>System Intergrated</h3>
+              <p>Linglong has been integrated into deepin with a beautiful and convenient graphical user
+                interface.</p>
             </div>
             <div class="card">
               <i class="f-icon f2"></i>
-              <h3>System Intergrated</h3>
-              <p>Linglong has been integrated into deepin with a beautiful and convenient graphical user interface.</p>
+              <h3>Quick Start</h3>
+              <p>Mechanisms are offered for deep optimization of runtime in distributions, so as to reduce the
+                size.</p>
             </div>
             <div class="card">
               <i class="f-icon f3"></i>
