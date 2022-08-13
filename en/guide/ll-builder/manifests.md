@@ -85,6 +85,21 @@ depends:
 | version | Dependent version                                                                                    |
 | digest  | (not used yet, this field can be used to bind a unique version of the dependency)                    |
 
+ll-builder will pull dependencies from the remote repository to the local when the project is built. If the dependency does not exist in the remote repository or cannot meet the requirements, you can add source and build content, and ll-builder will build and apply this type of dependency first to the project build.
+
+```yaml
+depends: 
+  - id: icu
+    version: 63.1.0
+    source:
+      kind: git
+      url: "https://github.com/linuxdeepin/deepin-reader.git"
+      version: master
+      commit: 3c651bcc40748fc5d02d9134fcaee14fda44ab62
+    build:
+      kind: autotools
+```
+
 ### source
 
 Describe source information.

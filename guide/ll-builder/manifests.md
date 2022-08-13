@@ -81,9 +81,25 @@ depends:
 | name    | description                                                 |
 | ------- | ----------------------------------------------------------- |
 | id      | 依赖的唯一名称                                              |
-| type    | 依赖的类型，类型为 runtime 的依赖，将会和构建内容一起被提交 |
+| type    | 依赖的类型，类型为 runtime 的依赖，将会和构建内容一起被提交;未设置type时, 该依赖仅参与构建|
 | version | 依赖的版本                                                  |
 | digest  | （暂未使用，该字段可用来绑定唯一版本的依赖）                |
+
+ll-builder在项目构建时将从远程存储库拉取dpends下包含的依赖到本地。若远程存储库不存在该依赖或其无法满足要求, 
+可新增source与build内容, ll-builder将优先构建包含source与build类型的依赖并应用到项目构建中。
+
+```yaml
+depends: 
+  - id: icu
+    version: 63.1.0
+    source:
+      kind: git
+      url: "https://github.com/linuxdeepin/deepin-reader.git"
+      version: master
+      commit: 3c651bcc40748fc5d02d9134fcaee14fda44ab62
+    build:
+      kind: autotools
+```
 
 ### 源码
 
@@ -179,7 +195,7 @@ build:
 | conf_args  | 同build_dir                                                                               |
 | extra_args | 同build_dir                                                                               |
 | jobs       | 同build_dir                                                                               |
-| PREFIX     | 环境变量之一，可在variable、build字段下使用；提供构建时的安装路径。                       |
+| PREFIX     | 环境变量之一，可在variable、build字段下使用；提供构建时的安装路径                       |
 | TRIPLET    | 环境变量之一，可在variable、build字段下使用；提供包含架构信息的三元组，如x86_64-linux-gnu |
 
 ## 完整示例
