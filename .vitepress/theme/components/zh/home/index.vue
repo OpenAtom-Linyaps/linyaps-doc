@@ -13,7 +13,8 @@
             </p>
             <div class="link-wrap">
               <a href="/guide/ll-builder/introduction.html" class="link quick">10分钟快速构建</a>
-              <a href="/guide/ll-builder/manifests.html" class="link plain ml-15">Runtime清单</a>
+              <a href="/guide/ll-builder/manifests.html#runtime-20-5-0-%E5%8C%85%E5%90%AB%E4%BE%9D%E8%B5%96%E9%A1%B9"
+                class="link plain ml-15">Runtime清单</a>
               <a href="https://bbs.deepin.org" target="_blank" class="link plain ml-15">社区讨论</a>
             </div>
           </div>

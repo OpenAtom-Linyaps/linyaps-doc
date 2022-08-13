@@ -15,7 +15,8 @@
             </p>
             <div class="link-wrap">
               <a href="/en/guide/ll-builder/introduction.html" class="link quick">Quick build in 10 mins</a>
-              <a href="/en/guide/ll-builder/manifests.html" class="link plain ml-15">Runtime list</a>
+              <a href="/en/guide/ll-builder/manifests.html#runtime-20-5-0-includes-dependencies"
+                class="link plain ml-15">Runtime list</a>
               <a href="https://bbs.deepin.org/en" target="_blank" class="link plain ml-15">Discussions</a>
             </div>
           </div>
