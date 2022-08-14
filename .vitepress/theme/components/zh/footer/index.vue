@@ -6,7 +6,7 @@
         <h2>打造操作系统新生态</h2>
       </div>
       <div class="flex-none link" style="width: 150px;">
-        <h3>快速连接</h3>
+        <h3>快速链接</h3>
         <a href="https://www.uniontech.com" target="_blank">统信官网</a>
         <a href="https://www.chinauos.com" target="_blank">UOS生态社区</a>
       </div>
@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="copyright">
-      <span>Copyright © 2021 统信软件版权所有</span>
+      <span>Copyright © 2022 统信软件版权所有</span>
     </div>
   </div>
 </template>
