@@ -12,11 +12,8 @@
               玲珑是一种新型的独立包管理工具集，致力于治理Linux系统下传统软件包格式复杂、交叉的依赖关系导致的各种兼容性问题，以及过于松散的权限管控导致的安全风险。
             </p>
             <div class="link-wrap">
-              <a href="javascript:void(0);" @click="jump('/guide/ll-builder/introduction.html')"
-                class="link quick">10分钟快速构建</a>
-              <a href="javascript:void(0);"
-                @click="jump('/guide/ll-builder/manifests.html#runtime-20-5-0-%E5%8C%85%E5%90%AB%E4%BE%9D%E8%B5%96%E9%A1%B9')"
-                class="link plain ml-15">Runtime清单</a>
+              <a href="javascript:void(0);" @click="jump('/guide/ll-builder/introduction.html')" class="link quick">10分钟快速构建</a>
+              <a href="javascript:void(0);" @click="jump('/guide/ll-builder/manifests.html#runtime-20-5-0-%E5%8C%85%E5%90%AB%E4%BE%9D%E8%B5%96%E9%A1%B9')" class="link plain ml-15">Runtime清单</a>
               <a href="https://bbs.deepin.org" target="_blank" class="link plain ml-15">社区讨论</a>
             </div>
           </div>
@@ -252,7 +249,7 @@ const jump = (url) => {
       outline: none;
       text-decoration: none;
       border: 1px solid #c5c5c5;
-      border-radius: 2px;
+      border-radius: 8px;
       padding: 9px 15px;
       font-size: 16px;
       font-weight: 500;
@@ -285,7 +282,7 @@ const jump = (url) => {
     height: 415px;
     background-color: #f9f9f9;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 40px 20px;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -333,7 +330,7 @@ const jump = (url) => {
     width: 384px;
     height: 225px;
     background-color: #ffffff;
-    border-radius: 4px;
+    border-radius: 8px;
     .f-icon {
       display: block;
       width: 48px;
@@ -378,7 +375,7 @@ const jump = (url) => {
     overflow: hidden;
     list-style: none;
     padding: 0 !important;
-    border-radius: 4px;
+    border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
@@ -394,7 +391,7 @@ const jump = (url) => {
         height: 88px;
         padding: 16px;
         border: 1px solid #ececec;
-        border-radius: 4px;
+        border-radius: 8px;
         i {
           display: block;
           width: 56px;
@@ -438,11 +435,11 @@ const jump = (url) => {
     a {
       outline: none;
       text-decoration: none;
-      color: rgba(0, 50, 150, 0.5);
+      color: #003296;
       font-size: 16px;
       font-weight: 500;
       &:hover {
-        color: #003296;
+        color: rgba(0, 50, 150, 0.7);
       }
     }
   }
@@ -452,7 +449,7 @@ const jump = (url) => {
   background-color: #fafafc;
   .card {
     background: #ffffff;
-    border-radius: 4px;
+    border-radius: 8px;
     width: 280px;
     height: 280px;
     padding: 40px 15px;
@@ -485,10 +482,10 @@ const jump = (url) => {
       font-size: 16px;
       font-weight: 400;
       border: 1px solid rgba(0, 50, 150, 0.5);
-      border-radius: 2px;
-      color: rgba(0, 50, 150, 0.5);
+      border-radius: 8px;
+      color: #003296;
       &:hover {
-        color: #003296;
+        color: rgba(0, 50, 150, 0.7);
         border: 1px solid #003296;
       }
       .down {

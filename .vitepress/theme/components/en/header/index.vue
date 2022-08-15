@@ -4,10 +4,10 @@
     <div class="nav-bar u-flex u-items-center u-justify-between">
       <!-- 导航 -->
       <div class="nav u-flex u-item-center u-justify-start">
-        <a class="selected" href="/" style="padding-left: 10px">Home</a>
+        <a class="selected" href="/" style="padding-left: 10px;">Home</a>
         <a href="http://10.0.33.45:28803/" target="_blank">Linglong Store</a>
         <a href="javascript:void(0);" @click="jump('/en/guide/start/install.html')">User Manual</a>
-        <i class="active"></i>
+        <!-- <i class="active"></i> -->
       </div>
       <!-- 语言切换 -->
       <div class="lang">
@@ -17,7 +17,7 @@
       </div>
     </div>
     <!-- 布局占位 -->
-    <div style="width: 48px; height: 48px"></div>
+    <div style="width: 48px; height: 48px;"></div>
   </div>
 </template>
 <script setup>
@@ -46,7 +46,7 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
-  window.removeEventListener('scroll', () => {})
+  window.removeEventListener('scroll', () => { })
 })
 const jump = (url) => {
   location.href = url

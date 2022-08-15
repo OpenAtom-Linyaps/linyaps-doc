@@ -7,7 +7,7 @@
         <a class="selected" href="/">首页</a>
         <a href="http://10.0.33.45:28803/" target="_blank">玲珑商店</a>
         <a href="javascript:void(0);" @click="jump('/guide/start/install.html')">使用手册</a>
-        <i class="active"></i>
+        <!-- <i class="active"></i> -->
       </div>
       <!-- 语言切换 -->
       <div class="lang">
@@ -17,7 +17,7 @@
       </div>
     </div>
     <!-- 布局占位 -->
-    <div style="width: 48px; height: 48px"></div>
+    <div style="width: 48px; height: 48px;"></div>
   </div>
 </template>
 <script setup>
@@ -49,7 +49,7 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
-  window.removeEventListener('scroll', () => {})
+  window.removeEventListener('scroll', () => { })
 })
 const switchLang = (url) => {
   location.href = url

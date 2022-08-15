@@ -15,8 +15,7 @@
             </p>
             <div class="link-wrap">
               <a href="/en/guide/ll-builder/introduction.html" class="link quick">Quick build in 10 mins</a>
-              <a href="/en/guide/ll-builder/manifests.html#runtime-20-5-0-includes-dependencies"
-                class="link plain ml-15">Runtime list</a>
+              <a href="/en/guide/ll-builder/manifests.html#runtime-20-5-0-includes-dependencies" class="link plain ml-15">Runtime list</a>
               <a href="https://bbs.deepin.org/en" target="_blank" class="link plain ml-15">Discussions</a>
             </div>
           </div>
@@ -259,7 +258,7 @@ const jump = (url) => {
       outline: none;
       text-decoration: none;
       border: 1px solid #c5c5c5;
-      border-radius: 2px;
+      border-radius: 8px;
       padding: 9px 15px;
       font-size: 16px;
       font-weight: 500;
@@ -292,11 +291,11 @@ const jump = (url) => {
     height: 415px;
     background-color: #f9f9f9;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
     padding: 40px 20px;
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 290px 304px;
+    border-radius: 8px;
     h2 {
       font-size: 26px;
       font-weight: 500;
@@ -341,7 +340,7 @@ const jump = (url) => {
     width: 384px;
     height: 225px;
     background-color: #ffffff;
-    border-radius: 4px;
+    border-radius: 8px;
     .f-icon {
       display: block;
       width: 48px;
@@ -386,7 +385,7 @@ const jump = (url) => {
     overflow: hidden;
     list-style: none;
     padding: 0 !important;
-    border-radius: 4px;
+    border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
@@ -402,7 +401,7 @@ const jump = (url) => {
         height: 88px;
         padding: 16px;
         border: 1px solid #ececec;
-        border-radius: 4px;
+        border-radius: 8px;
         i {
           display: block;
           width: 56px;
@@ -446,11 +445,11 @@ const jump = (url) => {
     a {
       outline: none;
       text-decoration: none;
-      color: rgba(0, 50, 150, 0.5);
+      color: #003296;
       font-size: 16px;
       font-weight: 500;
       &:hover {
-        color: #003296;
+        color: rgba(0, 50, 150, 0.7);
       }
     }
   }
@@ -460,7 +459,7 @@ const jump = (url) => {
   background-color: #fafafc;
   .card {
     background: #ffffff;
-    border-radius: 4px;
+    border-radius: 8px;
     width: 280px;
     height: 280px;
     padding: 40px 15px;
@@ -493,11 +492,11 @@ const jump = (url) => {
       font-size: 16px;
       font-weight: 400;
       border: 1px solid rgba(0, 50, 150, 0.5);
-      border-radius: 2px;
-      color: rgba(0, 50, 150, 0.5);
+      border: 1px solid #003296;
+      border-radius: 8px;
       &:hover {
         color: #003296;
-        border: 1px solid #003296;
+        color: rgba(0, 50, 150, 0.7);
       }
       .down {
         display: inline-block;
