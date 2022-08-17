@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="玲珑-首页-菜单交互" transform="translate(-340.000000, -15.000000)">
+            <g id="编组-2" transform="translate(340.000000, 15.000000)">
+                <rect id="矩形" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="20" height="20"></rect>
+                <g id="关闭" transform="translate(2.000000, 2.000000)" fill="#C9C9C9" fill-rule="nonzero">
+                    <polygon id="路径" points="6.40022738 8 -2.56926119e-16 1.59977262 1.59977262 1.7128408e-16 8 6.40022738 14.4002274 6.42315846e-16 16 1.59977262 9.59864566 8 15.998873 14.4002274 14.3991004 16 8.00001657 9.59864566 1.59978919 16 1.6572957e-05 14.4002274 6.40024395 8"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

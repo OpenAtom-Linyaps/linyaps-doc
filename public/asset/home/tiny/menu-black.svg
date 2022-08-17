@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu备份</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="玲珑-首页-375" transform="translate(-340.000000, -15.000000)" fill-rule="nonzero">
+            <g id="menu备份" transform="translate(340.000000, 15.000000)">
+                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                <path d="M17.84,3 L2.16,3 C2.072,3 2,3.09 2,3.2 L2,4.8 C2,4.91 2.072,5 2.16,5 L17.84,5 C17.928,5 18,4.91 18,4.8 L18,3.2 C18,3.09 17.928,3 17.84,3 Z M17.84,15 L2.16,15 C2.072,15 2,15.09 2,15.2 L2,16.8 C2,16.91 2.072,17 2.16,17 L17.84,17 C17.928,17 18,16.91 18,16.8 L18,15.2 C18,15.09 17.928,15 17.84,15 Z M17.84,9 L2.16,9 C2.072,9 2,9.09 2,9.2 L2,10.8 C2,10.91 2.072,11 2.16,11 L17.84,11 C17.928,11 18,10.91 18,10.8 L18,9.2 C18,9.09 17.928,9 17.84,9 Z" id="形状" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

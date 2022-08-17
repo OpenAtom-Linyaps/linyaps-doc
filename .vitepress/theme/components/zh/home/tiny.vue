@@ -1,11 +1,13 @@
 <template>
-  <FullLayout class="full-layout">
+  <TinyLayout class="tiny-layout">
     <template #header>
-      <Header />
+      <div>
+        <TinyHeader :expand="expand" @change="tinyHeaderChange" />
+      </div>
     </template>
     <template #content>
-      <div class="banner u-flex u-items-center u-justify-center">
-        <div class="w-center u-flex u-items-center u-justify-between">
+      <div class="banner">
+        <div class="w-center">
           <div class="enter">
             <h1>玲珑，为兼容与安全而生</h1>
             <p class="describe">
@@ -17,17 +19,16 @@
               <a href="https://bbs.deepin.org" target="_blank" class="link plain ml-15">社区讨论</a>
             </div>
           </div>
-          <div class="shield"></div>
         </div>
       </div>
       <!-- block1 (玲珑意味着什么？) -->
       <div class="mean-block ">
         <div class="w-center block">
-          <div class="title" style="width: 320px;">
+          <div class="title">
             <span>玲珑意味着什么？</span>
           </div>
-          <div class="u-flex u-items-center u-justify-between">
-            <div class="to to-user">
+          <div>
+            <div class="to w-center to-user">
               <h2>对用户来说</h2>
               <h3><i class="selected"></i>更稳定</h3>
               <p>大大减少了系统升级应用起不来，体验了一款新的应用导致系统损坏等情况。</p>
@@ -36,7 +37,7 @@
               <h3><i class="selected"></i>更易用</h3>
               <p>无需安装双击即可运行，删除文件即可卸载应用。</p>
             </div>
-            <div class="to to-dev">
+            <div class="to w-center to-dev">
               <h2>对开发者来说</h2>
               <h3><i class="selected"></i>更独立</h3>
               <p>应用与系统相互隔离，无需过多关注系统环境变化，支持多发行版内容也变得容易。</p>
@@ -51,10 +52,10 @@
       <!-- block2 (玲珑的五大特性) -->
       <div class="feature-block">
         <div class="w-center block">
-          <div class="title" style="width: 320px;">
+          <div class="title">
             <span>玲珑的五大特性</span>
           </div>
-          <div class="u-flex u-items-center u-justify-between">
+          <div class="w-center" style="padding: 0px 15px;">
             <div class="card">
               <i class="f-icon f1"></i>
               <h3>发行版已集成</h3>
@@ -70,14 +71,12 @@
               <h3>兼容性强</h3>
               <p>独立的runtime使得应用与系统隔离，增强兼容性。</p>
             </div>
-          </div>
-          <div class="u-flex u-items-center u-justify-start" style="margin-top: 24px;">
             <div class="card">
               <i class="f-icon f4"></i>
               <h3>安全性高</h3>
               <p>容器化技术与权限控制机制，提升安全性。</p>
             </div>
-            <div class="card" style="margin-left: 24px;">
+            <div class="card">
               <i class="f-icon f5"></i>
               <h3>易于分发</h3>
               <p>在线与离线分发均支持，无需安装即可运行。</p>
@@ -88,7 +87,7 @@
       <!-- block3 (玲珑不断丰富的生态) -->
       <div class="app-block">
         <div class="w-center block">
-          <div class="title" style="width: 360px;">
+          <div class="title">
             <span>玲珑不断丰富的生态</span>
           </div>
           <div class="u-flex u-items-center u-justify-center">
@@ -113,32 +112,32 @@
             <span>体验离线bundle格式</span>
             <p class="sub">可在Deepin、Ubuntu和Debian上体验离线bundle格式，无需安装即可运行，更多发行版持续支持中…</p>
           </div>
-          <div class="u-flex u-items-center u-justify-between">
-            <div class="card" v-for="bundle of bundles" :key="bundle.appId">
-              <i class="app" :style="{backgroundImage:bundle.icon}"></i>
-              <div class="app-name u-truncate">{{bundle.name}}</div>
-              <a :href="bundle.downloadUrl">
-                <i class="down"></i>
-                下载体验
-              </a>
-            </div>
+          <div class="card" v-for="bundle of bundles" :key="bundle.appId">
+            <i class="app" :style="{backgroundImage:bundle.icon}"></i>
+            <div class="app-name u-truncate">{{bundle.name}}</div>
+            <a :href="bundle.downloadUrl">
+              <i class="down"></i>
+              下载体验
+            </a>
           </div>
         </div>
       </div>
     </template>
     <template #footer>
-      <Footer />
+      <TinyFooter />
     </template>
-  </FullLayout>
-  <TinyLayout class="tiny-layout" />
+  </TinyLayout>
+  <div v-if="expand" @click="hideMask" class="mask"></div>
 </template>
 <script setup>
 import FullLayout from '../../layout/full.vue'
+import TinyLayout from '../../layout/tiny.vue'
 import Header from '../header/index.vue'
+import TinyHeader from '../header/tiny-header.vue'
 import Footer from '../footer/index.vue'
-import TinyLayout from './tiny.vue'
+import TinyFooter from '../footer/tiny-footer.vue'
 
-import { ref } from "@vue/reactivity";
+import { ref } from "@vue/reactivity"
 
 const apps = ref([
   { key: 1, icon: 'url(https://repo-dev.linglong.space/icon/com.deepin.gomoku.svg)', text: '五子棋' },
@@ -155,7 +154,7 @@ const apps = ref([
   { key: 12, icon: 'url(https://repo-dev.linglong.space/icon/deepin-image-viewer.svg)', text: '看图' },
   { key: 13, icon: 'url(https://repo-dev.linglong.space/icon/deepin-camera.svg)', text: '相机' },
   { key: 14, icon: 'url(https://repo-dev.linglong.space/icon/deepin-music.svg)', text: '音乐' },
-  { key: 15, icon: 'url(https://repo-dev.linglong.space/icon/deepin-movie.svg)', text: '影院' }
+  // { key: 15, icon: 'url(https://repo-dev.linglong.space/icon/deepin-movie.svg)', text: '影院' }
 ])
 const bundles = [{
   appId: "com.163.music",
@@ -191,131 +190,121 @@ const bundles = [{
   version: "1.0.0.2",
   downloadUrl: "https://repo-dev.linglong.space/bundle/com.xunlei.download_1.0.0.2_x86_64.uab"
 }]
+
+const expand = ref(false)
+const tinyHeaderChange = (isExpand) => {
+  expand.value = isExpand
+}
+const hideMask = () => {
+  expand.value = false
+}
 const jump = (url) => {
   location.href = url
 }
 </script>
 
 <style lang="scss" scoped>
-@media screen and (max-width: 1200px) {
-  .full-layout {
-    display: none;
-  }
-  .tiny-layout {
-    display: block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .full-layout {
-    display: block;
-  }
-  .tiny-layout {
-    display: none;
-  }
-}
 .w-center {
-  width: 1200px;
   margin: auto;
 }
 .block {
-  padding: 80px 0px;
+  padding: 40px 0px;
   .title {
     margin: auto;
     line-height: 1;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 500;
-    color: #000000;
-    margin-bottom: 60px;
+    color: #0a1943;
+    margin-bottom: 24px;
     text-align: center;
     .sub {
       margin-top: 24px;
       font-size: 14px;
       font-weight: 400;
+      padding: 0px 24px;
       color: rgba(0, 0, 0, 0.65);
-      line-height: 1.5;
     }
   }
 }
 .banner {
   width: 100%;
-  height: 640px;
-  background: #025bff url(/asset/home/banner.png) no-repeat 50% / cover;
+  height: 468px;
+  padding: 30px;
+  background-image: url(/asset/home/tiny/banner.png);
+  background-size: cover;
+  background-color: #0e1016;
+  background-repeat: no-repeat;
+  background-position: bottom;
   .enter {
     color: #ffffff;
-    width: 476px;
+    margin-top: 45px;
     h1 {
-      font-size: 42px;
+      text-align: center;
+      font-size: 24px;
       font-weight: 500;
       margin-bottom: 24px;
     }
     .describe {
-      width: 458px;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 400;
       line-height: 26px;
     }
   }
-  .shield {
-    width: 480px;
-    height: 500px;
-    // background: transparent url(/asset/home/shield.png) no-repeat 100% / cover;
-  }
+
   .link-wrap {
-    margin-top: 80px;
+    text-align: center;
+    margin-top: 30px;
     .link {
       display: inline-block;
-      color: #ffffff;
+      color: #3266fb;
       outline: none;
       text-decoration: none;
-      border: 1px solid #c5c5c5;
       border-radius: 8px;
-      padding: 9px 15px;
-      font-size: 16px;
+      padding: 5px 12px;
+      font-size: 12px;
       font-weight: 500;
       text-align: center;
       cursor: pointer;
     }
     .quick {
       background-color: #025bff;
-      border: 1px solid #025bff;
+      color: #ffffff;
       &:hover {
         background-color: #3179ff;
       }
     }
     .plain {
+      background-color: #ffffff;
       &:hover {
-        color: #000000;
-        background-color: #ffffff;
+        color: #0a1943;
       }
     }
     .ml-15 {
-      margin-left: 15px;
+      margin-left: 12px;
     }
   }
 }
 .mean-block {
-  height: 676px;
+  padding: 0px 15px;
   background-color: #ffffff;
   .to {
-    width: 588px;
-    height: 415px;
     background-color: #f9f9f9;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 40px 20px;
+    padding: 24px 20px;
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 290px 304px;
     h2 {
-      font-size: 26px;
+      font-size: 18px;
       font-weight: 500;
-      color: #000000;
-      margin-bottom: 40px;
+      color: #0a1943;
+      margin-bottom: 24px;
     }
     h3 {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 500;
-      color: #000000;
+      color: #0a1943;
       margin-top: 30px;
       margin-bottom: 15px;
       .selected {
@@ -338,18 +327,21 @@ const jump = (url) => {
     background-image: url(/asset/home/user-bg.png);
   }
   .to-dev {
+    margin-top: 24px;
     background-image: url(/asset/home/dev-bg.png);
   }
 }
 .feature-block {
-  height: 752px;
-  background: #eef1f7 url(/asset/home/feature-bg.png) no-repeat 100% / cover;
+  background: #eef1f7 url(/asset/home/tiny/feature-bg.png) no-repeat 100% / cover;
   .card {
     padding: 30px;
-    width: 384px;
-    height: 225px;
+    height: 180px;
     background-color: #ffffff;
+    margin-bottom: 15px;
     border-radius: 8px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
     .f-icon {
       display: block;
       width: 48px;
@@ -374,10 +366,10 @@ const jump = (url) => {
       background-image: url(/asset/home/f5.png);
     }
     h3 {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 500;
       line-height: 1;
-      color: #000000;
+      color: #0a1943;
       margin: 24px 0px 8px;
     }
     p {
@@ -388,33 +380,31 @@ const jump = (url) => {
   }
 }
 .app-block {
-  height: 638px;
   background-color: #ffffff;
   .app-list {
     overflow: hidden;
     list-style: none;
-    padding: 0 !important;
+    padding: 0px 15px !important;
     border-radius: 8px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
     li {
       position: relative;
       text-align: center;
       color: #606266;
-      height: 112px;
+      height: 72px;
       font-size: 16px;
       transition: background-color 0.3s;
       .card {
-        width: 220px;
-        height: 88px;
+        height: 60px;
         padding: 16px;
         border: 1px solid #ececec;
         border-radius: 8px;
         i {
           display: block;
-          width: 56px;
-          height: 56px;
+          width: 40px;
+          height: 40px;
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
@@ -425,25 +415,14 @@ const jump = (url) => {
           margin-left: 8px;
         }
       }
-      &:nth-child(5n + 2) {
+      &:nth-child(2n + 1) {
         .card {
-          margin-left: 5px;
+          margin-right: 6px;
         }
       }
-      &:nth-child(5n + 3) {
+      &:nth-child(2n + 2) {
         .card {
-          margin-left: 10px;
-        }
-      }
-      &:nth-child(5n + 4) {
-        .card {
-          margin-left: 15px;
-        }
-      }
-      &:nth-child(5n) {
-        .card {
-          margin-left: auto;
-          text-align: right;
+          margin-left: 6px;
         }
       }
     }
@@ -464,15 +443,17 @@ const jump = (url) => {
   }
 }
 .bundle-block {
-  height: 580px;
+  padding: 0px 15px;
   background-color: #fafafc;
   .card {
-    background: #ffffff;
+    background-color: #ffffff;
     border-radius: 8px;
-    width: 280px;
-    height: 280px;
-    padding: 40px 15px;
+    padding: 24px 20px 32px;
     text-align: center;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
     &:hover {
       box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
     }
@@ -486,17 +467,16 @@ const jump = (url) => {
       background-size: contain;
     }
     .app-name {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 500;
       color: #0a1943;
-      margin-top: 24px;
-      margin-bottom: 45px;
+      margin-top: 16px;
+      margin-bottom: 32px;
     }
     a {
       display: block;
-      width: 120px;
-      height: 40px;
-      line-height: 40px;
+      padding: 7px 18px;
+      width: 125px;
       margin: auto;
       font-size: 16px;
       font-weight: 400;
@@ -520,5 +500,13 @@ const jump = (url) => {
       }
     }
   }
+}
+.mask {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: calc(100vh - 183px);
+  background-color: rgba($color: #333, $alpha: 0.5) !important;
 }
 </style>

@@ -493,9 +493,9 @@ const jump = (url) => {
       font-weight: 400;
       border: 1px solid rgba(0, 50, 150, 0.5);
       border: 1px solid #003296;
+      color: #003296;
       border-radius: 8px;
       &:hover {
-        color: #003296;
         color: rgba(0, 50, 150, 0.7);
       }
       .down {

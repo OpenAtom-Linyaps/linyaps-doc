@@ -1,19 +1,20 @@
 <template>
   <div class="footer-container">
-    <div class="block u-flex">
-      <div class="flex-none logo-panel">
-        <div class="logo"></div>
-        <h2>打造操作系统新生态</h2>
-      </div>
-      <div class="flex-none link" style="width: 150px;">
+    <div class="block">
+      <div class="logo"></div>
+      <div class="link">
         <h3>快速链接</h3>
-        <a href="https://www.uniontech.com" target="_blank">统信官网</a>
-        <a href="https://www.chinauos.com" target="_blank">UOS生态社区</a>
+        <div class="u-flex u-justify-start u-items-center">
+          <a href="https://www.uniontech.com" target="_blank">统信官网</a>
+          <a href="https://www.chinauos.com" style="margin-left: 42px;" target="_blank">UOS生态社区</a>
+        </div>
       </div>
-      <div class="flex-none link" style="width: 150px;">
+      <div class="link">
         <h3>关于我们</h3>
-        <a href="https://www.uniontech.com/about" target="_blank">公司介绍</a>
-        <a href="https://www.uniontech.com/partners" target="_blank">合作伙伴</a>
+        <div class="u-flex u-justify-start u-items-center">
+          <a href="https://www.uniontech.com/about" target="_blank">公司介绍</a>
+          <a href="https://www.uniontech.com/partners" style="margin-left: 42px;" target="_blank">合作伙伴</a>
+        </div>
       </div>
       <div class="flex-grow link">
         <h3>联系我们</h3>
@@ -21,13 +22,15 @@
         <span>适配：operation@uniontech.com</span>
         <span>联系电话：400-8588-488（周一至周五 9:00-18:00）</span>
       </div>
-      <div class="flex-none offical" style="width: 150px;">
-        <h3>关注微信公众号</h3>
-        <div class="qcode account"></div>
-      </div>
-      <div class="flex-none offical">
-        <h3>技术服务</h3>
-        <div class="qcode service"></div>
+      <div class="offical u-flex u-justify-start u-items-center">
+        <div>
+          <div class="qcode account"></div>
+          <h3 style="margin-left: -2px;">关注微信公众号</h3>
+        </div>
+        <div>
+          <div class="qcode service"></div>
+          <h3 style="margin-left: 22px;">技术服务</h3>
+        </div>
       </div>
     </div>
     <div class="copyright">
@@ -40,34 +43,23 @@
 .footer-container {
   background-color: #061d3a;
   .block {
-    margin: auto;
-    width: 1200px;
-    padding: 72px 0px 64px;
+    padding: 20px 15px;
   }
-  .logo-panel {
-    width: 220px;
-    .logo {
-      width: 123px;
-      height: 30px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(https://cdn-nu-common.uniontech.com/logo/distribution/Plymouth-white.png);
-      margin-left: 10px;
-    }
-    h2 {
-      font-size: 16px;
-      font-weight: 500;
-      color: #ffffff;
-      margin-top: 30px;
-    }
+  .logo {
+    width: 123px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://cdn-nu-common.uniontech.com/logo/distribution/Plymouth-white.png);
   }
   .link {
+    margin-top: 40px;
+    margin-bottom: 15px;
     h3 {
       font-size: 16px;
       font-weight: 400;
       color: rgba(255, 255, 255, 0.85);
-      margin-bottom: 30px;
     }
     a {
       display: block;
@@ -85,11 +77,11 @@
     }
   }
   .offical {
+    margin-top: 40px;
     h3 {
       font-size: 16px;
       font-weight: 400;
       color: rgba(255, 255, 255, 0.85);
-      margin-bottom: 30px;
     }
     .qcode {
       width: 108px;
@@ -97,6 +89,8 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      margin-right: 15px;
+      margin-bottom: 5px;
     }
     .account {
       background-image: url(https://cdn-nu-common.uniontech.com/logo/code/uniontech.jpg);
@@ -107,11 +101,9 @@
   }
 
   .copyright {
-    border-top: 1px solid #666666;
     margin: auto;
-    width: 1200px;
     padding: 28px 0px;
-    text-align: right;
+    text-align: center;
     font-size: 14px;
     font-weight: 400;
     color: #d8d8d8;
