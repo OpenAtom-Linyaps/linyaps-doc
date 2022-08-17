@@ -25,7 +25,7 @@ Kernel version requirement >=4.19.
 Use apt to install the Linglong environment.
 
 ```bash
-sudo apt install linglong-builder \ 
+sudo apt install linglong-builder \
                  linglong-box \
                  linglong-dbus-proxy \
                  linglong-bin \

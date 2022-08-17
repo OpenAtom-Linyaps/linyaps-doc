@@ -25,7 +25,7 @@ uname -r
 使用 apt 安装玲珑环境：
 
 ```bash
-sudo apt install linglong-builder \ 
+sudo apt install linglong-builder \
                  linglong-box \
                  linglong-dbus-proxy \
                  linglong-bin \
