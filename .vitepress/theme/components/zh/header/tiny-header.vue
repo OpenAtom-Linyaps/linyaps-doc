@@ -7,7 +7,7 @@
         <div v-if="!expand" class="lang">
           <span @click="switchLang('/')" class="zh">中</span>
           <i>/</i>
-          <span class="en">EN</span>
+          <span @click="switchLang('/en/index.html')" class="en">EN</span>
         </div>
         <div v-if="!expand" @click="emits('change',true)" class="expand">
           <svg width="16" height="16" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">

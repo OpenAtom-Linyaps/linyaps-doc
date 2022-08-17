@@ -1,5 +1,5 @@
 <template>
-  <FullLayout>
+  <FullLayout class="full-layout">
     <template #header>
       <EnHeader />
     </template>
@@ -139,12 +139,14 @@
       <EnFooter />
     </template>
   </FullLayout>
+  <TinyLayout class="tiny-layout" />
 </template>
 <script setup>
 import { ref } from "@vue/reactivity";
 import FullLayout from '../../layout/full.vue'
 import EnHeader from '../header/index.vue'
 import EnFooter from '../footer/index.vue'
+import TinyLayout from './tiny.vue'
 
 const apps = ref([
   { key: 1, icon: 'url(https://repo-dev.linglong.space/icon/com.deepin.gomoku.svg)', text: 'deepin-gomoku' },
@@ -203,6 +205,14 @@ const jump = (url) => {
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 1200px) {
+  .full-layout {
+    display: none;
+  }
+  .tiny-layout {
+    display: block;
+  }
+}
 .w-center {
   width: 1200px;
   margin: auto;

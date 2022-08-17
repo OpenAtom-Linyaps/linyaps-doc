@@ -19,7 +19,7 @@
         <h3>Contact Us</h3>
         <span>Cooperation: cooperation@uniontech.com</span>
         <span>Adaption: operation@uniontech.com</span>
-        <span>(Monday to Friday 9:00-18:00)</span>
+        <span>400-8588-488 (Monday to Friday 9:00-18:00)</span>
       </div>
       <div class="flex-none offical" style="width: 190px;">
         <h3>Follow Us on WeChat</h3>

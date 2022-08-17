@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-wrap u-flex u-items-center u-justify-between">
+  <div class="nav-wrap u-flex u-items-center u-justify-between" :class="{ 'header-theme': scrollVal.headerTheme }">
     <div class="logo"></div>
     <div class="nav-bar u-flex u-items-center u-justify-between">
       <!-- 导航 -->
