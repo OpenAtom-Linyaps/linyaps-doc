@@ -276,7 +276,7 @@ const jump = (url) => {
       outline: none;
       text-decoration: none;
       border-radius: 8px;
-      padding: 5px 12px;
+      padding: 2px 5px;
       font-size: 12px;
       font-weight: 500;
       text-align: center;
@@ -296,7 +296,7 @@ const jump = (url) => {
       }
     }
     .ml-15 {
-      margin-left: 12px;
+      margin-left: 8px;
     }
   }
 }
@@ -351,7 +351,6 @@ const jump = (url) => {
   background: #eef1f7 url(/asset/home/tiny/feature-bg.png) no-repeat 100% / cover;
   .card {
     padding: 30px;
-    height: 180px;
     background-color: #ffffff;
     margin-bottom: 15px;
     border-radius: 8px;
