@@ -46,6 +46,14 @@ deepin v23 已预装玲珑环境。
 
 [点击下载ubuntu 22.04(jammy)玲珑deb包](https://github.com/linuxdeepin/linglong-hub/releases/download/1.3.3/ubuntu_jammy.tar.gz)
 
+### 更新仓库源
+
+根据系统将对应的清华仓库源添加到源配置文件中。
+
+* [debian 添加清华仓库源教程](https://mirrors.tuna.tsinghua.edu.cn/help/debian/)
+
+* [ubuntu 添加清华仓库源教程](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+
 ### deb包安装
 
 debian 11 安装示例如下：

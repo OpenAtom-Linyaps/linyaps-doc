@@ -46,6 +46,14 @@ Deepin 23 has preinstalled the the Linglong environment.
 
 [Click Here to download ubuntu 22.04 (jammy) Linglong deb package](https://github.com/linuxdeepin/linglong-hub/blob/master/linglong-deb/ubuntu/ubuntu_jammy.tar.gz)
 
+### Update repository source
+
+Add the corresponding Tsinghua warehouse source to the source configuration file according to the system.
+
+* [Debian adds Tsinghua warehouse source tutorial](https://mirrors.tuna.tsinghua.edu.cn/help/debian/)
+
+* [Ubuntu add Tsinghua warehouse source tutorial](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+
 ### Deb install
 
 The debian 11 installation is as follows:
