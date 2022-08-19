@@ -48,7 +48,7 @@ Deepin 23 has preinstalled the the Linglong environment.
 
 ### Update repository source
 
-Add the corresponding Tsinghua warehouse source to the source configuration file according to the system.
+Add the corresponding Tsinghua warehouse source to the source configuration file according to the system version.
 
 * [Debian adds Tsinghua warehouse source tutorial](https://mirrors.tuna.tsinghua.edu.cn/help/debian/)
 

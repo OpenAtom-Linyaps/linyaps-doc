@@ -106,7 +106,7 @@ module.exports = {
                         { text: "Manifests", link: "/en/guide/ll-builder/manifests.md" },
                         // { text: "Push Uab To Remote Repository", link: "/en/guide/ll-builder/push.md" },
                         // { text: "Local demo", link: "/en/guide/ll-builder/demo.md" },
-                        { text: "App to store", link: "/en/guide/ll-builder/github.md" }
+                        { text: "App To Store", link: "/en/guide/ll-builder/github.md" }
                     ],
                     // TODO：add builder doc to here
                 },

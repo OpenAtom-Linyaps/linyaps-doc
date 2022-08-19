@@ -48,7 +48,7 @@ deepin v23 已预装玲珑环境。
 
 ### 更新仓库源
 
-根据系统将对应的清华仓库源添加到源配置文件中。
+根据系统版本将对应的清华仓库源添加到源配置文件中。
 
 * [debian 添加清华仓库源教程](https://mirrors.tuna.tsinghua.edu.cn/help/debian/)
 
