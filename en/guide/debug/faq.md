@@ -67,3 +67,7 @@
 17. Why does the execution of binary with `suid` and `guid` permissions fail?
 
     In order to ensure system security, Linglong container prohibits the execution of such permission binaries in the container.
+
+18. The input method of uab offline package format cannot be used under debian and ubuntu?
+
+    It is recommended to install the `fictx` input method to experience it.
