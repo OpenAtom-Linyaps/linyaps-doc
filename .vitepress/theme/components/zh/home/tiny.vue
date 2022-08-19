@@ -231,6 +231,7 @@ const jump = (url) => {
       font-weight: 400;
       padding: 0px 24px;
       color: rgba(0, 0, 0, 0.65);
+      line-height: 1.5;
     }
   }
 }

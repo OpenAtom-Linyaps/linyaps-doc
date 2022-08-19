@@ -238,7 +238,7 @@ const jump = (url) => {
 .banner {
   width: 100%;
   height: 640px;
-  background: #025bff url(/asset/home/banner.png) no-repeat 50% / cover;
+  background: #025bff url(/asset/home/banner.jpg) no-repeat 50% / cover;
   .enter {
     color: #ffffff;
     width: 476px;
@@ -344,7 +344,7 @@ const jump = (url) => {
 }
 .feature-block {
   height: 752px;
-  background: #eef1f7 url(/asset/home/feature-bg.png) no-repeat 100% / cover;
+  background: #eef1f7 url(/asset/home/feature-bg.jpg) no-repeat 100% / cover;
   .card {
     padding: 30px;
     width: 384px;

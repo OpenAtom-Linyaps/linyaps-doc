@@ -96,7 +96,7 @@
       <div class="app-block">
         <div class="w-center block">
           <div class="title">
-            <span>玲珑不断丰富的生态</span>
+            <span>Enriching Ecosystem</span>
           </div>
           <div class="u-flex u-items-center u-justify-center">
             <ul class="app-list">
@@ -239,6 +239,7 @@ const jump = (url) => {
       font-weight: 400;
       padding: 0px 24px;
       color: rgba(0, 0, 0, 0.65);
+      line-height: 1.5;
     }
   }
 }
