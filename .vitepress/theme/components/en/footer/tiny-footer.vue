@@ -46,7 +46,7 @@
     padding: 20px 15px;
   }
   .logo {
-    width: 123px;
+    width: 115px;
     height: 30px;
     background-position: center;
     background-repeat: no-repeat;
