@@ -40,11 +40,11 @@ Deepin 23 has preinstalled the the Linglong environment.
 
 ### debian 11(bullseye)
 
-[Click Here to download debian 11 (bullseye) Linglong deb package](https://github.com/linuxdeepin/linglong-hub/blob/master/linglong-deb/debian/debian_bullseye.tar.gz)
+[Click Here to download debian 11 (bullseye) Linglong deb package](https://github.com/linuxdeepin/linglong-hub/releases/download/1.3.3/debian_bullseye.tar.gz)
 
 ### ubuntu 22.04(jammy)
 
-[Click Here to download ubuntu 22.04 (jammy) Linglong deb package](https://github.com/linuxdeepin/linglong-hub/blob/master/linglong-deb/ubuntu/ubuntu_jammy.tar.gz)
+[Click Here to download ubuntu 22.04 (jammy) Linglong deb package](https://github.com/linuxdeepin/linglong-hub/releases/download/1.3.3/ubuntu_jammy.tar.gz)
 
 ### Update repository source
 
