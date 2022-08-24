@@ -306,7 +306,7 @@ const jump = (url) => {
   background-color: #ffffff;
   .to {
     background-color: #f9f9f9;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     padding: 24px 20px;
     background-repeat: no-repeat;
