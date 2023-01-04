@@ -2,13 +2,13 @@
 
 Use `ll-builder create` to create a Linglong project.
 
-View the help information information of `ll-builder create` command:
+View the help information for the `ll-builder create` command:
 
 ```bash
 ll-builder create --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-builder [options] create <org.deepin.demo>
@@ -23,13 +23,13 @@ Arguments:
   name project name
 ```
 
-The `ll-builder create` command create a folder in the current directory according to the project name, and generates the `linglong.yaml` template file required for the build. Here is an example:
+The `ll-builder create` command creates a folder in the current directory according to the project name, and generates the `linglong.yaml` template file required for the build. Here is an example:
 
 ```bash
 ll-builder create <org.deepin.demo>
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 org.deepin.demo/
@@ -38,7 +38,7 @@ org.deepin.demo/
 
 ## Edit linglong.yaml
 
-### App meta infos
+### App meta info
 
 ```yaml
 package:
@@ -87,7 +87,7 @@ build:
   kind: qmake
 ```
 
-### completed `linglong.yaml` config
+### Completed `linglong.yaml` config
 
 The contents of the `linglong.yaml` file are as follows:
 

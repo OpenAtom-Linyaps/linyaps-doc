@@ -1,14 +1,14 @@
 # Push UAB to Remote Repositories
 
-Use `ll-builder push` command to push Linglong packages to Linglong remote repositories.
+Use the `ll-builder push` command to push Linglong packages to Linglong remote repositories.
 
-View the help information of `ll-builder push` commands:
+View the help information for the `ll-builder push` command:
 
 ```bash
 ll-builder push --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-builder [options] push <filePath>

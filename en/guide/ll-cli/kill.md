@@ -2,13 +2,13 @@
 
 Use `ll-cli kill` to force quit running Linglong apps.
 
-View the help information of `ll-cli kill` command:
+View the help information for the `ll-cli kill` command:
 
 ```bash
 ll-cli kill --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-cli [options] kill container-id
@@ -22,13 +22,13 @@ Arguments:
   container-id      container id
 ```
 
-Example of Use `ll-cli kill` to force quit running Linglong app:
+Example of the `ll-cli kill` command to force quit running Linglong apps:
 
 ```bash
 ll-cli kill <9c41c0af2bad4617aea8485f5aaeb93a>
 ```
 
-Here is its output:
+Here is the output:
 
 ```text
 kill app:org.deepin.calculator/5.7.21.4/x86_64 success

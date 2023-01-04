@@ -2,13 +2,13 @@
 
 ## Kernel version requirement
 
-Use `uname -r` to check the kernel version.
+Use `uname -r` to check the kernel version:
 
 ```bash
 uname -r
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 5.10.101-amd64-desktop
@@ -22,7 +22,7 @@ Kernel version requirement >=4.19.
 
 ### deepin 20
 
-Use apt to install the Linglong environment.
+Use `apt` to install the Linglong environment.
 
 ```bash
 sudo apt install linglong-builder \
@@ -34,29 +34,29 @@ sudo apt install linglong-builder \
 
 ### deepin 23
 
-Deepin 23 has preinstalled the the Linglong environment.
+Deepin 23 comes preinstalled with the Linglong environment.
 
 ## Deb download
 
-### debian 11(bullseye)
+### Debian 11 (bullseye)
 
-[Click Here to download debian 11 (bullseye) Linglong deb package](https://github.com/linuxdeepin/linglong-hub/releases/download/1.3.3/debian_bullseye.tar.gz)
+[Click here to download Debian 11 (bullseye) Linglong deb package](https://github.com/linuxdeepin/linglong-hub/releases/download/1.3.3/debian_bullseye.tar.gz)
 
-### ubuntu 22.04(jammy)
+### Ubuntu 22.04 (jammy)
 
-[Click Here to download ubuntu 22.04 (jammy) Linglong deb package](https://github.com/linuxdeepin/linglong-hub/releases/download/1.3.3/ubuntu_jammy.tar.gz)
+[Click here to download Ubuntu 22.04 (jammy) Linglong deb package](https://github.com/linuxdeepin/linglong-hub/releases/download/1.3.3/ubuntu_jammy.tar.gz)
 
-### Update repository source
+### Update the repository source
 
-Add the corresponding Tsinghua warehouse source to the source configuration file according to the system version.
+Add the Tsinghua warehouse source for your distro to your sources:
 
-* [Debian adds Tsinghua warehouse source tutorial](https://mirrors.tuna.tsinghua.edu.cn/help/debian/)
+* [Debian source](https://mirrors.tuna.tsinghua.edu.cn/help/debian/)
 
-* [Ubuntu add Tsinghua warehouse source tutorial](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+* [Ubuntu source](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
 
 ### Deb install
 
-The debian 11 installation is as follows:
+The Debian 11 installation is as follows:
 
 ```bash
 tar -zxvf debian_bullseye.tar.gz

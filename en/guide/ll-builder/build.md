@@ -2,13 +2,13 @@
 
 Use `ll-builder build` to build a Linglong application.
 
-View the hep information of the `ll-builder build` command:
+View the help information for the `ll-builder build` command:
 
 ```bash
 ll-builder build --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-builder [options] build
@@ -25,7 +25,7 @@ Arguments:
 
 The `ll-builder build` command must be run in the root directory of the project, where the `linglong.yaml` file is located.
 
-Taking the Linglong project `org.deepin.demo` as an example, the main steps to build a Linglong application are as follows:
+Taking the Linglong project `org.deepin.demo`, as an example, the main steps to build a Linglong application would be as follows:
 
 Go to the `org.deepin.demo` project directory:
 

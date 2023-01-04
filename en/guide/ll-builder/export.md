@@ -2,13 +2,13 @@
 
 Use `ll-builder export` to check out the build content and generate the `bundle` format package (referred to as uab).
 
-View the help information of `ll-builder export` commands:
+View the help information for the `ll-builder export` command:
 
 ```bash
 ll-builder export --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-builder [options] export [filename]
@@ -23,9 +23,9 @@ Arguments:
                  bundle
 ```
 
-The `ll-builder export` command creates a directory named `appid` in the project root directory, checks out the local build cache to this directory, and produces a `bundle` format package according to the build result.
+The `ll-builder export` command creates a directory named `appid` in the project root directory, then checks out the local build cache to this directory, and produces a `bundle` format package according to the build result.
 
-An example of `ll-builder export` command is as follows:
+An example of the `ll-builder export` command is as follows:
 
 ```bash
 ll-builder export
@@ -37,9 +37,9 @@ The directory structure after checkout is as follows:
 org.deepin.demo linglong.yaml org.deepin.demo_0.0.1_x86_64.uab
 ```
 
-Linglong applications have two package formats: `linglong`, `uab`, currently the `linglong` package format is the main one.
+Linglong applications have two package formats: `linglong` and `uab`. Currently the `linglong` package format is the main one.
 
-Take `org.deepin.demo` Linglong application as an example, the directory is as follows:
+Take the `org.deepin.demo` Linglong application as an example. The directory is as follows:
 
 ```text
 org.deepin.demo

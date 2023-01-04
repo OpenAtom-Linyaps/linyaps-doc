@@ -68,4 +68,4 @@ gdb /opt/apps/org.deepin.calculator/files/bin/deepin-calculator
 
 The path is the absolute path of the application in the container.
 
-For more debugging information of Linglong application `release` version, please refer to: [Run FAQ](../debug/faq.md).
+For more debugging information on Linglong application `release` version, please refer to: [Run FAQ](../debug/faq.md).
