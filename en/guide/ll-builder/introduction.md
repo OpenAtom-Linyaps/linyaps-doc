@@ -1,21 +1,21 @@
 # ll-builder Introduction
 
-`ll-builder` is a tool for building Linglong applications for developers.
+`ll-builder` is a tool for developers for building Linglong applications.
 
 The main functions are as follows:
 
 - Supports building in a standalone sandbox.
 <!-- - Defined a version management system. -->
-- Provides a list of sdk development kits.
+- Provides a list of software development kits.
 <!-- - Contains a complete release process. -->
 
-View the help information of `ll-builder` commands:
+View the help information for the `ll-builder` command:
 
 ```bash
 ll-builder --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-builder [options] subcommand [sub-option]

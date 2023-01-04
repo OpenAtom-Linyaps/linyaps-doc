@@ -1,8 +1,8 @@
 # Debug App
 
-The following tutorial uses the [linglong-builder-demo](https://github.com/linuxdeepin/linglong-builder-demo) project mentioned in the "Building Tools" section as an example. We put the project in `/path/to/project`. **Note to replace the path** when referring to the tutorial operation.
+The following tutorial uses the [linglong-builder-demo](https://github.com/linuxdeepin/linglong-builder-demo) project mentioned in the "Building Tools" section as an example. We put the project in `/path/to/project`. Make sure to **replace the path** when referring to this tutorial.
 
-Since the Linglong application runs in a container, to debug it on the host, we need to use `gdbserver` to run the application in the container, so you need to install `gdbserver` first.
+Since the Linglong application runs in a container, we need to use `gdbserver` to run the application in the container to debug it on the host. So you'll need to install `gdbserver` first.
 
 We can use the `gdbserver` provided by the distribution, using `apt` as an example:
 

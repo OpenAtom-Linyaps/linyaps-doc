@@ -1,6 +1,6 @@
 # Manifests
 
-`linglong.yaml` is the description file of a Linglong project, which records the relevant information required for construction. Such as the name, version, source address, build dependencies, etc. of the build product.
+`linglong.yaml` is the description file of a Linglong project, which stores the relevant information required for building. Such as the name, version, source address, build dependencies, etc., of the build product.
 
 ## Project directory structure
 
@@ -18,7 +18,7 @@
 
 ## Field definitions
 
-### App meta infos
+### App meta info
 
 ```yaml
 package:
@@ -33,12 +33,12 @@ package:
 | ----------- | ---------------------------------------------------------------------------------------------------- |
 | description | Detailed description of the build product                                                            |
 | id          | Unique name of the build product                                                                     |
-| kind        | The type of the build product: app, runtime, lib, representing application, runtime, library in turn |
+| kind        | The type of build product: app, runtime, lib, representing application, library in turn |
 | version     | version of the build product                                                                         |
 
-### runtime
+### Runtime
 
-Describe the build and run dependencies of the application.
+Describes the build and run dependencies of the application.
 
 ```yaml
 runtime:
@@ -48,7 +48,7 @@ runtime:
   digest: 4d85525f09211381c77d2085c9c1057
 ```
 
-It can also be written as:
+The `id` can also be written to include the version as:
 
 ```text
 runtime:
@@ -59,7 +59,7 @@ runtime:
 | ------- | --------------------------------------------------------------------------------------- |
 | id      | Unique name of the runtime                                                              |
 | version | Runtime version                                                                         |
-| digest  | (not used yet, this field can be used to bind a unique version of the runtime (runtime) |
+| digest  | (not used yet, this field can be used to bind a unique version of the runtime) |
 
 ### Dependencies
 
@@ -81,11 +81,11 @@ depends:
 | name    | description                                                                                          |
 | ------- | ---------------------------------------------------------------------------------------------------- |
 | id      | Unique name of the dependency                                                                        |
-| type    | The type of the dependency, the type of runtime dependency, will be submitted with the build content |
-| version | Dependent version                                                                                    |
+| type    | The type of dependency, the type of runtime dependency, will be submitted with the build content |
+| version | Dependency version                                                                                    |
 | digest  | (not used yet, this field can be used to bind a unique version of the dependency)                    |
 
-ll-builder will pull dependencies from the remote repository to the local when the project is built. If the dependency does not exist in the remote repository or cannot meet the requirements, you can add source and build content, and ll-builder will build and apply this type of dependency first to the project build.
+`ll-builder` will pull dependencies from the remote repository to the local when the project is built. If the dependency does not exist in the remote repository or cannot meet the requirements, you can add source and build content, and `ll-builder` will build and apply this type of dependency first to the project build.
 
 ```yaml
 depends: 
@@ -100,9 +100,9 @@ depends:
       kind: autotools
 ```
 
-### source
+### Source
 
-Describe source information.
+Describes the source information.
 
 ```yaml
 source:
@@ -123,9 +123,9 @@ source:
 | commit  | The hash value of a source code commit, fill in when the type is git |
 | patch   | Source patch path                                                    |
 
-### build rules
+### Build rules
 
-Describe build rules.
+Describes the build rules.
 
 ```yaml
 build:
@@ -158,9 +158,9 @@ build:
 | kind      | Build type, optional manual, autotools, cmake, qmake                                                      |
 | manual    | Build rules, when manual is declared, it means custom rules, that is, rewriting build, install, configure |
 
-### variables
+### Variables
 
-Describes the variables that can be used by the build, used with the build build.
+Describes the variables that can be used by the build.
 
 ```yaml
 variables:
@@ -195,7 +195,7 @@ build:
 | PREFIX     | One of the environment variables, which can be used under the variable and build fields; provide the installation path when building                                    |
 | TRIPLET    | One of the environment variables, which can be used under the variable and build fields; provide a triple containing architecture information, such as x86_64-linux-gnu |
 
-## complete example
+## Complete example
 
 ### Build app
 
@@ -286,9 +286,9 @@ build:
 
 When the package type is runtime, all dependencies will be submitted.
 
-## build tools template
+## Build tools template
 
-### automake type build template
+### Automake type build template
 
 `autotools.yaml` provides a generic `automake` type build template, the template file is as follows:
 
@@ -315,7 +315,7 @@ build:
        make ${jobs} DESTDIR=${dest_dir} install
 ```
 
-build tool:
+Build tool:
 
 ```yaml
 build:
@@ -347,7 +347,7 @@ build:
        make ${jobs} DESTDIR=${dest_dir} install
 ```
 
-build tool:
+Build tool:
 
 ```yaml
 build:
@@ -379,14 +379,14 @@ build:
        env DESTDIR=${dest_dir} cmake --build ${build_dir} --target install
 ```
 
-build tool:
+Build tool:
 
 ```yaml
 build:
    kind: cmake
 ```
 
-## runtime 20.5.0 includes dependencies
+## Runtime 20.5.0 includes these dependencies:
 
 | id                     | version   |
 | ---------------------- | --------- |
@@ -428,7 +428,7 @@ build:
 | gsettings-qt           | 0.2       |
 | qt5platform-plugins    | 5.0.58    |
 
-## Other available dependencies
+## Other available dependencies:
 
 | id                   | version    |
 | -------------------- | ---------- |

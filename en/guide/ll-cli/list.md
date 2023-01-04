@@ -2,13 +2,13 @@
 
 Use `ll-cli list` to view the installed Linglong apps.
 
-View the help information of `ll-cli list` command:
+View the help information for the `ll-cli list` command:
 
 ```bash
 ll-cli list --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-cli [options] list
@@ -31,7 +31,7 @@ To view the installed `runtime` and apps, run `ll-cli list`:
 ll-cli list
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 appId                           name                            version         arch        channel         module      description

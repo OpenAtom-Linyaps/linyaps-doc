@@ -1,14 +1,14 @@
 # ll-cli Introduction
 
-`ll-cli` is the command line tool of Linglong, used to install, uninstall, check, run, close, debug, and update Linglong applications, etc.
+`ll-cli` is the command line tool of Linglong, used to install, uninstall, check, run, close, debug, and update Linglong applications.
 
-View the help information of `ll-cli` command:
+View the help information for the `ll-cli` command:
 
 ```bash
 ll-cli --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-cli [options] subcommand [sub-option]

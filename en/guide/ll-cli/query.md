@@ -1,14 +1,14 @@
 # Query Apps From Remote
 
-Use `ll-cli query` to search app meta infos from remote repository.
+Use `ll-cli query` to search app meta info from remote repository.
 
-View the help information of `ll-cli query` command:
+View the help information for the `ll-cli query` command:
 
 ```bash
 ll-cli query --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-cli [options] query com.deepin.demo
@@ -26,7 +26,7 @@ Arguments:
   appId                                application id
 ```
 
-Use `ll-cli query` to search app meta infos from remote repository and local cache:
+Use `ll-cli query` to search app meta info from remote repository and local cache:
 
 ```bash
 ll-cli query <calculator>
@@ -38,9 +38,9 @@ Add `--force` to force search app info from remote repository:
 ll-cli query <calculator> --force
 ```
 
-This command returns the info of all apps whose `appid` (appid is the app unique identifier) contains the keyword "calculator", including the complete `appid`, application name, version, CPU architecture and descriptions.
+This command returns the info of all apps whose `appid` (appid is the app's unique identifier) contains the keyword "calculator", including the complete `appid`, application name, version, CPU architecture and descriptions.
 
-Here is the outputs:
+Here is the output:
 
 ```text
 appId                           name                            version         arch        channel         module      description

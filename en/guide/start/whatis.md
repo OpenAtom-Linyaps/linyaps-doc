@@ -1,13 +1,13 @@
 # Introduction
 
-Linglong, an open source package format developed by UnionTech Software, is designed to manage, distribute, create a sandbox for packages, and integrate development tools, instead of using package management tools such as `deb` and `rpm`.
+Linglong, an open source package format developed by UnionTech Software, is designed to manage, distribute, create a sandbox for packages, and integrate development tools, instead of using package management tools such as `deb` or `rpm`.
 
 ## Problems with current package management
 
 1. Both `deb` and `rpm` are strongly-dependent package management systems and allow complex cross dependencies (or circular dependencies) between components, which makes maintenance a matter of great expertise. A little carelessness will lead to a complete system failure that cannot be repaired.
-2. Installation dependencies and running dependencies are coupled so that multiple versions can hardly coexist. Although `rpm` and `deb` have provided several solutions to solve the multi-version coexistence problem, these solutions require changes in source code and are infeasible.
+2. Installation dependencies and running dependencies are coupled so that multiple versions can hardly coexist. Although `deb` and `rpm` have provided several solutions to solve the multi-version coexistence problem, these solutions require changes in source code and are infeasible.
 3. The `Hook` system is complex and has no restrictions, through which many operations can damage the system. 
-4. They have insufficient reliability, no redundant recovery design, and a lack of verification mechanism. Once the package management system fails, the system can hardly be repaired.
+4. They have insufficient reliability, no redundant recovery design, and a lack of verification mechanisms. Once the package management system fails, the system can hardly be repaired.
 5. The permissions of `deb` and `rpm` are loosely controlled with big security risks.
 6. The current package updates do not support incremental updates, which is a great waste of resources.
 

@@ -1,14 +1,14 @@
 # Uninstall App
 
-Use `ll-cli uninstall` to uninstall Linglong app.
+Use `ll-cli uninstall` to uninstall Linglong apps.
 
-View the help information of `ll-cli uninstall` command:
+View the help information for the `ll-cli uninstall` command:
 
 ```bash
 ll-cli uninstall --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-cli [options] uninstall com.deepin.demo
@@ -30,7 +30,7 @@ The command below gives an example of how to uninstall a Linglong app:
 ll-cli uninstall <org.deepin.calculator>
 ```
 
-Here is the outputs of `ll-cli uninstall org.deepin.calculator`:
+Here is the output of `ll-cli uninstall org.deepin.calculator`:
 
 ```text
 uninstall org.deepin.calculator , please wait a few minutes...

@@ -1,14 +1,14 @@
 # Update Linglong App
 
-Use `ll-cli update` to update Linglong application.
+Use `ll-cli update` to update Linglong apps.
 
-View the help information of `ll-cli update` command:
+View the help information for the `ll-cli update` command:
 
 ```bash
 ll-cli update --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-cli [options] update com.deepin.demo
@@ -24,13 +24,13 @@ Arguments:
   appId                           application id
 ```
 
-Use `ll-cli update` to update a local app to latest versions in the remote repository, such as:
+Use `ll-cli update` to update a local app to the latest version in the remote repository, such as:
 
 ```bash
 ll-cli update <org.deepin.calculator>
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 update org.deepin.calculator , please wait a few minutes...
@@ -38,7 +38,7 @@ org.deepin.calculator is updating...
 message: update org.deepin.calculator success, version:5.7.16 --> 5.7.21.4
 ```
 
-Example of update the specified version to the latest version:
+Example of updating the specified version to the latest version:
 
 ```bash
 ll-cli update <org.deepin.calculator/5.7.16>

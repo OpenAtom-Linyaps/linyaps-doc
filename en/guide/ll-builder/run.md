@@ -2,13 +2,13 @@
 
 Use `ll-builder run` to run the compiled executable program.
 
-View the help information of `ll-builder run` command:
+View the help information for the `ll-builder run` command:
 
 ```bash
 ll-builder run --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-builder [options] run
@@ -22,7 +22,7 @@ Arguments:
    run run project
 ```
 
-The `ll-builder run` command reads the operating environment information related to the program according to the configuration file, constructs a container, and executes the program in the container without installation.
+The `ll-builder run` command reads the operating system environment information related to the program according to the configuration file, constructs a container, and executes the program in the container without installation.
 
 ```bash
 ll-builder run

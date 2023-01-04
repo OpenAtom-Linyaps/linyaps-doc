@@ -2,13 +2,13 @@
 
 Use `ll-cli exec` to enter the inside of the running Linglong container.
 
-View the help information of `ll-cli exec` command:
+View the help information for the `ll-cli exec` command:
 
 ```bash
 ll-cli exec --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-cli [options] exec 9c41c0af2bad4617aea8485f5aaeb93a "bash"
@@ -25,7 +25,7 @@ Arguments:
   cmd               command
 ```
 
-Open a new terminal window and run this command:
+Open a new terminal window and run these commands:
 
 ```bash
 killall ll-service

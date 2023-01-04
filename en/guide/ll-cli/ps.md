@@ -2,13 +2,13 @@
 
 Use `ll-cli ps` to view running Linglong Apps.
 
-View the help information of `ll-cli ps` command:
+View the help information for the `ll-cli ps` command:
 
 ```bash
 ll-cli ps --help
 ```
 
-Here is the outputs:
+Here is the output:
 
 ```text
 Usage: ll-cli [options] ps
@@ -28,7 +28,7 @@ Use `ll-cli ps` to view running Linglong Apps:
 ll-cli ps
 ```
 
-Here is the outputs of `ll-cli ps`:
+Here is the output of `ll-cli ps`:
 
 ```text
 App                                             ContainerID                         Pid     Path
