@@ -1,0 +1,47 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+      - name: Prepare
+        run: |
+          sed -i 's/http:\/\/10.0.33.45:28803/https:\/\/store.linglong.dev/g' `grep "http:\/\/10.0.33.45:28803" -rl .`
+          sed -i 's/https:\/\/repo-dev.linglong.space/https:\/\/mirror-repo-linglong.deepin.com/g' `grep "https:\/\/repo-dev.linglong.space" -rl .`
+      - name: Install Depend
+        run: yarn install
+      - name: Build Pages
+        run: yarn build
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./.vitepress/dist
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event == 'push'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push'
+        id: deployment
+        uses: actions/deploy-pages@v1
