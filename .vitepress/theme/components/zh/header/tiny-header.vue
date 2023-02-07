@@ -23,7 +23,7 @@
     </div>
     <div class="nav">
       <a class="selected" href="/">首页</a>
-      <a href="http://10.0.33.45:28803/" target="_blank">玲珑商店</a>
+      <a href="https://store.linglong.dev/" target="_blank">玲珑商店</a>
       <a href="javascript:void(0);" @click="jump('/guide/start/install.html')">使用手册</a>
     </div>
   </div>
