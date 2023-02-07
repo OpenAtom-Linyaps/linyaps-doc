@@ -101,7 +101,7 @@
             </ul>
           </div>
           <div class="go-stroe">
-            <a href="http://10.0.33.45:28803" target="_blank">进入玲珑商店 -></a>
+            <a href="https://store.linglong.dev" target="_blank">进入玲珑商店 -></a>
           </div>
         </div>
       </div>
@@ -140,21 +140,21 @@ import TinyFooter from '../footer/tiny-footer.vue'
 import { ref } from "@vue/reactivity"
 
 const apps = ref([
-  { key: 1, icon: 'url(https://repo-dev.linglong.space/icon/com.deepin.gomoku.svg)', text: '五子棋' },
-  { key: 2, icon: 'url(https://repo-dev.linglong.space/icon/com.deepin.lianliankan.svg)', text: '连连看' },
-  { key: 3, icon: 'url(https://repo-dev.linglong.space/icon/dde-calendar.svg)', text: '日历' },
-  { key: 4, icon: 'url(https://repo-dev.linglong.space/icon/deepin-calculator.svg)', text: '计算器' },
-  { key: 5, icon: 'url(https://repo-dev.linglong.space/icon/deepin-editor.svg)', text: '文本编辑器' },
-  { key: 6, icon: 'url(https://repo-dev.linglong.space/icon/deepin-reader.svg)', text: '文档查看器' },
-  { key: 7, icon: 'url(https://repo-dev.linglong.space/icon/deepin-compressor.svg)', text: '归档管理器' },
-  { key: 8, icon: 'url(https://repo-dev.linglong.space/icon/org.deepin.browser.svg)', text: '浏览器' },
-  { key: 9, icon: 'url(https://repo-dev.linglong.space/icon/deepin-mail.svg)', text: '邮箱' },
-  { key: 10, icon: 'url(https://repo-dev.linglong.space/icon/deepin-album.svg)', text: '相册' },
-  { key: 11, icon: 'url(https://repo-dev.linglong.space/icon/deepin-draw.svg)', text: '画板' },
-  { key: 12, icon: 'url(https://repo-dev.linglong.space/icon/deepin-image-viewer.svg)', text: '看图' },
-  { key: 13, icon: 'url(https://repo-dev.linglong.space/icon/deepin-camera.svg)', text: '相机' },
-  { key: 14, icon: 'url(https://repo-dev.linglong.space/icon/deepin-music.svg)', text: '音乐' },
-  // { key: 15, icon: 'url(https://repo-dev.linglong.space/icon/deepin-movie.svg)', text: '影院' }
+  { key: 1, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/com.deepin.gomoku.svg)', text: '五子棋' },
+  { key: 2, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/com.deepin.lianliankan.svg)', text: '连连看' },
+  { key: 3, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/dde-calendar.svg)', text: '日历' },
+  { key: 4, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-calculator.svg)', text: '计算器' },
+  { key: 5, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-editor.svg)', text: '文本编辑器' },
+  { key: 6, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-reader.svg)', text: '文档查看器' },
+  { key: 7, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-compressor.svg)', text: '归档管理器' },
+  { key: 8, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/org.deepin.browser.svg)', text: '浏览器' },
+  { key: 9, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-mail.svg)', text: '邮箱' },
+  { key: 10, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-album.svg)', text: '相册' },
+  { key: 11, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-draw.svg)', text: '画板' },
+  { key: 12, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-image-viewer.svg)', text: '看图' },
+  { key: 13, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-camera.svg)', text: '相机' },
+  { key: 14, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-music.svg)', text: '音乐' },
+  // { key: 15, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-movie.svg)', text: '影院' }
 ])
 const bundles = [{
   appId: "com.163.music",
@@ -164,7 +164,7 @@ const bundles = [{
   id: 0,
   name: "网易云音乐",
   version: "1.2.1.1",
-  downloadUrl: "https://repo-dev.linglong.space/bundle/com.163.music_1.2.1.1_x86_64.uab"
+  downloadUrl: "https://mirror-repo-linglong.deepin.com/bundle/com.163.music_1.2.1.1_x86_64.uab"
 }, {
   appId: "cn.wps.wps-office",
   arch: "x86_64",
@@ -172,7 +172,7 @@ const bundles = [{
   icon: "url(https://store.chinauos.com/api/public/blob/ec4435df-037e-40cf-8417-67993b89dd0e)",
   name: "WPS2019 社区版",
   version: "11.1.0.11664",
-  downloadUrl: "https://repo-dev.linglong.space/bundle/cn.wps.wps-office_11.1.0.11664_x86-64.uab"
+  downloadUrl: "https://mirror-repo-linglong.deepin.com/bundle/cn.wps.wps-office_11.1.0.11664_x86-64.uab"
 }, {
   appId: "com.baidu.baidunetdisk",
   arch: "x86_64",
@@ -180,7 +180,7 @@ const bundles = [{
   icon: "url(https://store.chinauos.com/api/public/blob/5bb10bee-53de-4ed0-ac65-8374c8c3e8f4)",
   name: "百度网盘",
   version: "4.3.0",
-  downloadUrl: "https://repo-dev.linglong.space/bundle/com.baidu.baidunetdisk_4.3.0_x86_64.uab"
+  downloadUrl: "https://mirror-repo-linglong.deepin.com/bundle/com.baidu.baidunetdisk_4.3.0_x86_64.uab"
 }, {
   appId: "com.xunlei.download",
   arch: "x86_64",
@@ -188,7 +188,7 @@ const bundles = [{
   icon: "url(https://store.chinauos.com/api/public/blob/5266244f-5df0-4512-ac0e-b980eba060f6)",
   name: "迅雷",
   version: "1.0.0.2",
-  downloadUrl: "https://repo-dev.linglong.space/bundle/com.xunlei.download_1.0.0.2_x86_64.uab"
+  downloadUrl: "https://mirror-repo-linglong.deepin.com/bundle/com.xunlei.download_1.0.0.2_x86_64.uab"
 }]
 
 const expand = ref(false)

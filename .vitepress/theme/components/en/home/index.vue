@@ -111,7 +111,7 @@
             </ul>
           </div>
           <div class="go-stroe">
-            <a href="http://10.0.33.45:28803" target="_blank">Go to Linglong Store -></a>
+            <a href="https://store.linglong.dev" target="_blank">Go to Linglong Store -></a>
           </div>
         </div>
       </div>
@@ -149,21 +149,21 @@ import EnFooter from '../footer/index.vue'
 import TinyLayout from './tiny.vue'
 
 const apps = ref([
-  { key: 1, icon: 'url(https://repo-dev.linglong.space/icon/com.deepin.gomoku.svg)', text: 'deepin-gomoku' },
-  { key: 2, icon: 'url(https://repo-dev.linglong.space/icon/com.deepin.lianliankan.svg)', text: 'deepin-lianliankan' },
-  { key: 3, icon: 'url(https://repo-dev.linglong.space/icon/dde-calendar.svg)', text: 'dde-calendar' },
-  { key: 4, icon: 'url(https://repo-dev.linglong.space/icon/deepin-calculator.svg)', text: 'deepin-calculator' },
-  { key: 5, icon: 'url(https://repo-dev.linglong.space/icon/deepin-editor.svg)', text: 'deepin-editor' },
-  { key: 6, icon: 'url(https://repo-dev.linglong.space/icon/deepin-reader.svg)', text: 'deepin-reader' },
-  { key: 7, icon: 'url(https://repo-dev.linglong.space/icon/deepin-compressor.svg)', text: 'deepin-compressor' },
-  { key: 8, icon: 'url(https://repo-dev.linglong.space/icon/org.deepin.browser.svg)', text: 'deepin-browser' },
-  { key: 9, icon: 'url(https://repo-dev.linglong.space/icon/deepin-mail.svg)', text: 'deepin-mail' },
-  { key: 10, icon: 'url(https://repo-dev.linglong.space/icon/deepin-album.svg)', text: 'deepin-album' },
-  { key: 11, icon: 'url(https://repo-dev.linglong.space/icon/deepin-draw.svg)', text: 'deepin-draw' },
-  { key: 12, icon: 'url(https://repo-dev.linglong.space/icon/deepin-image-viewer.svg)', text: 'deepin-image-viewer' },
-  { key: 13, icon: 'url(https://repo-dev.linglong.space/icon/deepin-camera.svg)', text: 'deepin-camera' },
-  { key: 14, icon: 'url(https://repo-dev.linglong.space/icon/deepin-music.svg)', text: 'deepin-music' },
-  { key: 15, icon: 'url(https://repo-dev.linglong.space/icon/deepin-movie.svg)', text: 'deepin-movie' }
+  { key: 1, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/com.deepin.gomoku.svg)', text: 'deepin-gomoku' },
+  { key: 2, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/com.deepin.lianliankan.svg)', text: 'deepin-lianliankan' },
+  { key: 3, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/dde-calendar.svg)', text: 'dde-calendar' },
+  { key: 4, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-calculator.svg)', text: 'deepin-calculator' },
+  { key: 5, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-editor.svg)', text: 'deepin-editor' },
+  { key: 6, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-reader.svg)', text: 'deepin-reader' },
+  { key: 7, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-compressor.svg)', text: 'deepin-compressor' },
+  { key: 8, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/org.deepin.browser.svg)', text: 'deepin-browser' },
+  { key: 9, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-mail.svg)', text: 'deepin-mail' },
+  { key: 10, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-album.svg)', text: 'deepin-album' },
+  { key: 11, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-draw.svg)', text: 'deepin-draw' },
+  { key: 12, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-image-viewer.svg)', text: 'deepin-image-viewer' },
+  { key: 13, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-camera.svg)', text: 'deepin-camera' },
+  { key: 14, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-music.svg)', text: 'deepin-music' },
+  { key: 15, icon: 'url(https://mirror-repo-linglong.deepin.com/icon/deepin-movie.svg)', text: 'deepin-movie' }
 ])
 const bundles = [{
   appId: "com.163.music",
@@ -173,7 +173,7 @@ const bundles = [{
   id: 0,
   name: "netease-cloud-music",
   version: "1.2.1.1",
-  downloadUrl: "https://repo-dev.linglong.space/bundle/com.163.music_1.2.1.1_x86_64.uab"
+  downloadUrl: "https://mirror-repo-linglong.deepin.com/bundle/com.163.music_1.2.1.1_x86_64.uab"
 }, {
   appId: "cn.wps.wps-office",
   arch: "x86_64",
@@ -181,7 +181,7 @@ const bundles = [{
   icon: "url(https://store.chinauos.com/api/public/blob/ec4435df-037e-40cf-8417-67993b89dd0e)",
   name: "WPS2019 Community",
   version: "11.1.0.11664",
-  downloadUrl: "https://repo-dev.linglong.space/bundle/cn.wps.wps-office_11.1.0.11664_x86-64.uab"
+  downloadUrl: "https://mirror-repo-linglong.deepin.com/bundle/cn.wps.wps-office_11.1.0.11664_x86-64.uab"
 }, {
   appId: "com.baidu.baidunetdisk",
   arch: "x86_64",
@@ -189,7 +189,7 @@ const bundles = [{
   icon: "url(https://store.chinauos.com/api/public/blob/5bb10bee-53de-4ed0-ac65-8374c8c3e8f4)",
   name: "baidunetdisk",
   version: "4.3.0",
-  downloadUrl: "https://repo-dev.linglong.space/bundle/com.baidu.baidunetdisk_4.3.0_x86_64.uab"
+  downloadUrl: "https://mirror-repo-linglong.deepin.com/bundle/com.baidu.baidunetdisk_4.3.0_x86_64.uab"
 }, {
   appId: "com.xunlei.download",
   arch: "x86_64",
@@ -197,7 +197,7 @@ const bundles = [{
   icon: "url(https://store.chinauos.com/api/public/blob/5266244f-5df0-4512-ac0e-b980eba060f6)",
   name: "xunlei",
   version: "1.0.0.2",
-  downloadUrl: "https://repo-dev.linglong.space/bundle/com.xunlei.download_1.0.0.2_x86_64.uab"
+  downloadUrl: "https://mirror-repo-linglong.deepin.com/bundle/com.xunlei.download_1.0.0.2_x86_64.uab"
 }]
 const jump = (url) => {
   location.href = url

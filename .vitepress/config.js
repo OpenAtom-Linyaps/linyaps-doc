@@ -129,7 +129,7 @@ module.exports = {
                     {
                         text: "商店",
                         ariaLabel: "store",
-                        link: "http://10.0.33.45:28803",
+                        link: "https://store.linglong.dev",
                     },
                     {
                         text: "文档",
@@ -157,7 +157,7 @@ module.exports = {
                     {
                         text: "Store",
                         ariaLabel: "store",
-                        link: "http://10.0.33.45:28803",
+                        link: "https://store.linglong.dev",
                     },
                     {
                         text: "Docs",

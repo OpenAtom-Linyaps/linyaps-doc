@@ -5,7 +5,7 @@
       <!-- 导航 -->
       <div class="nav u-flex u-item-center u-justify-start">
         <a class="selected" href="/" style="padding-left: 10px;">Home</a>
-        <a href="http://10.0.33.45:28803/" target="_blank">Linglong Store</a>
+        <a href="https://store.linglong.dev/" target="_blank">Linglong Store</a>
         <a href="javascript:void(0);" @click="jump('/en/guide/start/install.html')">User Manual</a>
         <!-- <i class="active"></i> -->
       </div>

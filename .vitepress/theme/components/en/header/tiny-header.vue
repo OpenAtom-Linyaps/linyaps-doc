@@ -23,7 +23,7 @@
     </div>
     <div class="nav">
       <a class="selected" href="/">Home</a>
-      <a href="http://10.0.33.45:28803/" target="_blank">Linglong Store</a>
+      <a href="https://store.linglong.dev/" target="_blank">Linglong Store</a>
       <a href="javascript:void(0);" @click="jump('/en/guide/start/install.html')">User Manual</a>
     </div>
   </div>
