@@ -1,11 +1,3 @@
 node_modules
-.DS_Store
+cache
 dist
-dist-ssr
-*.local
-.idea
-pnpm-lock.yaml
-smartmontools.md
-zsh_history.md
-/package-lock.json
-/yarn.lock

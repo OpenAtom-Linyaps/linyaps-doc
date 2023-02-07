@@ -1,4 +1,5 @@
 module.exports = {
+    ignoreDeadLinks: true,
     locales: {
         "/": {
             lang: "zh-CN",
