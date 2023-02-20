@@ -1,12 +1,12 @@
 module.exports = {
     ignoreDeadLinks: true,
     locales: {
-        "/": {
+        root: {
             lang: "zh-CN",
             title: "玲珑",
             description: "独立包格式",
         },
-        "/en/": {
+        en: {
             lang: "en-US",
             title: "linglong",
             description: "hermetic package format",
