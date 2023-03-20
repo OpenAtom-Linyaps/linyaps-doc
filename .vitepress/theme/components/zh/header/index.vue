@@ -13,7 +13,7 @@
       <div class="lang">
         <span class="zh">中</span>
         <i>/</i>
-        <span @click="switchLang('/en/index.html')" class="en">EN</span>
+        <span @click="switchLang('/en/')" class="en">EN</span>
       </div>
     </div>
     <!-- 布局占位 -->

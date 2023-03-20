@@ -22,11 +22,9 @@ const lay = computed(() => {
   }
   if (route.path === '/') {
     _lay.isHome = true
-  }
-  if (route.path.startsWith('/en/index.html')) {
+  } else if (route.path === '/en/') {
     _lay.isEnHome = true
-  }
-  if (route.path !== '/' && !route.path.startsWith('/en/index.html')) {
+  } else {
     _lay.isDefault = true
   }
   return _lay
