@@ -19,19 +19,6 @@ uname -r
 * x86架构4.19内核需要开启user namespace。
 
 ## deb包安装教程
-
-### deepin v20
-
-使用 apt 安装玲珑环境：
-
-```bash
-sudo apt install linglong-builder \
-                 linglong-box \
-                 linglong-dbus-proxy \
-                 linglong-bin \
-                 linglong-installer
-```
-
 ### deepin v23
 
 deepin v23 已预装玲珑环境。
