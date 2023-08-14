@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 # ll-cli Introduction
 
 `ll-cli` is the command line tool of Linglong, used to install, uninstall, check, run, close, debug, and update Linglong applications.

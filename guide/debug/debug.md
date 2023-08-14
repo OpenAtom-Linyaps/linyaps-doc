@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 # 调试玲珑应用
 
 以下教程以“构建工具”一节中提到的 [linglong-builder-demo](https://github.com/linuxdeepin/linglong-builder-demo) 项目为例。我们将项目放在 `/path/to/project`。参考教程操作时**注意对路径进行替换**。

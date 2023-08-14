@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 # 简介
 
 玲珑是统信软件自研的开源软件包格式，用于替代 `deb`、`rpm`等包管理工具，实现了应用包管理、分发、容器、集成开发工具等功能。

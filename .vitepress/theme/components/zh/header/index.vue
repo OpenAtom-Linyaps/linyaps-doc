@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 <template>
   <div class="nav-wrap u-flex u-items-center u-justify-between" :class="{ 'header-theme': scrollVal.headerTheme }">
     <div class="logo"></div>

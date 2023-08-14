@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 # Debug App
 
 The following tutorial uses the [linglong-builder-demo](https://github.com/linuxdeepin/linglong-builder-demo) project mentioned in the "Building Tools" section as an example. We put the project in `/path/to/project`. Make sure to **replace the path** when referring to this tutorial.
