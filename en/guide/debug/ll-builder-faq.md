@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 # Build FAQ
 
 1. `-lxxx` failed in `cmake` type build, but `ldconfig` and `pkg-config` can query the library information.

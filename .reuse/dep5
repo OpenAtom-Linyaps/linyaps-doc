@@ -1,0 +1,39 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: linglong-homepage
+Upstream-Contact: myml <wurongjie@deepin.org>
+Source: https://github.com/linuxdeepin/linglong-homepage
+
+# ci
+Files: .github/* .gitlab-ci.yml
+Copyright: None
+License: CC0-1.0
+
+# gitignore #
+Files: .gitignore
+Copyright: None
+License: CC0-1.0
+
+# json conf yaml lock
+Files: *.json *.yaml *.lock .editorconfig
+Copyright: None
+License: CC0-1.0
+
+# README&doc
+Files: README*
+Copyright: None
+License:  CC-BY-4.0
+
+# img
+Files: public/favicon.ico public/asset/*
+Copyright: UnionTech Software Technology Co., Ltd.
+License: LGPL-3.0-or-later
+
+# env
+Files: .env env.d.ts
+Copyright: None
+License:  CC-BY-4.0
+
+# index
+Files: index.md
+Copyright: None
+License:  CC-BY-4.0

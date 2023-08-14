@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 # Push UAB to Remote Repositories
 
 Use the `ll-builder push` command to push Linglong packages to Linglong remote repositories.

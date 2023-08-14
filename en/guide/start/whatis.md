@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 # Introduction
 
 Linglong, an open source package format developed by UnionTech Software, is designed to manage, distribute, create a sandbox for packages, and integrate development tools, instead of using package management tools such as `deb` or `rpm`.

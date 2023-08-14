@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 # ll-builder简介
 
 `ll-builder`是为应用开发者提供的一款构建玲珑应用工具。

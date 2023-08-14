@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 # 常见构建问题
 
 1. `cmake`类型构建，出现`-lxxx`失败，但`ldconfig`与`pkg-config`均能查询到该库信息。

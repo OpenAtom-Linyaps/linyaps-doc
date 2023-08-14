@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 # 导出uab格式应用
 
 `ll-builder export`命令用来检出构建内容, 生成`bundle`格式软件包（简称 uab）。

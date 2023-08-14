@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 # 常见运行问题
 
 1. 应用运行读取`/usr/share`下应用安装资源文件，为什么读取失败？

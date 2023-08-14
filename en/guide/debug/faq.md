@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+
+SPDX-License-Identifier: LGPL-3.0-or-later
+-->
+
 # Run FAQ
 
 1. When the application runs to read the application installation resource file under `/usr/share`, why does the reading fail?
