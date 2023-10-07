@@ -27,8 +27,8 @@ package:
 
 ```text
 runtime:
-  id: org.deepin.runtime
-  version: 20.0.0
+  id: org.deepin.Runtime
+  version: 23.0.0
 ```
 ### Fill in the source code info
 
@@ -49,7 +49,7 @@ depends:
   - id: googletest
     version: 1.8.1
   - id: icu
-    version: 63.1
+    version: 63.1.0
     type: runtime
   - id: xcb-util
     type: runtime
@@ -101,20 +101,20 @@ variables:
     -DAPP_VERSION=5.7.21
 runtime:
   id: org.deepin.Runtime
-  version: 20.5.0
+  version: 23.0.0
 depends:
   - id: "dde-qt-dbus-factory"
     version: 5.5.12
   - id: googletest
     version: 1.8.1
   - id: icu
-    version: 63.1
+    version: 63.1.0
     type: runtime
   - id: xcb-util
     type: runtime
 source:
   kind: git
-  url: "https://github.com/linuxdeepin/deepin-calculator.git"
+  url: https://github.com/linuxdeepin/deepin-calculator.git
   commit: 7b5fdf8d133c356317636bb4b4a76fc73ef288c6
 build:
   kind: cmake
@@ -136,5 +136,5 @@ ll-builder export
 ## Push to repositories
 
 ```text
-ll-builder push org.deepin.calculator_1.1.1_x86_64.uab
+ll-builder push org.deepin.calculator_5.7.21_x86_64.uab
 ```

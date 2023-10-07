@@ -31,7 +31,7 @@ package:
 ```yaml
 runtime:
   id: org.deepin.Runtime
-  version: 20.5.0
+  version: 23.0.0
 ```
 
 ### 填写源码信息
@@ -67,7 +67,7 @@ package:
 
 runtime:
   id: org.deepin.Runtime
-  version: 20.5.0
+  version: 23.0.0
 
 source:
   kind: git

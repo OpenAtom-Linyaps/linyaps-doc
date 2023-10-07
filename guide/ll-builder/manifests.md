@@ -28,11 +28,12 @@ SPDX-License-Identifier: LGPL-3.0-or-later
 
 ```yaml
 package:
-  id: org.deepin.reader
-  version: 5.9.17
+  id: org.deepin.calculator
+  name: deepin-calculator
+  version: 5.7.21
   kind: app
   description: |
-    reader for deepin os.
+    calculator for deepin os.
 ```
 
 | name        | description                                                 |
@@ -44,12 +45,12 @@ package:
 
 ### 运行时（runtime）
 
-应用运行依赖，同时也是构建依赖。
+应用运行时依赖，同时也是构建依赖。
 
 ```yaml
 runtime:
-  id: org.deepin.runtime
-  version: 20.0.0
+  id: org.deepin.Runtime
+  version: 23.0.0
   # NOT IMPLEMENTATION NOW
   digest: 4d85525f09211381c77d2085c9c1057
 ```
@@ -58,7 +59,7 @@ runtime:
 
 ```text
 runtime:
-  id: org.deepin.Runtime/20.5.0
+  id: org.deepin.Runtime/23.0.0
 ```
 
 | name    | description                                             |
@@ -73,15 +74,16 @@ runtime:
 
 ```yaml
 depends:
-  - id: libopenjp2
-    version: 2.4.0
-  - id: libopenjp
-    version: 2.1.0
+  - id: dde-qt-dbus-factory
+    version: 5.5.12
+  - id: googletest
+    version: 1.8.1
+  - id: icu
+    version: 63.1.0
     type: runtime
-  - id: djvu
-    version: 3.5.28
-    # NOT IMPLEMENTATION NOW
-    digest: 381c77d2085c9c10574d85525f09211
+  - id: xcb-util
+    version: 0.3.8.1
+    type: runtime
 ```
 
 | name    | description                                                 |
@@ -100,7 +102,7 @@ depends:
     version: 63.1.0
     source:
       kind: git
-      url: "https://github.com/linuxdeepin/deepin-reader.git"
+      url: https://github.com/deepin-community/icu.git
       version: master
       commit: 3c651bcc40748fc5d02d9134fcaee14fda44ab62
     build:
@@ -114,9 +116,9 @@ depends:
 ```yaml
 source:
   kind: git
-  url: "https://github.com/linuxdeepin/deepin-reader.git"
+  url: https://github.com/linuxdeepin/deepin-calculator.git
   version: master
-  commit: 3c651bcc40748fc5d02d9134fcaee14fda44ab62
+  commit: d7e207b4a71bbd97f7d818de5044228c1a6e2c92
   patch: 
     - patches/fix-install-prefix-path.patch
     - patches/fix-lib-install-path.patch
@@ -210,30 +212,44 @@ build:
 
 ```yaml
 package:
-  id: org.deepin.reader
-  version: 5.9.17
+  id: org.deepin.calculator
+  name: deepin-calculator
+  version: 5.7.21
   kind: app
   description: |
-    reader for deepin os.
+    calculator for deepin os.
 
 runtime:
-  id: org.deepin.runtime
-  version: 20.0.0
+  id: org.deepin.Runtime
+  version: 23.0.0
 
 depends:
-  - id: libopenjp2
-    version: 2.4.0
-  - id: djvu
-    version: 3.5.28
+  - id: dde-qt-dbus-factory
+    version: 5.5.12
+  - id: googletest
+    version: 1.8.1
+  - id: icu
+    version: 63.1.0
+    type: runtime
+  - id: xcb-util
+    version: 0.3.8.1
+    type: runtime
 
 source:
   kind: git
-  url: "https://github.com/linuxdeepin/deepin-reader.git"
+  url: https://github.com/linuxdeepin/deepin-calculator.git
   version: master
-  commit: 3c651bcc40748fc5d02d9134fcaee14fda44ab62
+  commit: d7e207b4a71bbd97f7d818de5044228c1a6e2c92
+
+variables:
+  extra_args: |
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_SAFETYTEST_ARG="CMAKE_SAFETYTEST_ARG_OFF" \
+    -DAPP_VERSION=5.7.21 \
+    -DVERSION=5.7.21
 
 build:
-  kind: qmake
+  kind: cmake
 ```
 
 ### 构建依赖库
@@ -246,7 +262,7 @@ package:
 
 base:
   id: org.deepin.base
-  version: 20.5.0
+  version: 23.0.0
 
 source:
   kind: git
@@ -264,27 +280,55 @@ build:
 package:
   id: org.deepin.Runtime
   kind: runtime
-  version: 20.5.0
+  version: 23.0.0
   description: |
     runtime of deepin
 
 base:
-  id: org.deepin.base/20.5.0
+  id: org.deepin.base/23.0.0
 
 depends:
-  - id: qtbase/5.11.3.15
-  - id: qttool/5.11.3
-  - id: qtx11extras/5.11.3
-  - id: qtsvg/5.11.3
-  - id: qtxdg/3.5.0
-  - id: qtmultimedia/5.11.3
-  - id: "gsettings-qt/0.2"
-  - id: dtkcommon/5.5.21
-  - id: dtkcore/5.5.27
-  - id: dtkgui/5.5.22
-  - id: dtkwidget/5.5.40
-  - id: "qt5platform-plugins/5.0.46"
-  - id: qt5integration/5.5.19
+  - id: qtbase/5.15.7
+  - id: qttranslations/5.15.7
+  - id: qt3d/5.15.7
+  - id: qtcharts/5.15.7
+  - id: qtconnectivity/5.15.7
+  - id: qtgamepad/5.15.7
+  - id: qtsensors/5.15.7
+  - id: qtspeech/5.15.7
+  - id: qtvirtualkeyboard/5.15.7
+  - id: qtserialport/5.15.7
+  - id: qtnetworkauth/5.15.7
+  - id: qttools/5.15.7
+  - id: qtx11extras/5.15.7
+  - id: qtdeclarative/5.15.7
+  - id: qtsvg/5.15.7
+  - id: qtscript/5.15.7
+  - id: qtgraphicaleffects/5.15.7
+  - id: qtquickcontrols/5.15.7
+  - id: qtquickcontrols2/5.15.7
+  - id: qtxmlpatterns/5.15.7
+  - id: qtwayland/5.15.7
+  - id: qtmultimedia/5.15.7
+  - id: qtwebchannel/5.15.7
+  - id: qtwebsockets/5.15.7
+  - id: qtimageformats/5.15.7
+  - id: qtlocation/5.15.7
+  - id: spdlog/1.10.0
+  - id: fmtlib/10.1.2
+  - id: dtkcommon/5.6.0.3
+  - id: dtkcore/5.6.0.9
+  - id: dtkgui/5.6.0.13
+  - id: dtkwidget/5.6.0.6
+  - id: dtkdeclarative/5.6.0.7
+  - id: qt5integration/5.6.0.5
+  - id: qt5platform-plugins/5.6.0.5
+  - id: libqtxdg/3.6.0.1
+  - id: double-conversion/3.1.0.3
+  - id: deepin-shortcut-viewer/5.0.6.1
+  - id: fcitx-qt5/1.2.6.6
+  - id: gsettings-qt/0.3.1.1
+  - id: linglong-config/0.0.1.2
 
 build:
   kind: manual
@@ -395,47 +439,49 @@ build:
   kind: cmake
 ```
 
-## runtime 20.5.0 包含依赖项
+## runtime 23.0.0 包含依赖项
 
 | id                     | version   |
 | ---------------------- | --------- |
-| qtbase                 | 5.11.3.15 |
-| qt3d                   | 5.11.3    |
-| qtcharts               | 5.11.3    |
-| qtconnectivity         | 5.11.3    |
-| qtgamepad              | 5.11.3    |
-| qtsensors              | 5.11.3    |
-| qtspeech               | 5.11.3    |
-| qtvirtualkeyboard      | 5.11.3    |
-| qtserialport           | 5.11.3    |
-| qtnetworkauth          | 5.11.3    |
-| qttools                | 5.11.3    |
-| qtx11extras            | 5.11.3    |
-| qtdeclarative          | 5.11.3    |
-| qtsvg                  | 5.11.3    |
-| qtscript               | 5.11.3    |
-| qtgraphicaleffects     | 5.11.3    |
-| qtquickcontrols        | 5.11.3    |
-| qtquickcontrols2       | 5.11.3    |
-| qtxmlpatterns          | 5.11.3    |
-| qtwayland              | 5.15.1.7  |
-| qtmultimedia           | 5.11.3    |
-| qtwebchannel           | 5.11.3    |
-| qtwebsockets           | 5.11.3    |
-| qtimageformats         | 5.11.3    |
-| qtlocation             | 5.11.3    |
-| dtkcommon              | 5.5.3     |
-| dtkcore                | 5.5.26    |
-| dtkgui                 | 5.5.22    |
-| dtkwidget              | 5.5.39    |
-| dtkdeclarative         | 5.0.1     |
-| qtxdg                  | 3.3.1.1   |
-| qt5integration         | 5.1.17    |
+| qtbase                 | 5.15.7    |
+| qt3d                   | 5.15.7    |
+| qtcharts               | 5.15.7    |
+| qtconnectivity         | 5.15.7    |
+| qtgamepad              | 5.15.7    |
+| qtsensors              | 5.15.7    |
+| qtspeech               | 5.15.7    |
+| qtvirtualkeyboard      | 5.15.7    |
+| qtserialport           | 5.15.7    |
+| qtnetworkauth          | 5.15.7    |
+| qttools                | 5.15.7    |
+| qtx11extras            | 5.15.7    |
+| qtdeclarative          | 5.15.7    |
+| qtsvg                  | 5.15.7    |
+| qtscript               | 5.15.7    |
+| qtgraphicaleffects     | 5.15.7    |
+| qtquickcontrols        | 5.15.7    |
+| qtquickcontrols2       | 5.15.7    |
+| qtxmlpatterns          | 5.15.7    |
+| qtwayland              | 5.15.7    |
+| qtmultimedia           | 5.15.7    |
+| qtwebchannel           | 5.15.7    |
+| qtwebsockets           | 5.15.7    |
+| qtimageformats         | 5.15.7    |
+| qtlocation             | 5.15.7    |
+| dtkcommon              | 5.6.0.3   |
+| dtkcore                | 5.6.0.9   |
+| dtkgui                 | 5.6.0.13  |
+| dtkwidget              | 5.6.0.6   |
+| dtkdeclarative         | 5.6.0.7   |
+| libqtxdg               | 3.6.0.3   |
+| qt5integration         | 5.6.0.5   |
 | double-conversion      | 3.1.0.2   |
-| deepin-shortcut-viewer | 5.0.5     |
-| fcitx-qt5              | 1.2.6.4   |
-| gsettings-qt           | 0.2       |
-| qt5platform-plugins    | 5.0.58    |
+| deepin-shortcut-viewer | 5.0.6.1   |
+| fcitx-qt5              | 1.2.6.6   |
+| gsettings-qt           | 0.3.1.1   |
+| qt5platform-plugins    | 5.6.0.5   |
+| spdlog                 | 1.10.0    |
+| fmtlib                 | 10.1.2    |
 
 ## 其他可用依赖
 

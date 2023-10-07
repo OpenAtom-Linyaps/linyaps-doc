@@ -61,7 +61,7 @@ package:
 ```yaml
 runtime:
   id: org.deepin.Runtime
-  version: 20.5.0
+  version: 23.0.0
 ```
 
 ### Dependencies
@@ -69,7 +69,7 @@ runtime:
 ```yaml
 depends:
   - id: icu
-    version: 63.1
+    version: 63.1.0
     type: runtime
 ```
 
@@ -108,12 +108,7 @@ package:
 
 runtime:
   id: org.deepin.Runtime
-  version: 20.5.0
-
-depends:
-  - id: icu
-    version: 63.1
-    type: runtime
+  version: 23.0.0
 
 source:
   kind: git
