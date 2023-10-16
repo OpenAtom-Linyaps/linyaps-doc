@@ -128,6 +128,7 @@ source:
 | kind    | Source code type, optional types local, archive, git                 |
 | url     | Source address, fill in when the type is archive or git              |
 | version | Source branch version, fill in when the type is git                  |
+| digest  | The Hash value of archive file encrypted using sha256 algorithm, fill in when the type is git          |
 | commit  | The hash value of a source code commit, fill in when the type is git |
 | patch   | Source patch path                                                    |
 
