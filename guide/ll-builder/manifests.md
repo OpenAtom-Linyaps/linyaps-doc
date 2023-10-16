@@ -129,6 +129,7 @@ source:
 | kind    | 源码类型，可选类型 local、archive、git  |
 | url     | 源码地址，类型为 archive、git 时填写    |
 | version | 源码分支版本，类型为 git 时填写         |
+| digest  | 归档文件的hash值，使用sha256算法加密，类型为archive时填写 |
 | commit  | 源码某次提交 hash 值，类型为 git 时填写 |
 | patch   | 源码补丁路径                            |
 
