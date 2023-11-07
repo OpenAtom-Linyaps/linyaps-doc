@@ -26,7 +26,7 @@ Options:
   --repo-point app                     repo type to use
   --nodbus                             execute cmd directly, not via dbus(only
                                        for root user)
-  --channel <--channel=linglong>       the channnel of app
+  --channel <--channel=linglong>       the channel of app
   --module <--module=runtime>          the module of app
 
 Arguments:

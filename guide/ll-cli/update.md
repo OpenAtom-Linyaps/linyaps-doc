@@ -22,7 +22,7 @@ Usage: ll-cli [options] update com.deepin.demo
 Options:
   -h, --help                      Displays help on commandline options.
   --help-all                      Displays help including Qt specific options.
-  --channel <--channel=linglong>  the channnel of app
+  --channel <--channel=linglong>  the channel of app
   --module <--module=runtime>     the module of app
 
 Arguments:
