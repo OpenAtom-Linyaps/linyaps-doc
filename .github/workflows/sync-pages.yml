@@ -1,0 +1,52 @@
+name: sync docs from linglong
+on:
+    schedule:
+        - cron: "0 5 * * 1"
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+          - name: checkout linglong pages
+            uses: actions/checkout@v4
+            with:
+              path: linglong
+              repository: linglong/linglong
+              sparse-checkout: |
+                docs/pages
+              sparse-checkout-cone-mode: false
+
+          - name: checkout self
+            uses: actions/checkout@v4
+            with:
+              path: self
+              sparse-checkout: |
+                en
+                guide
+              sparse-checkout-cone-mode: false
+
+          - name: get diff
+            run: |
+              diff -Naur self linglong/docs/pages &> changed.txt || true
+
+              if [ ! -s changed.txt ]; then
+                echo "No docs have been changed, terminate normally."
+                exit 0
+              fi
+
+              cp -r linglong/docs/pages/en/* self/
+              cp -r linglong/docs/pages/guide/* self/
+
+          - name: create pr
+            uses: peter-evans/create-pull-request@v6
+            with:
+                path: self
+                commit-message: "sync docs automatically."
+                title: "Sync docs from linglong"
+                delete-branch: true
+
+
+
+
+
