@@ -12,7 +12,7 @@ jobs:
             uses: actions/checkout@v4
             with:
               path: linglong
-              repository: linglong/linglong
+              repository: linuxdeepin/linglong
               sparse-checkout: |
                 docs/pages
               sparse-checkout-cone-mode: false
@@ -35,8 +35,8 @@ jobs:
                 exit 0
               fi
 
-              cp -r linglong/docs/pages/en/* self/
-              cp -r linglong/docs/pages/guide/* self/
+              cp -r linglong/docs/pages/en/* self/en/
+              cp -r linglong/docs/pages/guide/* self/guide/
 
           - name: create pr
             uses: peter-evans/create-pull-request@v6
