@@ -76,4 +76,4 @@ SPDX-License-Identifier: LGPL-3.0-or-later
 
 18. uab离线包格式在debian、ubuntu下输入法无法使用？
 
-    建议安装`fcitx`输入法后体验。
+    建议安装`fictx`输入法后体验。
