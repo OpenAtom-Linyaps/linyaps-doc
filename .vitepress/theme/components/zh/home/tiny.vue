@@ -22,7 +22,7 @@ SPDX-License-Identifier: LGPL-3.0-or-later
             <div class="link-wrap">
               <a href="javascript:void(0);" @click="jump('/guide/ll-builder/introduction.html')" class="link quick">10分钟快速构建</a>
               <a href="javascript:void(0);" @click="jump('/guide/ll-builder/manifests.html#runtime-20-5-0-包含依赖项')" class="link plain ml-15">Runtime清单</a>
-              <a href="https://bbs.deepin.org" target="_blank" class="link plain ml-15">社区讨论</a>
+              <a href="https://bbs.deepin.org/module/detail/230" target="_blank" class="link plain ml-15">社区讨论</a>
             </div>
           </div>
         </div>
