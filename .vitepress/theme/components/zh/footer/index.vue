@@ -38,6 +38,8 @@ SPDX-License-Identifier: LGPL-3.0-or-later
     </div>
     <div class="copyright">
       <span>Copyright © 2022 统信软件技术有限公司</span>
+      &nbsp;
+      <a href="https://beian.miit.gov.cn/">京ICP备20003780号-4</a>
     </div>
   </div>
 </template>
