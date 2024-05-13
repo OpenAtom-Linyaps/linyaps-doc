@@ -43,25 +43,25 @@ Arguments:
 When the application is installed normally, use the `ll-cli run` command to start it:
 
 ```bash
-ll-cli run <org.deepin.calculator>
+ll-cli run org.deepin.calculator
 ```
 
 By default, executing the run command will start the application of the highest version. If you want to run the application of the specified version, you need to append the corresponding version number after `appid`:
 
 ```bash
-ll-cli run <org.deepin.calculator/5.7.21.4>
+ll-cli run org.deepin.calculator/5.7.21.4
 ```
 
-By default, `ll-dbus-proxy` is used to intercept and forward `dbus` messages. If you do not want to use `ll-dbus-proxy`, you can use the `--no-proxy` parameter:
+By default, `ll-dbus-proxy` is used to intercept and forward `dbus` messages. If you do not want to use `ll-dbus-proxy`, you can use the `--no-dbus-proxy` parameter:
 
 ```bash
-ll-cli run <org.deepin.calculator> --no-proxy
+ll-cli run org.deepin.calculator --no-dbus-proxy
 ```
 
 Use the `ll-cli run` command to enter the specified program container:
 
 ```bash
-ll-cli run <org.deepin.calculator> --exec /bin/bash
+ll-cli run org.deepin.calculator --exec /bin/bash
 ```
 
 After entering, execute `shell` commands, such as `gdb`, `strace`, `ls`, `find`, etc.
