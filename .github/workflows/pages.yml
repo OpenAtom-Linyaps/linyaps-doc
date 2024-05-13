@@ -17,7 +17,7 @@ jobs:
         runs-on: ubuntu-latest
         strategy:
             matrix:
-                version: ['1.4.3'] # 定义版本数组
+                version: ['1.5.0'] # 定义版本数组
         steps:
             - uses: actions/checkout@v3
             - name: Checkout linglong ${{ matrix.version }}
@@ -29,24 +29,20 @@ jobs:
                   sparse-checkout: |
                       docs/pages
                   sparse-checkout-cone-mode: false
-            - name: checkout 1.4.3 docs
+            - name: Checkout linglong release
               uses: actions/checkout@v4
               with:
-                  ref: 2ba2407e1148b3a084f71269660272a9348360ab # homepage 项目的 v1.4.3 
-                  path: '1.4.3'
-                  repository: linuxdeepin/linglong-homepage
-                  sparse-checkout: |
-                      en
-                      guide
-                  sparse-checkout-cone-mode: false
-            - name: Generate Versions JS File
+                ref: 450ed3185b889de0be5695649a580d50357bc07f # 指定玲珑项目的 commit 提交，可能文档有小部分修改，不需要从 tag 获取
+                path: tmp
+                repository: linuxdeepin/linglong
+                sparse-checkout: |
+                    docs/pages
+                sparse-checkout-cone-mode: false
+            - name: set release version
               run: |
-                  verPath=".vitepress/theme/versions.js"
-                  echo "const versions = [''];" > $verPath
-                  for ver in "${{ matrix.version }}"; do
-                    echo "versions.push('$ver');" >> $verPath
-                  done
-                  echo "exports.versions = versions;" >> $verPath
+                rm -rf en guide
+                mv tmp/docs/pages/guide .
+                mv tmp/docs/pages/en .
             - uses: actions/setup-node@v3
               with:
                   node-version: 16

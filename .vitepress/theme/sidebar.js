@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const { versions } = require('./versions.js')
+const { generateVersions } = require('./versions.js')
+const { versions } = generateVersions()
+
 const langs = ['zh', 'en']
 
  // 所有版本和语言的指南结构
@@ -10,9 +12,6 @@ let sidebar = {};
 // 定义每个类别及其子项的映射
 const categoryMappings = {
     "zh": {
-        "开始": {
-            "安装":  "/start/install.md",
-        },
         "命令行工具": {
             "简介": "/ll-cli/introduction.md",
             "列出已安装的应用": "/ll-cli/list.md",
@@ -30,9 +29,23 @@ const categoryMappings = {
             "创建项目": "/ll-builder/create.md",
             "构建应用": "/ll-builder/build.md",
             "运行应用": "/ll-builder/run.md",
+            "转换 appimage": "/ll-builder/convert.md",
             "导出uab格式应用": "/ll-builder/export.md",
             "配置文件": "/ll-builder/manifests.md",
             "上架应用到商店": "/ll-builder/github.md"
+        },
+        "转换工具": {
+            "ll-pica 简介": "/ll-pica/introduction.md",
+            "初始化配置": "/ll-pica/init.md",
+            "转换应用": "/ll-pica/convert.md",
+            "添加依赖": "/ll-pica/adep.md",
+            "转换配置文件简介": "/ll-pica/manifests.md",
+            "常见问题": "/ll-pica/faq.md",
+        },
+        "开始": {
+            "安装玲珑":  "/start/install.md",
+            "安装 Pica":  "/start/install_pica.md",
+            "从0开始构建":  "/start/how_to_use.md",
         },
         "调试应用": {
             "IDE中调试应用": "/debug/debug.md",
@@ -41,9 +54,6 @@ const categoryMappings = {
         }
     },
     "en": {
-        "Getting Started": {
-            "Install Linglong Environment": "/start/install.md",
-        },
         "Command Line Tools": {
             "Introduction": "/ll-cli/introduction.md",
             "List Installed Apps": "/ll-cli/list.md",
@@ -61,9 +71,23 @@ const categoryMappings = {
             "Create Project": "/ll-builder/create.md",
             "Build App": "/ll-builder/build.md",
             "Run Compiled App": "/ll-builder/run.md",
+            "Convert AppImage": "/ll-builder/convert.md",
             "Export Uab Format": "/ll-builder/export.md",
             "Manifests": "/ll-builder/manifests.md",
             "App To Store": "/ll-builder/github.md"
+        },
+        "Conversion application": {
+            "ll-pica Introduction": "/ll-pica/introduction.md",
+            "Initialization configuration": "/ll-pica/init.md",
+            "Conversion application": "/ll-pica/convert.md",
+            "Add dependency": "/ll-pica/adep.md",
+            "Manifests": "/ll-pica/manifests.md",
+            "FAQ": "/ll-pica/faq.md",
+        },
+        "Getting Started": {
+            "Install Linglong Environment": "/start/install.md",
+            "Install Pica":  "/start/install_pica.md",
+            "Build from scratch":  "/start/how_to_use.md",
         },
         "Debug App": {
             "Debug App In IDE": "/debug/debug.md",

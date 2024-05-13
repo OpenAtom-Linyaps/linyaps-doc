@@ -1,15 +1,16 @@
-const { versions } = require('./versions.js')
+const { generateVersions } = require('./versions.js')
+const { defaultVersion, versions } = generateVersions()
 
 // 定义每个类别及其子项的映射
 const categoryMappings = {
     "zh": {
-        "item": "版本",
-        "defaultVersion": "主分支",
+        "item": "文档版本",
+        "defaultVersion": defaultVersion,
         "link": "/start/install.md"
     },
     "en": {
-        "item": "Version",
-        "defaultVersion": "master",
+        "item": "Doc Version",
+        "defaultVersion": defaultVersion,
         "link": "/start/install.md"
     }
 }
