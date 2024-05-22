@@ -32,7 +32,7 @@ jobs:
             - name: Checkout linglong release
               uses: actions/checkout@v4
               with:
-                ref: 72b18a16c3221b2577ed750e52028e6bc21520b2 # 指定玲珑项目的 commit 提交，可能文档有小部分修改，不需要从 tag 获取
+                ref: 653c82dbfabbbedfb27d354f2b03af12ced4acbd # 指定玲珑项目的 commit 提交，可能文档有小部分修改，不需要从 tag 获取
                 path: tmp
                 repository: linuxdeepin/linglong
                 sparse-checkout: |
