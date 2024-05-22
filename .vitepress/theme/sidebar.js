@@ -12,7 +12,12 @@ let sidebar = {};
 // 定义每个类别及其子项的映射
 const categoryMappings = {
     "zh": {
-        "命令行工具": {
+        "开始": {
+            "概述": "/start/whatis.md",
+            "安装":  "/start/install.md",
+            "简单示例":  "/start/how_to_use.md",
+        },
+        "ll-cli": {
             "简介": "/ll-cli/introduction.md",
             "列出已安装的应用": "/ll-cli/list.md",
             "从远程仓库查询应用": "/ll-cli/query.md",
@@ -24,37 +29,37 @@ const categoryMappings = {
             "进入容器内部": "/ll-cli/exec.md",
             "强制退出应用": "/ll-cli/kill.md"
         },
-        "构建工具": {
+        "ll-builder": {
             "简介": "/ll-builder/introduction.md",
             "创建项目": "/ll-builder/create.md",
             "构建应用": "/ll-builder/build.md",
             "运行应用": "/ll-builder/run.md",
             "转换 appimage": "/ll-builder/convert.md",
-            "导出uab格式应用": "/ll-builder/export.md",
+            "导出 layer 文件": "/ll-builder/export.md",
             "配置文件": "/ll-builder/manifests.md",
             "上架应用到商店": "/ll-builder/github.md"
         },
-        "转换工具": {
-            "ll-pica 简介": "/ll-pica/introduction.md",
+        "ll-pica": {
+            "简介": "/ll-pica/introduction.md",
             "初始化配置": "/ll-pica/init.md",
             "转换应用": "/ll-pica/convert.md",
             "添加依赖": "/ll-pica/adep.md",
             "转换配置文件简介": "/ll-pica/manifests.md",
-            "常见问题": "/ll-pica/faq.md",
-        },
-        "开始": {
-            "安装玲珑":  "/start/install.md",
-            "安装 Pica":  "/start/install_pica.md",
-            "从0开始构建":  "/start/how_to_use.md",
         },
         "调试应用": {
             "IDE中调试应用": "/debug/debug.md",
             "常见构建问题": "/debug/ll-builder-faq.md",
-            "常见运行问题": "/debug/faq.md"
+            "常见运行问题": "/debug/faq.md",
+            "常见转换问题": "/debug/ll-pica-faq.md",
         }
     },
     "en": {
-        "Command Line Tools": {
+        "Getting Started": {
+            "summary": "/start/whatis.md",
+            "Install": "/start/install.md",
+            "Simple example":  "/start/how_to_use.md",
+        },
+        "ll-cli": {
             "Introduction": "/ll-cli/introduction.md",
             "List Installed Apps": "/ll-cli/list.md",
             "Query Apps From Remote": "/ll-cli/query.md",
@@ -66,33 +71,28 @@ const categoryMappings = {
             "Attach To Container": "/ll-cli/exec.md",
             "Force Quit App": "/ll-cli/kill.md",
         },
-        "Build Tools": {
+        "ll-builder": {
             "Introduction": "/ll-builder/introduction.md",
             "Create Project": "/ll-builder/create.md",
             "Build App": "/ll-builder/build.md",
             "Run Compiled App": "/ll-builder/run.md",
             "Convert AppImage": "/ll-builder/convert.md",
-            "Export Uab Format": "/ll-builder/export.md",
+            "Export Layer File": "/ll-builder/export.md",
             "Manifests": "/ll-builder/manifests.md",
             "App To Store": "/ll-builder/github.md"
         },
-        "Conversion application": {
+        "ll-pica": {
             "ll-pica Introduction": "/ll-pica/introduction.md",
             "Initialization configuration": "/ll-pica/init.md",
             "Conversion application": "/ll-pica/convert.md",
             "Add dependency": "/ll-pica/adep.md",
             "Manifests": "/ll-pica/manifests.md",
-            "FAQ": "/ll-pica/faq.md",
-        },
-        "Getting Started": {
-            "Install Linglong Environment": "/start/install.md",
-            "Install Pica":  "/start/install_pica.md",
-            "Build from scratch":  "/start/how_to_use.md",
         },
         "Debug App": {
             "Debug App In IDE": "/debug/debug.md",
             "Build FAQ": "/debug/ll-builder-faq.md",
-            "Run FAQ": "/debug/faq.md"
+            "Run FAQ": "/debug/faq.md",
+            "Convert FAQ": "/debug/ll-pica-faq.md",
         }
     }
 };

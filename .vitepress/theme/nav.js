@@ -6,12 +6,12 @@ const categoryMappings = {
     "zh": {
         "item": "文档版本",
         "defaultVersion": defaultVersion,
-        "link": "/start/install.md"
+        "link": "/start/whatis.md"
     },
     "en": {
         "item": "Doc Version",
         "defaultVersion": defaultVersion,
-        "link": "/start/install.md"
+        "link": "/start/whatis.md"
     }
 }
 

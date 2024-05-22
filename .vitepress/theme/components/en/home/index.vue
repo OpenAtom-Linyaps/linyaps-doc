@@ -20,7 +20,7 @@ SPDX-License-Identifier: LGPL-3.0-or-later
               security risks caused by decentralized control of permissions.
             </p>
             <div class="link-wrap">
-              <a href="/en/guide/ll-builder/introduction.html" class="link quick">Quick build in 10 mins</a>
+              <a href="/en/guide/start/how_to_use.html" class="link quick">Quick build in 10 mins</a>
               <a href="/en/guide/ll-builder/manifests.html#runtime-20-5-0-includes-dependencies" class="link plain ml-15">Runtime list</a>
               <a href="https://bbs.deepin.org/module/detail/230" target="_blank" class="link plain ml-15">Discussions</a>
             </div>

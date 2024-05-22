@@ -61,7 +61,7 @@ module.exports = {
                         text: "文档",
                         ariaLabel: "doc",
                         items: [
-                            { text: "开始", link: "/guide/start/install.md" },
+                            { text: "开始", link: "/guide/start/whatis.md" },
                             {
                                 text: "命令行工具",
                                 link: "/guide/ll-cli/introduction.md",
@@ -83,11 +83,11 @@ module.exports = {
                         items: [
                             {
                                 text: "简体中文",
-                                link: "/guide/start/install.md",
+                                link: "/guide/start/whatis.md",
                             },
                             {
                                 text: "English",
-                                link: "/en/guide/start/install.md",
+                                link: "/en/guide/start/whatis.md",
                             },
                         ],
                     },
@@ -107,7 +107,7 @@ module.exports = {
                         items: [
                             {
                                 text: "Getting Start",
-                                link: "/en/guide/start/install.md",
+                                link: "/en/guide/start/whatis.md",
                             },
                             {
                                 text: "Command Line Tools",
@@ -127,11 +127,11 @@ module.exports = {
                         items: [
                             {
                                 text: "简体中文",
-                                link: "/guide/start/install.md",
+                                link: "/guide/start/whatis.md",
                             },
                             {
                                 text: "English",
-                                link: "/en/guide/start/install.md",
+                                link: "/en/guide/start/whatis.md",
                             },
                         ],
                     },
