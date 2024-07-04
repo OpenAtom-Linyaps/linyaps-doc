@@ -1,23 +1,23 @@
 name: Deploy to GitHub Pages
 on:
     push:
-        branches: ['master']
+        branches: ["master"]
     pull_request:
-        branches: ['master']
+        branches: ["master"]
     workflow_dispatch:
 permissions:
     contents: read
     pages: write
     id-token: write
 concurrency:
-    group: 'pages'
+    group: "pages"
     cancel-in-progress: true
 jobs:
     build:
         runs-on: ubuntu-latest
         strategy:
             matrix:
-                version: ['1.5.0'] # 定义版本数组
+                version: ["1.5.0"] # 定义版本数组
         steps:
             - uses: actions/checkout@v3
             - name: Checkout linglong ${{ matrix.version }}
@@ -25,28 +25,28 @@ jobs:
               with:
                   ref: ${{ matrix.version }} # 使用矩阵中的版本号作为检出的ref
                   path: ${{ matrix.version }} # 每个版本检出到不同的目录
-                  repository: linuxdeepin/linglong
+                  repository: OpenAtomFoundation/linglong
                   sparse-checkout: |
                       docs/pages
                   sparse-checkout-cone-mode: false
             - name: Checkout linglong release
               uses: actions/checkout@v4
               with:
-                ref: aef466bd48eb714e5376c064459dbe2ca117e115 # 指定玲珑项目的 commit 提交，可能文档有小部分修改，不需要从 tag 获取
-                path: tmp
-                repository: linuxdeepin/linglong
-                sparse-checkout: |
-                    docs/pages
-                sparse-checkout-cone-mode: false
+                  ref: 90f0846d2e9b0ed14e6f51e40c3a25b5de35dd93 # 指定玲珑项目的 commit 提交，可能文档有小部分修改，不需要从 tag 获取
+                  path: tmp
+                  repository: OpenAtomFoundation/linglong
+                  sparse-checkout: |
+                      docs/pages
+                  sparse-checkout-cone-mode: false
             - name: set release version
               run: |
-                rm -rf en guide
-                mv tmp/docs/pages/guide .
-                mv tmp/docs/pages/en .
+                  rm -rf en guide
+                  mv tmp/docs/pages/guide .
+                  mv tmp/docs/pages/en .
             - uses: actions/setup-node@v3
               with:
                   node-version: 16
-                  cache: 'yarn'
+                  cache: "yarn"
             - name: Install Depend
               run: yarn install
             - name: Build Pages
