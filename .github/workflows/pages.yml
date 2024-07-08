@@ -15,20 +15,31 @@ concurrency:
 jobs:
     build:
         runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                version: ["1.5.0"] # 定义版本数组
         steps:
             - uses: actions/checkout@v3
-            - name: Checkout linglong ${{ matrix.version }}
-              uses: actions/checkout@v4
-              with:
-                  ref: ${{ matrix.version }} # 使用矩阵中的版本号作为检出的ref
-                  path: ${{ matrix.version }} # 每个版本检出到不同的目录
-                  repository: OpenAtomFoundation/linglong
-                  sparse-checkout: |
-                      docs/pages
-                  sparse-checkout-cone-mode: false
+            - name: Checkout linglong old version
+              run: |
+                # 定义版本和 commit 的映射关系
+                declare -A dict=(
+                    ["1.5.0"]="317ef66813e413adafeae5b01186b34eda514248"
+                    # 添加更多的版本和 commit
+                )
+                # 遍历字典并检出每个 commit 到对应的目录
+                for version in "${!dict[@]}"; do
+                    commit="${dict[$version]}"
+                    # 克隆仓库到指定版本的目录下，使用一个临时分支名
+                    git clone https://github.com/OpenAtomFoundation/linglong.git $version
+                    cd $version
+                    git sparse-checkout init
+                    git sparse-checkout set docs/pages/en docs/pages/guide
+                    git checkout $commit
+                    mv docs/pages/en .
+                    mv docs/pages/guide .
+                    # 输出目录内容，确认文件是否被正确检出
+                    cd ..
+                done
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - name: Checkout linglong release
               uses: actions/checkout@v4
               with:
