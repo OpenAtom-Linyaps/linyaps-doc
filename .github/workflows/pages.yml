@@ -43,7 +43,7 @@ jobs:
             - name: Checkout linglong release
               uses: actions/checkout@v4
               with:
-                  ref: 3799f60cbaa65fc483212b8a89088ad5dbb387fe # 指定玲珑项目的 commit 提交，可能文档有小部分修改，不需要从 tag 获取
+                  ref: 34c92876a4c136ecf4a4821ca04cef5749afc0c4 # 指定玲珑项目的 commit 提交，可能文档有小部分修改，不需要从 tag 获取
                   path: tmp
                   repository: OpenAtomFoundation/linglong
                   sparse-checkout: |
