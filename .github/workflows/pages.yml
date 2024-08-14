@@ -28,7 +28,7 @@ jobs:
                 for version in "${!dict[@]}"; do
                     commit="${dict[$version]}"
                     # 克隆仓库到指定版本的目录下，使用一个临时分支名
-                    git clone https://github.com/OpenAtomFoundation/linglong.git $version
+                    git clone https://github.com/OpenAtom-Linyaps/linyaps.git $version
                     cd $version
                     git sparse-checkout init
                     git sparse-checkout set docs/pages/en docs/pages/guide
@@ -43,9 +43,9 @@ jobs:
             - name: Checkout linglong release
               uses: actions/checkout@v4
               with:
-                  ref: 34c92876a4c136ecf4a4821ca04cef5749afc0c4 # 指定玲珑项目的 commit 提交，可能文档有小部分修改，不需要从 tag 获取
+                  ref: fd4ccd143d7e67b5c19cba3987043ae7db012ca8 # 指定玲珑项目的 commit 提交，可能文档有小部分修改，不需要从 tag 获取
                   path: tmp
-                  repository: OpenAtomFoundation/linglong
+                  repository: OpenAtom-Linyaps/linyaps
                   sparse-checkout: |
                       docs/pages
                   sparse-checkout-cone-mode: false
