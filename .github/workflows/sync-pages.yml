@@ -1,4 +1,4 @@
-name: sync docs from linglong
+name: sync docs from linyaps
 on:
     schedule:
         - cron: "0 5 * * 1"
@@ -8,11 +8,11 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - name: checkout linglong pages
+            - name: checkout linyaps pages
               uses: actions/checkout@v4
               with:
-                  path: linglong
-                  repository: OpenAtomFoundation/linglong
+                  path: linyaps
+                  repository: OpenAtom-Linyaps/linyaps
                   sparse-checkout: |
                       docs/pages
                   sparse-checkout-cone-mode: false
@@ -28,20 +28,20 @@ jobs:
 
             - name: get diff
               run: |
-                  diff -Naur self linglong/docs/pages &> changed.txt || true
+                  diff -Naur self linyaps/docs/pages &> changed.txt || true
 
                   if [ ! -s changed.txt ]; then
                     echo "No docs have been changed, terminate normally."
                     exit 0
                   fi
 
-                  cp -r linglong/docs/pages/en/* self/en/
-                  cp -r linglong/docs/pages/guide/* self/guide/
+                  cp -r linyaps/docs/pages/en/* self/en/
+                  cp -r linyaps/docs/pages/guide/* self/guide/
 
             - name: create pr
               uses: peter-evans/create-pull-request@v6
               with:
                   path: self
                   commit-message: "sync docs automatically."
-                  title: "Sync docs from linglong"
+                  title: "Sync docs from linyaps"
                   delete-branch: true
