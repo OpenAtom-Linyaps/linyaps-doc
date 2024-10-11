@@ -46,6 +46,14 @@ const categoryMappings = {
             "添加依赖": "/ll-pica/adep.md",
             "转换配置文件简介": "/ll-pica/manifests.md",
         },
+        "ll-appimage-convert": {
+            "简介": "/ll-appimage-convert/introduction.md",
+            "转换应用": "/ll-appimage-convert/convert-appimage.md",
+        },
+        "ll-flatpak-convert": {
+            "简介": "/ll-flatpak-convert/introduction.md",
+            "转换应用": "/ll-flatpak-convert/convert-flatpak.md",
+        },
         "调试应用": {
             "IDE中调试应用": "/debug/debug.md",
             "常见构建问题": "/debug/ll-builder-faq.md",
@@ -87,6 +95,14 @@ const categoryMappings = {
             "Conversion application": "/ll-pica/convert.md",
             "Add dependency": "/ll-pica/adep.md",
             "Manifests": "/ll-pica/manifests.md",
+        },
+        "ll-appimage-convert": {
+            "Introduction": "/ll-appimage-convert/introduction.md",
+            "Conversion application": "/ll-appimage-convert/convert-appimage.md",
+        },
+        "ll-flatpak-convert": {
+            "Introduction": "/ll-flatpak-convert/introduction.md",
+            "Conversion application": "/ll-flatpak-convert/convert-flatpak.md",
         },
         "Debug App": {
             "Debug App In IDE": "/debug/debug.md",
