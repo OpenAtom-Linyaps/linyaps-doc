@@ -48,6 +48,13 @@
                 "常见构建问题": "/debug/ll-builder-faq.md",
                 "常见运行问题": "/debug/faq.md",
                 "常见转换问题": "/debug/ll-pica-faq.md"
+            },
+            "精选课程": {
+                "玲珑应用构建工程基础知识": "/lessons/basic-notes.md",
+                "容器内手动编译应用": "/lessons/build-in-env.md",
+                "本地源码手动编译应用": "/lessons/build-offline-src.md",
+                "使用git&patch编译应用": "/lessons/build-git-patch.md",
+                "玲珑应用自动化测试套件": "/lessons/test-with-toolchains.md"
             }
         },
         "1.5.x": {
