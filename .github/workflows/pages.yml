@@ -20,7 +20,7 @@ jobs:
                   # 定义版本和 commit 的映射关系
                   declare -A dict=(
                       ["1.5.x"]="fd4ccd143d7e67b5c19cba3987043ae7db012ca8"
-                      ["1.6.x"]="b955f9cf9dbcc5f5eaa158b5fb407937bbcdd473"
+                      ["1.6.x"]="57c330609415c131b10aa62d33844c95e9a92bb4"
                       ["1.7.x"]="8813fcf268dd306e22b23896918fcca1b79c1174"
                       # 添加更多的版本和 commit
                   )
