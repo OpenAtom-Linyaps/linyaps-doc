@@ -1,64 +1,40 @@
 name: Deploy to GitHub Pages
 on:
-    push:
-        branches: ["master"]
-    workflow_dispatch:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
 permissions:
-    contents: read
-    pages: write
-    id-token: write
+  contents: read
+  pages: write
+  id-token: write
 concurrency:
-    group: "pages"
-    cancel-in-progress: true
+  group: "pages"
+  cancel-in-progress: true
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v4
-            - name: Checkout linglong old version
-              run: |
-                  # 定义版本和 commit 的映射关系
-                  declare -A dict=(
-                      ["1.5.x"]="fd4ccd143d7e67b5c19cba3987043ae7db012ca8"
-                      ["1.6.x"]="57c330609415c131b10aa62d33844c95e9a92bb4"
-                      ["1.7.x"]="8813fcf268dd306e22b23896918fcca1b79c1174"
-                      ["1.8.x"]="6962bb15fd0f1506574b1b0d81aabf23c7f8a1a7"
-                      # 添加更多的版本和 commit
-                  )
-                  # 遍历字典并检出每个 commit 到对应的目录
-                  for version in "${!dict[@]}"; do
-                      commit="${dict[$version]}"
-                      # 克隆仓库到指定版本的目录下，使用一个临时分支名
-                      git clone --no-checkout https://github.com/OpenAtom-Linyaps/linyaps.git $version
-                      cd $version
-                      git checkout $commit docs/pages
-                      mv docs/pages/en .
-                      mv docs/pages/guide .
-                      # 输出目录内容，确认文件是否被正确检出
-                      cd ..
-                  done
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            - uses: actions/setup-node@v3
-              with:
-                  node-version: 16
-                  cache: "yarn"
-            - name: Install Depend
-              run: yarn install
-            - name: Build Pages
-              run: yarn build
-            - name: Upload Artifact
-              uses: actions/upload-pages-artifact@v3
-              with:
-                  path: ./.vitepress/dist
-    deploy:
-        runs-on: ubuntu-latest
-        needs: build
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-        environment:
-            name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
-        steps:
-            - name: Deploy to GitHub Pages
-              id: deployment
-              uses: actions/deploy-pages@v4
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: "yarn"
+      - name: Install Depend
+        run: yarn install
+      - name: Build Pages
+        run: yarn build
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./.vitepress/dist
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
