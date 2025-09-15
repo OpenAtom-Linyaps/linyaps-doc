@@ -6,23 +6,23 @@
       "items": [
         {
           "text": "玲珑应用构建工程基础知识",
-          "link": "/1.8.x/guide/lessons/basic-notes.md"
+          "link": "/guide/1.8.x/lessons/basic-notes.md"
         },
         {
           "text": "容器内手动编译应用",
-          "link": "/1.8.x/guide/lessons/build-in-env.md"
+          "link": "/guide/1.8.x/lessons/build-in-env.md"
         },
         {
           "text": "本地源码手动编译应用",
-          "link": "/1.8.x/guide/lessons/build-offline-src.md"
+          "link": "/guide/1.8.x/lessons/build-offline-src.md"
         },
         {
           "text": "使用git&patch编译应用",
-          "link": "/1.8.x/guide/lessons/build-git-patch.md"
+          "link": "/guide/1.8.x/lessons/build-git-patch.md"
         },
         {
           "text": "玲珑应用自动化测试套件",
-          "link": "/1.8.x/guide/lessons/test-with-toolchains.md"
+          "link": "/guide/1.8.x/lessons/test-with-toolchains.md"
         }
       ]
     }
