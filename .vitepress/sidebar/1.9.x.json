@@ -109,10 +109,6 @@
           "link": "/guide/ll-builder/run.md"
         },
         {
-          "text": "转换 appimage",
-          "link": "/guide/ll-builder/convert.md"
-        },
-        {
           "text": "导出 layer 文件",
           "link": "/guide/ll-builder/export.md"
         },
