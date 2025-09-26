@@ -85,20 +85,12 @@
           "link": "/guide/1.7.x/ll-builder/run.md"
         },
         {
-          "text": "转换 appimage",
-          "link": "/guide/1.7.x/ll-builder/convert.md"
-        },
-        {
           "text": "导出 layer 文件",
           "link": "/guide/1.7.x/ll-builder/export.md"
         },
         {
           "text": "配置文件",
           "link": "/guide/1.7.x/ll-builder/manifests.md"
-        },
-        {
-          "text": "上架应用到商店",
-          "link": "/guide/1.7.x/ll-builder/github.md"
         }
       ]
     },
@@ -265,20 +257,12 @@
           "link": "/en/guide/1.7.x/ll-builder/run.md"
         },
         {
-          "text": "Convert AppImage",
-          "link": "/en/guide/1.7.x/ll-builder/convert.md"
-        },
-        {
           "text": "Export Layer File",
           "link": "/en/guide/1.7.x/ll-builder/export.md"
         },
         {
           "text": "Manifests",
           "link": "/en/guide/1.7.x/ll-builder/manifests.md"
-        },
-        {
-          "text": "App To Store",
-          "link": "/en/guide/1.7.x/ll-builder/github.md"
         }
       ]
     },

@@ -60,7 +60,7 @@
         },
         {
           "text": "更新应用",
-          "link": "/guide/ll-cli/update.md"
+          "link": "/guide/ll-cli/upgrade.md"
         },
         {
           "text": "查看运行中的应用",
@@ -305,20 +305,12 @@
           "link": "/en/guide/ll-builder/run.md"
         },
         {
-          "text": "Convert AppImage",
-          "link": "/en/guide/ll-builder/convert.md"
-        },
-        {
           "text": "Export Layer File",
           "link": "/en/guide/ll-builder/export.md"
         },
         {
           "text": "Manifests",
           "link": "/en/guide/ll-builder/manifests.md"
-        },
-        {
-          "text": "App To Store",
-          "link": "/en/guide/ll-builder/github.md"
         }
       ]
     },

@@ -5,6 +5,7 @@
   },
   "scripts": {
     "dev": "vitepress dev",
+    "prebuild": "sh sidebar-link-check.sh",
     "build": "vitepress build",
     "preview": "vitepress preview"
   },

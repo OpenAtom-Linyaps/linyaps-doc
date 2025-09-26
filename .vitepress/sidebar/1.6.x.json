@@ -130,34 +130,6 @@
     },
     {
       "collapsible": true,
-      "text": "ll-appimage-convert",
-      "items": [
-        {
-          "text": "简介",
-          "link": "/guide/1.6.x/ll-appimage-convert/introduction.md"
-        },
-        {
-          "text": "转换应用",
-          "link": "/guide/1.6.x/ll-appimage-convert/convert-appimage.md"
-        }
-      ]
-    },
-    {
-      "collapsible": true,
-      "text": "ll-flatpak-convert",
-      "items": [
-        {
-          "text": "简介",
-          "link": "/guide/1.6.x/ll-flatpak-convert/introduction.md"
-        },
-        {
-          "text": "转换应用",
-          "link": "/guide/1.6.x/ll-flatpak-convert/convert-flatpak.md"
-        }
-      ]
-    },
-    {
-      "collapsible": true,
       "text": "调试应用",
       "items": [
         {
@@ -305,34 +277,6 @@
         {
           "text": "Manifests",
           "link": "/en/guide/1.6.x/ll-pica/manifests.md"
-        }
-      ]
-    },
-    {
-      "collapsible": true,
-      "text": "ll-appimage-convert",
-      "items": [
-        {
-          "text": "Introduction",
-          "link": "/en/guide/1.6.x/ll-appimage-convert/introduction.md"
-        },
-        {
-          "text": "Conversion application",
-          "link": "/en/guide/1.6.x/ll-appimage-convert/convert-appimage.md"
-        }
-      ]
-    },
-    {
-      "collapsible": true,
-      "text": "ll-flatpak-convert",
-      "items": [
-        {
-          "text": "Introduction",
-          "link": "/en/guide/1.6.x/ll-flatpak-convert/introduction.md"
-        },
-        {
-          "text": "Conversion application",
-          "link": "/en/guide/1.6.x/ll-flatpak-convert/convert-flatpak.md"
         }
       ]
     },
