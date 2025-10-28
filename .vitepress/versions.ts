@@ -2,6 +2,6 @@
 //
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
-const versionList = ["1.9.x", "1.8.x", "1.7.x", "1.6.x", "1.5.x"];
+const versionList = ["1.10.x", "1.9.x", "1.8.x", "1.7.x", "1.6.x", "1.5.x"];
 
 export default { list: versionList, default: versionList[0] };

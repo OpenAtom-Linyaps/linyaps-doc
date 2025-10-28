@@ -6,15 +6,15 @@
       "items": [
         {
           "text": "概述",
-          "link": "/guide/1.9.x/start/whatis.md"
+          "link": "/guide/start/whatis.md"
         },
         {
           "text": "安装",
-          "link": "/guide/1.9.x/start/install.md"
+          "link": "/guide/start/install.md"
         },
         {
           "text": "发布日志",
-          "link": "/guide/1.9.x/start/release_note.md"
+          "link": "/guide/start/release_note.md"
         }
       ]
     },
@@ -24,55 +24,55 @@
       "items": [
         {
           "text": "简介",
-          "link": "/guide/1.9.x/ll-cli/introduction.md"
+          "link": "/guide/ll-cli/introduction.md"
         },
         {
           "text": "列出已安装的应用",
-          "link": "/guide/1.9.x/ll-cli/list.md"
+          "link": "/guide/ll-cli/list.md"
         },
         {
           "text": "从远程仓库查询应用",
-          "link": "/guide/1.9.x/ll-cli/search.md"
+          "link": "/guide/ll-cli/search.md"
         },
         {
           "text": "安装应用",
-          "link": "/guide/1.9.x/ll-cli/install.md"
+          "link": "/guide/ll-cli/install.md"
         },
         {
           "text": "显示应用信息",
-          "link": "/guide/1.9.x/ll-cli/info.md"
+          "link": "/guide/ll-cli/info.md"
         },
         {
           "text": "显示应用导出文件",
-          "link": "/guide/1.9.x/ll-cli/content.md"
+          "link": "/guide/ll-cli/content.md"
         },
         {
           "text": "运行应用",
-          "link": "/guide/1.9.x/ll-cli/run.md"
+          "link": "/guide/ll-cli/run.md"
         },
         {
           "text": "卸载应用",
-          "link": "/guide/1.9.x/ll-cli/uninstall.md"
+          "link": "/guide/ll-cli/uninstall.md"
         },
         {
           "text": "移除未使用的最小系统或运行时",
-          "link": "/guide/1.9.x/ll-cli/prune.md"
+          "link": "/guide/ll-cli/prune.md"
         },
         {
           "text": "更新应用",
-          "link": "/guide/1.9.x/ll-cli/upgrade.md"
+          "link": "/guide/ll-cli/upgrade.md"
         },
         {
           "text": "查看运行中的应用",
-          "link": "/guide/1.9.x/ll-cli/ps.md"
+          "link": "/guide/ll-cli/ps.md"
         },
         {
           "text": "进入容器内部",
-          "link": "/guide/1.9.x/ll-cli/exec.md"
+          "link": "/guide/ll-cli/exec.md"
         },
         {
           "text": "强制退出应用",
-          "link": "/guide/1.9.x/ll-cli/kill.md"
+          "link": "/guide/ll-cli/kill.md"
         }
       ]
     },
@@ -82,39 +82,39 @@
       "items": [
         {
           "text": "简介",
-          "link": "/guide/1.9.x/ll-builder/introduction.md"
+          "link": "/guide/ll-builder/introduction.md"
         },
         {
           "text": "Base和Runtime介绍",
-          "link": "/guide/1.9.x/ll-builder/runtime.md"
+          "link": "/guide/ll-builder/runtime.md"
         },
         {
           "text": "创建项目",
-          "link": "/guide/1.9.x/ll-builder/create.md"
+          "link": "/guide/ll-builder/create.md"
         },
         {
           "text": "构建应用",
-          "link": "/guide/1.9.x/ll-builder/build.md"
+          "link": "/guide/ll-builder/build.md"
         },
         {
           "text": "简单示例",
-          "link": "/guide/1.9.x/ll-builder/demo.md"
+          "link": "/guide/ll-builder/demo.md"
         },
         {
           "text": "打包规范",
-          "link": "/guide/1.9.x/ll-builder/linyaps_package_spec.md"
+          "link": "/guide/ll-builder/linyaps_package_spec.md"
         },
         {
           "text": "运行应用",
-          "link": "/guide/1.9.x/ll-builder/run.md"
+          "link": "/guide/ll-builder/run.md"
         },
         {
           "text": "导出 layer 文件",
-          "link": "/guide/1.9.x/ll-builder/export.md"
+          "link": "/guide/ll-builder/export.md"
         },
         {
           "text": "配置文件",
-          "link": "/guide/1.9.x/ll-builder/manifests.md"
+          "link": "/guide/ll-builder/manifests.md"
         }
       ]
     },
@@ -124,27 +124,27 @@
       "items": [
         {
           "text": "简介",
-          "link": "/guide/1.9.x/ll-pica/introduction.md"
+          "link": "/guide/ll-pica/introduction.md"
         },
         {
           "text": "安装",
-          "link": "/guide/1.9.x/ll-pica/install.md"
+          "link": "/guide/ll-pica/install.md"
         },
         {
           "text": "初始化配置",
-          "link": "/guide/1.9.x/ll-pica/init.md"
+          "link": "/guide/ll-pica/init.md"
         },
         {
           "text": "转换应用",
-          "link": "/guide/1.9.x/ll-pica/convert.md"
+          "link": "/guide/ll-pica/convert.md"
         },
         {
           "text": "添加依赖",
-          "link": "/guide/1.9.x/ll-pica/adep.md"
+          "link": "/guide/ll-pica/adep.md"
         },
         {
           "text": "转换配置文件简介",
-          "link": "/guide/1.9.x/ll-pica/manifests.md"
+          "link": "/guide/ll-pica/manifests.md"
         }
       ]
     },
@@ -154,11 +154,11 @@
       "items": [
         {
           "text": "简介",
-          "link": "/guide/1.9.x/ll-appimage-convert/introduction.md"
+          "link": "/guide/ll-appimage-convert/introduction.md"
         },
         {
           "text": "转换应用",
-          "link": "/guide/1.9.x/ll-appimage-convert/convert-appimage.md"
+          "link": "/guide/ll-appimage-convert/convert-appimage.md"
         }
       ]
     },
@@ -168,11 +168,11 @@
       "items": [
         {
           "text": "简介",
-          "link": "/guide/1.9.x/ll-flatpak-convert/introduction.md"
+          "link": "/guide/ll-flatpak-convert/introduction.md"
         },
         {
           "text": "转换应用",
-          "link": "/guide/1.9.x/ll-flatpak-convert/convert-flatpak.md"
+          "link": "/guide/ll-flatpak-convert/convert-flatpak.md"
         }
       ]
     },
@@ -182,19 +182,19 @@
       "items": [
         {
           "text": "IDE中调试应用",
-          "link": "/guide/1.9.x/debug/debug.md"
+          "link": "/guide/debug/debug.md"
         },
         {
           "text": "常见构建问题",
-          "link": "/guide/1.9.x/debug/ll-builder-faq.md"
+          "link": "/guide/debug/ll-builder-faq.md"
         },
         {
           "text": "常见运行问题",
-          "link": "/guide/1.9.x/debug/faq.md"
+          "link": "/guide/debug/faq.md"
         },
         {
           "text": "常见转换问题",
-          "link": "/guide/1.9.x/debug/ll-pica-faq.md"
+          "link": "/guide/debug/ll-pica-faq.md"
         }
       ]
     }
@@ -206,15 +206,15 @@
       "items": [
         {
           "text": "summary",
-          "link": "/en/guide/1.9.x/start/whatis.md"
+          "link": "/en/guide/start/whatis.md"
         },
         {
           "text": "Install",
-          "link": "/en/guide/1.9.x/start/install.md"
+          "link": "/en/guide/start/install.md"
         },
         {
           "text": "Release Note",
-          "link": "/en/guide/1.9.x/start/release_note.md"
+          "link": "/en/guide/start/release_note.md"
         }
       ]
     },
@@ -224,55 +224,55 @@
       "items": [
         {
           "text": "Introduction",
-          "link": "/en/guide/1.9.x/ll-cli/introduction.md"
+          "link": "/en/guide/ll-cli/introduction.md"
         },
         {
           "text": "List Installed Apps",
-          "link": "/en/guide/1.9.x/ll-cli/list.md"
+          "link": "/en/guide/ll-cli/list.md"
         },
         {
           "text": "Query Apps From Remote",
-          "link": "/en/guide/1.9.x/ll-cli/query.md"
+          "link": "/en/guide/ll-cli/query.md"
         },
         {
           "text": "Install App",
-          "link": "/en/guide/1.9.x/ll-cli/install.md"
+          "link": "/en/guide/ll-cli/install.md"
         },
         {
           "text": "Display App Information",
-          "link": "/en/guide/1.9.x/ll-cli/info.md"
+          "link": "/en/guide/ll-cli/info.md"
         },
         {
           "text": "Display App Exported Files",
-          "link": "/en/guide/1.9.x/ll-cli/content.md"
+          "link": "/en/guide/ll-cli/content.md"
         },
         {
           "text": "Run App",
-          "link": "/en/guide/1.9.x/ll-cli/run.md"
+          "link": "/en/guide/ll-cli/run.md"
         },
         {
           "text": "Uninstall App",
-          "link": "/en/guide/1.9.x/ll-cli/uninstall.md"
+          "link": "/en/guide/ll-cli/uninstall.md"
         },
         {
           "text": "Remove The Unused Base or Runtime",
-          "link": "/en/guide/1.9.x/ll-cli/prune.md"
+          "link": "/en/guide/ll-cli/prune.md"
         },
         {
           "text": "Update App",
-          "link": "/en/guide/1.9.x/ll-cli/update.md"
+          "link": "/en/guide/ll-cli/update.md"
         },
         {
           "text": "View Running Apps",
-          "link": "/en/guide/1.9.x/ll-cli/ps.md"
+          "link": "/en/guide/ll-cli/ps.md"
         },
         {
           "text": "Attach To Container",
-          "link": "/en/guide/1.9.x/ll-cli/exec.md"
+          "link": "/en/guide/ll-cli/exec.md"
         },
         {
           "text": "Force Quit App",
-          "link": "/en/guide/1.9.x/ll-cli/kill.md"
+          "link": "/en/guide/ll-cli/kill.md"
         }
       ]
     },
@@ -282,35 +282,35 @@
       "items": [
         {
           "text": "Introduction",
-          "link": "/en/guide/1.9.x/ll-builder/introduction.md"
+          "link": "/en/guide/ll-builder/introduction.md"
         },
         {
           "text": "Create Project",
-          "link": "/en/guide/1.9.x/ll-builder/create.md"
+          "link": "/en/guide/ll-builder/create.md"
         },
         {
           "text": "Build App",
-          "link": "/en/guide/1.9.x/ll-builder/build.md"
+          "link": "/en/guide/ll-builder/build.md"
         },
         {
           "text": "Simple example",
-          "link": "/en/guide/1.9.x/ll-builder/demo.md"
+          "link": "/en/guide/ll-builder/demo.md"
         },
         {
           "text": "Packaging specifications",
-          "link": "/en/guide/1.9.x/ll-builder/linyaps_package_spec.md"
+          "link": "/en/guide/ll-builder/linyaps_package_spec.md"
         },
         {
           "text": "Run Compiled App",
-          "link": "/en/guide/1.9.x/ll-builder/run.md"
+          "link": "/en/guide/ll-builder/run.md"
         },
         {
           "text": "Export Layer File",
-          "link": "/en/guide/1.9.x/ll-builder/export.md"
+          "link": "/en/guide/ll-builder/export.md"
         },
         {
           "text": "Manifests",
-          "link": "/en/guide/1.9.x/ll-builder/manifests.md"
+          "link": "/en/guide/ll-builder/manifests.md"
         }
       ]
     },
@@ -320,27 +320,27 @@
       "items": [
         {
           "text": "Introduction",
-          "link": "/en/guide/1.9.x/ll-pica/introduction.md"
+          "link": "/en/guide/ll-pica/introduction.md"
         },
         {
           "text": "Install",
-          "link": "/en/guide/1.9.x/ll-pica/install.md"
+          "link": "/en/guide/ll-pica/install.md"
         },
         {
           "text": "Initialization configuration",
-          "link": "/en/guide/1.9.x/ll-pica/init.md"
+          "link": "/en/guide/ll-pica/init.md"
         },
         {
           "text": "Conversion application",
-          "link": "/en/guide/1.9.x/ll-pica/convert.md"
+          "link": "/en/guide/ll-pica/convert.md"
         },
         {
           "text": "Add dependency",
-          "link": "/en/guide/1.9.x/ll-pica/adep.md"
+          "link": "/en/guide/ll-pica/adep.md"
         },
         {
           "text": "Manifests",
-          "link": "/en/guide/1.9.x/ll-pica/manifests.md"
+          "link": "/en/guide/ll-pica/manifests.md"
         }
       ]
     },
@@ -350,11 +350,11 @@
       "items": [
         {
           "text": "Introduction",
-          "link": "/en/guide/1.9.x/ll-appimage-convert/introduction.md"
+          "link": "/en/guide/ll-appimage-convert/introduction.md"
         },
         {
           "text": "Conversion application",
-          "link": "/en/guide/1.9.x/ll-appimage-convert/convert-appimage.md"
+          "link": "/en/guide/ll-appimage-convert/convert-appimage.md"
         }
       ]
     },
@@ -364,11 +364,11 @@
       "items": [
         {
           "text": "Introduction",
-          "link": "/en/guide/1.9.x/ll-flatpak-convert/introduction.md"
+          "link": "/en/guide/ll-flatpak-convert/introduction.md"
         },
         {
           "text": "Conversion application",
-          "link": "/en/guide/1.9.x/ll-flatpak-convert/convert-flatpak.md"
+          "link": "/en/guide/ll-flatpak-convert/convert-flatpak.md"
         }
       ]
     },
@@ -378,19 +378,19 @@
       "items": [
         {
           "text": "Debug App In IDE",
-          "link": "/en/guide/1.9.x/debug/debug.md"
+          "link": "/en/guide/debug/debug.md"
         },
         {
           "text": "Build FAQ",
-          "link": "/en/guide/1.9.x/debug/ll-builder-faq.md"
+          "link": "/en/guide/debug/ll-builder-faq.md"
         },
         {
           "text": "Run FAQ",
-          "link": "/en/guide/1.9.x/debug/faq.md"
+          "link": "/en/guide/debug/faq.md"
         },
         {
           "text": "Convert FAQ",
-          "link": "/en/guide/1.9.x/debug/ll-pica-faq.md"
+          "link": "/en/guide/debug/ll-pica-faq.md"
         }
       ]
     }
