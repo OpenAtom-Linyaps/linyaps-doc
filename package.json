@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vitepress dev",
     "prebuild": "sh sidebar-link-check.sh",
+    "postbuild": "cp .vitepress/dist/sitemap.xml .vitepress/dist/guide/",
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
