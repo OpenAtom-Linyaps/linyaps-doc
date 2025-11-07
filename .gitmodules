@@ -15,4 +15,5 @@
 	url = https://github.com/OpenAtom-Linyaps/linyaps.git
 [submodule "linyaps/1.10.x"]
 	path = linyaps/1.10.x
+	branch = docs/10.x
 	url = https://github.com/OpenAtom-Linyaps/linyaps.git

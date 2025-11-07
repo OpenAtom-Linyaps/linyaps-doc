@@ -20,14 +20,26 @@ const config: UserConfig = {
   // TODO 有关于manifests的死链接需要处理
   ignoreDeadLinks: [
     (url, source) => {
-      console.log(source);
+      // 1.10.x开始的版本只跳过README文件的死链接检查
+      if (source.includes("1.10.x")) {
+        if (
+          source.includes("1.10.x/README.md") ||
+          source.includes("1.10.x/README.zh_CN.md")
+        ) {
+          return true;
+        }
+        return false;
+      }
       if (source.endsWith("README.md")) {
+        console.log("ignoreDeadLinks", source);
         return true;
       }
       if (source.endsWith("README.zh_CN.md")) {
+        console.log("ignoreDeadLinks", source);
         return true;
       }
       if (url.endsWith("/manifests")) {
+        console.log("ignoreDeadLinks", source);
         return true;
       }
       return false;
