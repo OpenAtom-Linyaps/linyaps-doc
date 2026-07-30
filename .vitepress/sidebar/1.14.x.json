@@ -1,0 +1,288 @@
+{
+  "zh": [
+    {
+      "text": "入门指南",
+      "collapsed": false,
+      "items": [
+        { "text": "概述", "link": "/guide/start/whatis" },
+        { "text": "快速上手", "link": "/guide/start/quick-start" },
+        { "text": "发布说明", "link": "/guide/start/release_note" }
+      ]
+    },
+    {
+      "text": "用户手册",
+      "collapsed": true,
+      "items": [
+        { "text": "安装如意玲珑", "link": "/guide/start/install" },
+        { "text": "管理应用", "link": "/guide/start/manage-apps-with-cli" },
+        { "text": "高级",
+          "items": [
+            { "text": "运行配置", "link": "/guide/extra/runtime_config" },
+            { "text": "管理运行时", "link": "/guide/start/manage-runtimes-with-cli" },
+            { "text": "仓库管理", "link": "/guide/publishing/repositories" }
+          ] }
+      ]
+    },
+    {
+      "text": "开发者手册",
+      "collapsed": true,
+      "items": [
+        { "text": "构建第一个如意玲珑应用", "link": "/guide/start/build_your_first_app" },
+        { "text": "ll-builder 工作流", "link": "/guide/start/ll-builder-workflow" },
+        {
+          "text": "构建示例",
+          "items": [
+            { "text": "构建配置解读", "link": "/guide/building/demo" },
+            { "text": "从 deb 包转换", "link": "/guide/building/deb_conversion" }
+          ]
+        },
+        { "text": "UAB 格式发布", "link": "/guide/publishing/uab" },
+        {
+          "text": "高级",
+          "items": [
+            { "text": "调试如意玲珑应用", "link": "/guide/debug/debug" },
+            { "text": "模块管理", "link": "/guide/building/modules" },
+            { "text": "多架构支持", "link": "/guide/building/multiarch" }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "参考文档",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "规范",
+          "items": [
+            { "text": "玲珑应用打包规范", "link": "/guide/building/linyaps_package_spec" },
+            { "text": "构建配置文件简介", "link": "/guide/building/manifests" }
+          ]
+        },
+        {
+          "text": "基础概念",
+          "items": [
+            { "text": "基础概念介绍", "link": "/guide/reference/basic-concepts" },
+            { "text": "运行时组件", "link": "/guide/reference/runtime" },
+            { "text": "驱动程序", "link": "/guide/reference/driver" }
+          ]
+        },
+        {
+          "text": "命令参考",
+          "items": [
+            {
+              "text": "ll-appimage-convert",
+              "items": [
+                { "text": "主命令", "link": "/guide/reference/commands/ll-appimage-convert/ll-appimage-convert" },
+                { "text": "convert", "link": "/guide/reference/commands/ll-appimage-convert/ll-appimage-convert-convert" }
+              ]
+            },
+            {
+              "text": "ll-builder",
+              "items": [
+                { "text": "主命令", "link": "/guide/reference/commands/ll-builder/ll-builder" },
+                { "text": "build", "link": "/guide/reference/commands/ll-builder/build" },
+                { "text": "create", "link": "/guide/reference/commands/ll-builder/create" },
+                { "text": "export", "link": "/guide/reference/commands/ll-builder/export" },
+                { "text": "extract", "link": "/guide/reference/commands/ll-builder/extract" },
+                { "text": "import", "link": "/guide/reference/commands/ll-builder/import" },
+                { "text": "list", "link": "/guide/reference/commands/ll-builder/list" },
+                { "text": "push", "link": "/guide/reference/commands/ll-builder/push" },
+                { "text": "remove", "link": "/guide/reference/commands/ll-builder/remove" },
+                { "text": "repo", "link": "/guide/reference/commands/ll-builder/repo" },
+                { "text": "run", "link": "/guide/reference/commands/ll-builder/run" }
+              ]
+            },
+            {
+              "text": "ll-cli",
+              "items": [
+                { "text": "主命令", "link": "/guide/reference/commands/ll-cli/ll-cli" },
+                { "text": "content", "link": "/guide/reference/commands/ll-cli/content" },
+                { "text": "enter", "link": "/guide/reference/commands/ll-cli/enter" },
+                { "text": "info", "link": "/guide/reference/commands/ll-cli/info" },
+                { "text": "install", "link": "/guide/reference/commands/ll-cli/install" },
+                { "text": "kill", "link": "/guide/reference/commands/ll-cli/kill" },
+                { "text": "list", "link": "/guide/reference/commands/ll-cli/list" },
+                { "text": "prune", "link": "/guide/reference/commands/ll-cli/prune" },
+                { "text": "ps", "link": "/guide/reference/commands/ll-cli/ps" },
+                { "text": "repo", "link": "/guide/reference/commands/ll-cli/repo" },
+                { "text": "run", "link": "/guide/reference/commands/ll-cli/run" },
+                { "text": "search", "link": "/guide/reference/commands/ll-cli/search" },
+                { "text": "uninstall", "link": "/guide/reference/commands/ll-cli/uninstall" },
+                { "text": "upgrade", "link": "/guide/reference/commands/ll-cli/upgrade" }
+              ]
+            },
+            {
+              "text": "ll-pica",
+              "items": [
+                { "text": "主命令", "link": "/guide/reference/commands/ll-pica/ll-pica" },
+                { "text": "adep", "link": "/guide/reference/commands/ll-pica/ll-pica-adep" },
+                { "text": "convert", "link": "/guide/reference/commands/ll-pica/ll-pica-convert" },
+                { "text": "init", "link": "/guide/reference/commands/ll-pica/ll-pica-init" },
+                { "text": "manifests", "link": "/guide/reference/commands/ll-pica/ll-pica-manifests" }
+              ]
+            },
+            {
+              "text": "ll-pica-flatpak",
+              "items": [
+                { "text": "主命令", "link": "/guide/reference/commands/ll-pica-flatpak/ll-pica-flatpak" },
+                { "text": "convert", "link": "/guide/reference/commands/ll-pica-flatpak/ll-pica-flatpak-convert" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "提示与常见问题",
+      "collapsed": true,
+      "items": [
+        { "text": "常见问题", "link": "/guide/tips-and-faq/faq" },
+        { "text": "ll-builder 常见问题", "link": "/guide/tips-and-faq/ll-builder-faq" },
+        { "text": "ll-pica 常见问题", "link": "/guide/tips-and-faq/ll-pica-faq" }
+      ]
+    }
+  ],
+  "en": [
+    {
+      "text": "Getting Started",
+      "collapsed": false,
+      "items": [
+        { "text": "Overview", "link": "/en/guide/start/whatis" },
+        { "text": "Quick Start", "link": "/en/guide/start/quick-start" },
+        { "text": "Release Notes", "link": "/en/guide/start/release_note" }
+      ]
+    },
+    {
+      "text": "User Manual",
+      "collapsed": true,
+      "items": [
+        { "text": "Install Linyaps", "link": "/en/guide/start/install" },
+        { "text": "Manage Applications", "link": "/en/guide/start/manage-apps-with-cli" },
+        { "text": "Advanced",
+          "items": [
+            { "text": "Runtime Configuration", "link": "/en/guide/extra/runtime_config" },
+            { "text": "Manage Runtimes", "link": "/en/guide/start/manage-runtimes-with-cli" },
+            { "text": "Repository Management", "link": "/en/guide/publishing/repositories" }
+          ] }
+      ]
+    },
+    {
+      "text": "Developer Manual",
+      "collapsed": true,
+      "items": [
+        { "text": "Build Your First Linyaps App", "link": "/en/guide/start/build_your_first_app" },
+        { "text": "ll-builder Workflow", "link": "/en/guide/start/ll-builder-workflow" },
+        {
+          "text": "Build Examples",
+          "items": [
+            { "text": "Understanding Build Configuration", "link": "/en/guide/building/demo" },
+            { "text": "Convert from a deb Package", "link": "/en/guide/building/deb_conversion" }
+          ]
+        },
+        { "text": "UAB Application Publishing", "link": "/en/guide/publishing/uab" },
+        {
+          "text": "Advanced",
+          "items": [
+            { "text": "Debug Linyaps Applications", "link": "/en/guide/debug/debug" },
+            { "text": "Module Management", "link": "/en/guide/building/modules" },
+            { "text": "Multi-architecture Support", "link": "/en/guide/building/multiarch" }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "Reference Documentation",
+      "collapsed": true,
+      "items": [
+        {
+          "text": "Specifications",
+          "items": [
+            { "text": "Linyaps Application Packaging Specification", "link": "/en/guide/building/linyaps_package_spec" },
+            { "text": "Build Configuration File Introduction", "link": "/en/guide/building/manifests" }
+          ]
+        },
+        {
+          "text": "Basic Concepts",
+          "items": [
+            { "text": "Basic Concepts Introduction", "link": "/en/guide/reference/basic-concepts" },
+            { "text": "Runtime Components", "link": "/en/guide/reference/runtime" },
+            { "text": "Drivers", "link": "/en/guide/reference/driver" }
+          ]
+        },
+        {
+          "text": "Command Reference",
+          "items": [
+            {
+              "text": "ll-appimage-convert",
+              "items": [
+                { "text": "Main Command", "link": "/en/guide/reference/commands/ll-appimage-convert/ll-appimage-convert" },
+                { "text": "convert", "link": "/en/guide/reference/commands/ll-appimage-convert/ll-appimage-convert-convert" }
+              ]
+            },
+            {
+              "text": "ll-builder",
+              "items": [
+                { "text": "Main Command", "link": "/en/guide/reference/commands/ll-builder/ll-builder" },
+                { "text": "build", "link": "/en/guide/reference/commands/ll-builder/build" },
+                { "text": "create", "link": "/en/guide/reference/commands/ll-builder/create" },
+                { "text": "export", "link": "/en/guide/reference/commands/ll-builder/export" },
+                { "text": "extract", "link": "/en/guide/reference/commands/ll-builder/extract" },
+                { "text": "import", "link": "/en/guide/reference/commands/ll-builder/import" },
+                { "text": "list", "link": "/en/guide/reference/commands/ll-builder/list" },
+                { "text": "push", "link": "/en/guide/reference/commands/ll-builder/push" },
+                { "text": "remove", "link": "/en/guide/reference/commands/ll-builder/remove" },
+                { "text": "repo", "link": "/en/guide/reference/commands/ll-builder/repo" },
+                { "text": "run", "link": "/en/guide/reference/commands/ll-builder/run" }
+              ]
+            },
+            {
+              "text": "ll-cli",
+              "items": [
+                { "text": "Main Command", "link": "/en/guide/reference/commands/ll-cli/ll-cli" },
+                { "text": "content", "link": "/en/guide/reference/commands/ll-cli/content" },
+                { "text": "enter", "link": "/en/guide/reference/commands/ll-cli/enter" },
+                { "text": "info", "link": "/en/guide/reference/commands/ll-cli/info" },
+                { "text": "install", "link": "/en/guide/reference/commands/ll-cli/install" },
+                { "text": "kill", "link": "/en/guide/reference/commands/ll-cli/kill" },
+                { "text": "list", "link": "/en/guide/reference/commands/ll-cli/list" },
+                { "text": "prune", "link": "/en/guide/reference/commands/ll-cli/prune" },
+                { "text": "ps", "link": "/en/guide/reference/commands/ll-cli/ps" },
+                { "text": "repo", "link": "/en/guide/reference/commands/ll-cli/repo" },
+                { "text": "run", "link": "/en/guide/reference/commands/ll-cli/run" },
+                { "text": "search", "link": "/en/guide/reference/commands/ll-cli/search" },
+                { "text": "uninstall", "link": "/en/guide/reference/commands/ll-cli/uninstall" },
+                { "text": "upgrade", "link": "/en/guide/reference/commands/ll-cli/upgrade" }
+              ]
+            },
+            {
+              "text": "ll-pica",
+              "items": [
+                { "text": "Main Command", "link": "/en/guide/reference/commands/ll-pica/ll-pica" },
+                { "text": "adep", "link": "/en/guide/reference/commands/ll-pica/ll-pica-adep" },
+                { "text": "convert", "link": "/en/guide/reference/commands/ll-pica/ll-pica-convert" },
+                { "text": "init", "link": "/en/guide/reference/commands/ll-pica/ll-pica-init" },
+                { "text": "manifests", "link": "/en/guide/reference/commands/ll-pica/ll-pica-manifests" }
+              ]
+            },
+            {
+              "text": "ll-pica-flatpak",
+              "items": [
+                { "text": "Main Command", "link": "/en/guide/reference/commands/ll-pica-flatpak/ll-pica-flatpak" },
+                { "text": "convert", "link": "/en/guide/reference/commands/ll-pica-flatpak/ll-pica-flatpak-convert" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "text": "Tips and FAQs",
+      "collapsed": true,
+      "items": [
+        { "text": "FAQ", "link": "/en/guide/tips-and-faq/faq" },
+        { "text": "ll-builder FAQ", "link": "/en/guide/tips-and-faq/ll-builder-faq" },
+        { "text": "ll-pica FAQ", "link": "/en/guide/tips-and-faq/ll-pica-faq" }
+      ]
+    }
+  ]
+}
